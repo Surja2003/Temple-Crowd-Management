@@ -58,9 +58,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/icon-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/images/icons/icon-512x512.png" />
-        {/* eslint-disable-next-line @microsoft/sdl/no-invalid-head-content */}
         <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png" />
-        {/* eslint-disable-next-line compat/compat */}
         <meta name="theme-color" content="#18181b" />
 
         {/* Google Analytics (GA4) - optional, privacy-friendly */}

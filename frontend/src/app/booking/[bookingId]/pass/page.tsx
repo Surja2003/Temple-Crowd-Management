@@ -67,7 +67,7 @@ export default function BookingPassPage() {
   const templeInfo = templeConfig ? {
     name: templeConfig.basic.name,
     address: `${templeConfig.basic.address.city}, ${templeConfig.basic.address.state}`,
-    phone: templeConfig.contact?.phone,
+    phone: templeConfig.basic.contact?.phone?.[0],
   } : {
     name: "Temple",
     address: "Address",
@@ -135,7 +135,7 @@ export default function BookingPassPage() {
             booking={{
               bookingId: booking.bookingId,
               devoteeName: booking.devoteeName,
-              phoneNumber: booking.phoneNumber || "",
+              phoneNumber: booking.phone || "",
               numberOfDevotees: booking.numberOfDevotees,
               darshanType: booking.darshanType,
               timeSlot: booking.timeSlot,
