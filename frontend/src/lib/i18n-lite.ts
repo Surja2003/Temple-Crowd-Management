@@ -6,10 +6,11 @@ import hi from "@/../public/locales/hi/common.json";
 import gu from "@/../public/locales/gu/common.json";
 
 
-type Dict = typeof en & { admin: typeof import('@/../public/locales/en/admin.json') };
-const admin = require('@/../public/locales/en/admin.json');
-const adminHi = require('@/../public/locales/hi/admin.json');
-const adminGu = require('@/../public/locales/gu/admin.json');
+
+import admin from "@/../public/locales/en/admin.json";
+import adminHi from "@/../public/locales/hi/admin.json";
+import adminGu from "@/../public/locales/gu/admin.json";
+type Dict = typeof en & { admin: typeof admin };
 
 const MAP: Record<string, Dict> = {
   en: { ...en, admin },
