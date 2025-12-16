@@ -15,8 +15,4 @@ qrcode[pil]==7.4.2
 apscheduler==3.10.4
 twilio==8.11.1
 pywebpush==1.14.0
-pandas==2.1.4
-numpy==1.26.3
-scikit-learn==1.4.0
-opencv-python==4.9.0.80
 websockets==12.0
