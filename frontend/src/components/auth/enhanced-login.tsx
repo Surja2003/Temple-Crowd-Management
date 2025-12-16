@@ -4,6 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Lock, User, Eye, EyeOff, AlertCircle, LogIn, Home, UserPlus } from 'lucide-react'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useAuth } from '@/contexts/auth-context'
 
@@ -181,10 +182,13 @@ export default function EnhancedLogin() {
                 transition={{ duration: 2, repeat: Infinity }}
                 className="w-12 h-12 md:w-14 md:h-14 relative"
               >
-                <img
+                <Image
                   src="/images/logo.png"
                   alt="Temple Crowd Management Logo"
-                  className="w-full h-full object-contain"
+                  fill
+                  sizes="(min-width: 768px) 56px, 48px"
+                  className="object-contain"
+                  priority
                 />
               </motion.div>
               <div>

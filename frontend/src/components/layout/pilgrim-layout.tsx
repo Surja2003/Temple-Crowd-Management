@@ -12,7 +12,7 @@ export default function PilgrimLayout({ children }: { children: React.ReactNode 
   const pathname = usePathname()
   const router = useRouter()
   const { logout } = useAuth()
-  const { t, locale } = useI18n()
+  const { locale } = useI18n()
 
   const [isDark, setIsDark] = React.useState(false)
 

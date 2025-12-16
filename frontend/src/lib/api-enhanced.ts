@@ -171,7 +171,7 @@ export class TempleApiService {
       // Use livePath for live queue if backend expects /api/v1/live/temple/{id}/status
       const response = await this.api.get(livePath(`/temple/${this.templeSlug}/status`));
       return response.data;
-    } catch (error) {
+    } catch {
       // Fallback to inline mock data if backend is not available (silent fallback)
       const mockData: QueueDataEnhanced = {
         templeId: config?.basic.id || 'unknown',
@@ -192,7 +192,7 @@ export class TempleApiService {
       // Use analyticsPath for crowd metrics if backend expects /api/v1/analytics/temple/{id}
       const response = await this.api.get(analyticsPath(`/temple/${this.templeSlug}`));
       return response.data;
-    } catch (error) {
+    } catch {
       // Return mock data if backend is not available (silent fallback)
       return {
         timestamp: new Date().toISOString(),
@@ -219,7 +219,7 @@ export class TempleApiService {
         params: { timestamp }
       });
       return response.data;
-    } catch (error) {
+    } catch {
       // Silent fallback to mock prediction
       return { level: 'medium', confidence: 0.7 };
     }
@@ -236,7 +236,7 @@ export class TempleApiService {
       // Get temple info
       const response = await this.api.get(templePath(this.templeSlug));
       return { ...config, ...response.data };
-    } catch (error) {
+    } catch {
       // Fallback to configuration with mock status (silent fallback)
       const mockStatus = {
         isOpen: true,

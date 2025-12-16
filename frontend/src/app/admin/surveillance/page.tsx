@@ -7,17 +7,10 @@ import { Video, Users, AlertTriangle, MapPin, Activity } from 'lucide-react'
 import AdminLayout from '@/components/layout/admin-layout'
 import { useLiveAdminMetrics } from '@/hooks/use-live-admin-metrics'
 import { trackEvent, trackTempleEvent } from '@/lib/ga'
-import { usePathname } from 'next/navigation'
-import { useMemo } from 'react'
 import { useI18n } from '@/lib/i18n-lite'
 
 export default function AdminSurveillancePage() {
   const { stats, temples, now } = useLiveAdminMetrics()
-  const pathname = usePathname()
-  const locale = useMemo(() => {
-    const match = pathname?.match(/^\/(en|hi|gu)(?=\/|$)/)
-    return (match?.[1] as 'en' | 'hi' | 'gu') || 'en'
-  }, [pathname])
   const { t } = useI18n()
 
   const pageTrackedRef = React.useRef(false)

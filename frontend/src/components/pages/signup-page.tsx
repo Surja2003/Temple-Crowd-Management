@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { AlertCircle, Lock, Mail, Phone, User } from 'lucide-react'
@@ -91,10 +92,13 @@ export default function SignupPage() {
                 className="w-16 h-16 md:w-20 md:h-20 relative"
                 aria-hidden="true"
               >
-                <img
+                <Image
                   src="/images/logo.png"
                   alt="Temple Crowd Management Logo"
-                  className="w-full h-full object-contain"
+                  fill
+                  sizes="(min-width: 768px) 80px, 64px"
+                  className="object-contain"
+                  priority
                 />
               </motion.div>
               <div>

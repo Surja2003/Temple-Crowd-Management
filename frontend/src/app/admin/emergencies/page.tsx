@@ -6,17 +6,10 @@ import { CheckCircle, Users, AlertTriangle, MapPin, Activity } from 'lucide-reac
 import AdminLayout from '@/components/layout/admin-layout'
 import { useLiveAdminMetrics } from '@/hooks/use-live-admin-metrics'
 import { trackEvent } from '@/lib/ga'
-import { usePathname } from 'next/navigation'
-import { useMemo } from 'react'
 import { useI18n } from '@/lib/i18n-lite'
 
 export default function AdminEmergenciesPage() {
   const { stats } = useLiveAdminMetrics()
-  const pathname = usePathname()
-  const locale = useMemo(() => {
-    const match = pathname?.match(/^\/(en|hi|gu)(?=\/|$)/)
-    return (match?.[1] as 'en' | 'hi' | 'gu') || 'en'
-  }, [pathname])
   const { t } = useI18n()
 
   const trackedRef = React.useRef(false)

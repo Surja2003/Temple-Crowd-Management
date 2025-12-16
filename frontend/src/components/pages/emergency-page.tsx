@@ -124,7 +124,7 @@ export default function EmergencyPage() {
                             : 'border-border hover:border-border/80 bg-background'
                         }`}
                         role="radio"
-                        aria-checked={isSelected ? 'true' : 'false'}
+                        aria-checked={isSelected}
                         tabIndex={0}
                         aria-label={type.label}
                       >
@@ -165,7 +165,7 @@ export default function EmergencyPage() {
                             : 'border-border hover:border-border/80 bg-background text-foreground'
                         }`}
                         role="radio"
-                        aria-checked={isSelected ? 'true' : 'false'}
+                        aria-checked={isSelected}
                         tabIndex={0}
                         aria-label={level.label}
                       >

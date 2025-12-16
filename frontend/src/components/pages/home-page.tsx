@@ -75,10 +75,13 @@ export default function HomePage() {
           <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 sm:w-14 sm:h-14 relative" aria-hidden="true">
-                <img
+                <Image
                   src="/images/logo.png"
                   alt="Temple Crowd Management Logo"
-                  className="w-full h-full object-contain"
+                  fill
+                  sizes="(min-width: 640px) 56px, 48px"
+                  className="object-contain"
+                  priority
                 />
               </div>
               <div>

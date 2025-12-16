@@ -355,8 +355,9 @@ export class PrivacyService {
     return pia;
   }
 
-  async getPIAs(templeId: string): Promise<PrivacyImpactAssessment[]> {
+  async getPIAs(templeId?: string): Promise<PrivacyImpactAssessment[]> {
     // Mock data for development
+    void templeId;
     return [];
   }
 
@@ -377,7 +378,7 @@ export class PrivacyService {
     ];
   }
 
-  async assessCompliance(templeId: string, frameworkId: string): Promise<{
+  async assessCompliance(templeId?: string, frameworkId?: string): Promise<{
     overallStatus: ComplianceStatus;
     score: number;
     assessmentDate: Date;
@@ -389,6 +390,8 @@ export class PrivacyService {
     }>;
   }> {
     // Mock compliance assessment
+    void templeId;
+    void frameworkId;
     return {
       overallStatus: ComplianceStatus.PARTIALLY_COMPLIANT,
       score: 75,
@@ -494,14 +497,17 @@ export class PrivacyService {
     return breach;
   }
 
-  async getDataBreaches(templeId: string): Promise<DataBreach[]> {
+  async getDataBreaches(templeId?: string): Promise<DataBreach[]> {
     // Mock data for development
+    void templeId;
     return [];
   }
 
   // Analytics and Reporting
-  async getPrivacyMetrics(templeId: string, dateRange: { start: Date; end: Date }) {
+  async getPrivacyMetrics(templeId?: string, dateRange?: { start: Date; end: Date }) {
     // Mock metrics for development
+    void templeId;
+    void dateRange;
     return {
       consentRates: {
         essential: 100,
@@ -531,9 +537,9 @@ export class PrivacyService {
   }
 
   async generatePrivacyReport(
-    templeId: string,
-    reportType: 'compliance' | 'consent' | 'requests' | 'breaches',
-    options: {
+    templeId?: string,
+    reportType?: 'compliance' | 'consent' | 'requests' | 'breaches',
+    options?: {
       format: 'pdf' | 'csv' | 'json';
       dateRange?: { start: Date; end: Date };
       includeDetails?: boolean;
@@ -545,17 +551,27 @@ export class PrivacyService {
     expiresAt: Date;
   }> {
     // Mock report generation
+    const format = options?.format ?? 'pdf';
+    const type = reportType ?? 'compliance';
+    const scope = templeId ?? 'all-temples';
+    const range = options?.dateRange
+      ? `${options.dateRange.start.toISOString()}_${options.dateRange.end.toISOString()}`
+      : 'all-time';
+    const details = options?.includeDetails ? 'detailed' : 'summary';
+    const reportKey = encodeURIComponent(`${scope}_${type}_${format}_${details}_${range}`);
+
     return {
-      reportId: `report_${Date.now()}`,
-      downloadUrl: '/api/reports/download/123',
+      reportId: `report_${reportKey}_${Date.now()}`,
+      downloadUrl: `/api/reports/download/${reportKey}`,
       generatedAt: new Date(),
       expiresAt: new Date(Date.now() + 86400000) // 24 hours
     };
   }
 
   // Data Subject Profile
-  async getDataSubjectProfile(userId: string, templeId: string): Promise<DataSubject> {
+  async getDataSubjectProfile(userId: string, templeId?: string): Promise<DataSubject> {
     // Mock data subject profile
+    void templeId;
     return {
       id: userId,
       email: 'user@example.com',
@@ -577,6 +593,8 @@ export class PrivacyService {
     expiresAt: Date;
   }> {
     // Mock data export
+    void userId;
+    void templeId;
     return {
       exportId: `export_${Date.now()}`,
       downloadUrl: '/api/exports/download/123',
@@ -594,6 +612,8 @@ export class PrivacyService {
     verificationRequired: boolean;
   }> {
     // Mock data deletion
+    void userId;
+    void templeId;
     return {
       deletionId: `deletion_${Date.now()}`,
       scheduledAt: new Date(),
