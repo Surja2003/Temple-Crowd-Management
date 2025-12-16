@@ -1,0 +1,419 @@
+{
+  "basic": {
+    "id": "temple-011",
+    "slug": "meenakshi-temple",
+    "name": "Meenakshi Amman Temple",
+    "shortName": "Meenakshi Temple",
+    "description": "A magnificent Dravidian architecture temple complex dedicated to Goddess Meenakshi (Parvati) and Lord Sundareshwarar (Shiva). Famous for its towering gopurams with intricate sculptures and vibrant colors.",
+    "address": {
+      "street": "Madurai Main",
+      "city": "Madurai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "postalCode": "625001",
+      "coordinates": {
+        "latitude": 9.9195,
+        "longitude": 78.1196
+      }
+    },
+    "contact": {
+      "phone": ["+91-452-2341360", "+91-452-2341361"],
+      "email": ["info@maduraimeenakshi.org", "admin@meenakshitemple.tn.gov.in"],
+      "website": "https://www.maduraimeenakshi.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/meenakshitemple",
+        "instagram": "@meenakshitemple",
+        "youtube": "https://youtube.com/@meenakshitemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/meenakshi/logo.jpg",
+      "banner": "/images/temples/meenakshi/banner.jpg",
+      "gallery": [
+        "/images/temples/meenakshi/gopuram-towers.jpg",
+        "/images/temples/meenakshi/meenakshi-goddess.jpg",
+        "/images/temples/meenakshi/sundareshwarar.jpg",
+        "/images/temples/meenakshi/thousand-pillar-hall.jpg",
+        "/images/temples/meenakshi/temple-complex.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/meenakshi/temple-layout.jpg",
+        "/images/temples/meenakshi/gopuram-map.jpg"
+      ],
+      "virtualTour": "/images/temples/meenakshi/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "05:00",
+        "close": "22:30",
+        "breaks": [
+          {
+            "start": "12:30",
+            "end": "16:00"
+          }
+        ],
+        "lastEntry": "22:00"
+      },
+      "special": [
+        {
+          "date": "2025-04-15",
+          "open": "04:00",
+          "close": "23:30",
+          "reason": "Chithirai Festival",
+          "lastEntry": "23:00"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Chithirai Festival",
+          "startDate": "2025-04-14",
+          "endDate": "2025-04-25",
+          "open": "04:00",
+          "close": "23:30",
+          "lastEntry": "23:00",
+          "specialRules": [
+            "Celestial wedding ceremony",
+            "Grand processions",
+            "Extended darshan hours"
+          ]
+        },
+        {
+          "name": "Navaratri",
+          "startDate": "2025-10-03",
+          "endDate": "2025-10-11",
+          "open": "04:30",
+          "close": "23:00",
+          "lastEntry": "22:30",
+          "specialRules": [
+            "Special goddess decorations",
+            "Cultural performances",
+            "Nine-day celebrations"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 4000,
+      "zones": [
+        {
+          "id": "meenakshi-shrine",
+          "name": "Meenakshi Shrine",
+          "capacity": 400,
+          "description": "Main shrine of Goddess Meenakshi",
+          "accessLevel": "public"
+        },
+        {
+          "id": "sundareshwarar-shrine",
+          "name": "Sundareshwarar Shrine",
+          "capacity": 350,
+          "description": "Lord Shiva's shrine",
+          "accessLevel": "public"
+        },
+        {
+          "id": "thousand-pillar-hall",
+          "name": "Thousand Pillar Hall",
+          "capacity": 1200,
+          "description": "Magnificent hall with intricately carved pillars",
+          "accessLevel": "public"
+        },
+        {
+          "id": "golden-lotus-tank",
+          "name": "Golden Lotus Tank",
+          "capacity": 800,
+          "description": "Sacred tank in the temple complex",
+          "accessLevel": "public"
+        },
+        {
+          "id": "corridors",
+          "name": "Temple Corridors",
+          "capacity": 1000,
+          "description": "Outer corridors with shops and smaller shrines",
+          "accessLevel": "public"
+        },
+        {
+          "id": "museum",
+          "name": "Temple Museum",
+          "capacity": 250,
+          "description": "Art and sculpture museum",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 400,
+      "disabilityQuota": 250
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Regular darshan of both deities",
+        "price": 0,
+        "duration": 25,
+        "capacity": 3200,
+        "zones": ["meenakshi-shrine", "sundareshwarar-shrine", "thousand-pillar-hall"],
+        "features": ["Free darshan", "Both shrines", "Pillar hall viewing"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Darshan",
+        "description": "Priority darshan with special access",
+        "price": 100,
+        "duration": 40,
+        "capacity": 500,
+        "zones": ["meenakshi-shrine", "sundareshwarar-shrine", "golden-lotus-tank"],
+        "features": ["Priority entry", "Closer viewing", "Tank access", "Prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "kalyanam",
+        "name": "Kalyanam Darshan",
+        "description": "Wedding ceremony viewing of the divine couple",
+        "price": 300,
+        "duration": 60,
+        "capacity": 200,
+        "zones": ["meenakshi-shrine", "sundareshwarar-shrine"],
+        "features": ["Wedding ceremony", "Special decorations", "Blessed prasadam", "Photography allowed"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Traditional Attire",
+        "description": "Traditional South Indian dress preferred",
+        "severity": "recommended",
+        "icon": "🥻"
+      },
+      {
+        "id": "footwear",
+        "category": "footwear",
+        "title": "Remove Footwear",
+        "description": "Footwear must be removed before entering temple premises",
+        "severity": "mandatory",
+        "icon": "👡"
+      },
+      {
+        "id": "photography",
+        "category": "photography",
+        "title": "Limited Photography",
+        "description": "Photography allowed in certain areas only",
+        "severity": "info",
+        "icon": "📸"
+      },
+      {
+        "id": "offerings",
+        "category": "offerings",
+        "title": "Temple Offerings",
+        "description": "Flowers, coconuts, and sweets are traditional offerings",
+        "severity": "info",
+        "icon": "🥥"
+      }
+    ],
+    "languages": ["en", "hi", "tamil"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "urban_heritage",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "art-museum",
+        "name": "Temple Art Museum",
+        "description": "Collection of bronze sculptures and artifacts",
+        "category": "cultural",
+        "available": true
+      },
+      {
+        "id": "shopping-complex",
+        "name": "Temple Shopping",
+        "description": "Traditional silk sarees, jewelry, and handicrafts",
+        "category": "shopping",
+        "available": true
+      },
+      {
+        "id": "anna-dhanam",
+        "name": "Anna Dhanam",
+        "description": "Free food distribution for devotees",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "cultural-center",
+        "name": "Cultural Programs",
+        "description": "Classical music and dance performances",
+        "category": "cultural",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 3000,
+        "duration": "20-25 minutes",
+        "difficulty": "moderate"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "auto", "cycle"],
+        "parkingFee": 15
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 20 minutes",
+        "cost": 10
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 45,
+    "slotDuration": 90,
+    "maxDevoteesPerBooking": 8,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 25,
+      "refundProcessingDays": 7
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-east-gate",
+        "type": "people_counter",
+        "location": "East Gopuram Gate",
+        "zone": "corridors"
+      },
+      {
+        "id": "sensor-meenakshi",
+        "type": "occupancy",
+        "location": "Meenakshi Shrine",
+        "zone": "meenakshi-shrine"
+      },
+      {
+        "id": "sensor-pillar-hall",
+        "type": "thermal",
+        "location": "Thousand Pillar Hall",
+        "zone": "thousand-pillar-hall"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "06:00",
+        "end": "10:00",
+        "level": "high"
+      },
+      {
+        "start": "17:00",
+        "end": "20:00",
+        "level": "very_high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 82,
+      "updateInterval": 20
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Meenakshi Temple darshan confirmed for {date} at {time}. Remove footwear. Booking ID: {bookingId}",
+        "email": "Meenakshi Amman Temple Darshan Confirmation"
+      },
+      "festival_alert": {
+        "sms": "Chithirai Festival starting on {date}. Witness divine wedding ceremony.",
+        "email": "Meenakshi Temple Festival Update"
+      }
+    },
+    "preferences": {
+      "festivalAlerts": true,
+      "bookingReminders": true,
+      "culturalEvents": true,
+      "specialCeremonies": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "devotee_count",
+      "cultural_participation",
+      "festival_attendance",
+      "museum_visits"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "festivalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-452-2341300",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-452-2341400",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "police",
+        "number": "+91-452-2341500",
+        "description": "Temple Security"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "crowd",
+        "description": "Follow designated pathways through the complex"
+      },
+      {
+        "type": "festival",
+        "description": "Extra security during major festivals and processions"
+      }
+    ]
+  }
+}

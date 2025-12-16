@@ -1,0 +1,412 @@
+{
+  "basic": {
+    "id": "temple-009",
+    "slug": "jagannath-temple",
+    "name": "Jagannath Temple, Puri",
+    "shortName": "Jagannath Puri",
+    "description": "One of the Char Dham pilgrimage sites, famous for the annual Rath Yatra festival. This ancient temple is dedicated to Lord Jagannath, an incarnation of Lord Vishnu, and houses the sacred trinity of Jagannath, Balabhadra, and Subhadra.",
+    "address": {
+      "street": "Grand Road (Bada Danda)",
+      "city": "Puri",
+      "state": "Odisha",
+      "country": "India",
+      "postalCode": "752001",
+      "coordinates": {
+        "latitude": 19.8135,
+        "longitude": 85.8312
+      }
+    },
+    "contact": {
+      "phone": ["+91-6752-222228", "+91-6752-222551"],
+      "email": ["info@jagannathtemple.org", "admin@purijagannath.gov.in"],
+      "website": "https://www.jagannathtemple.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/jagannathpuri",
+        "instagram": "@jagannathpuri",
+        "youtube": "https://youtube.com/@jagannathpuri"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/jagannath/logo.jpg",
+      "banner": "/images/temples/jagannath/banner.jpg",
+      "gallery": [
+        "/images/temples/jagannath/temple-tower.jpg",
+        "/images/temples/jagannath/trinity-deities.jpg",
+        "/images/temples/jagannath/rath-yatra.jpg",
+        "/images/temples/jagannath/mahaprasad.jpg",
+        "/images/temples/jagannath/temple-complex.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/jagannath/temple-layout.jpg",
+        "/images/temples/jagannath/darshan-routes.jpg"
+      ],
+      "virtualTour": "/images/temples/jagannath/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "05:00",
+        "close": "23:00",
+        "breaks": [
+          {
+            "start": "13:00",
+            "end": "16:00"
+          }
+        ],
+        "lastEntry": "22:30"
+      },
+      "special": [
+        {
+          "date": "2025-06-25",
+          "open": "03:00",
+          "close": "24:00",
+          "reason": "Rath Yatra",
+          "lastEntry": "23:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Rath Yatra",
+          "startDate": "2025-06-25",
+          "endDate": "2025-07-03",
+          "open": "03:00",
+          "close": "24:00",
+          "lastEntry": "23:30",
+          "specialRules": [
+            "Deities travel in chariots",
+            "Special darshan route",
+            "Gundicha Temple visit"
+          ]
+        },
+        {
+          "name": "Snana Yatra",
+          "startDate": "2025-06-11",
+          "endDate": "2025-06-11",
+          "open": "04:00",
+          "close": "23:00",
+          "lastEntry": "22:30",
+          "specialRules": [
+            "Ceremonial bath of deities",
+            "Special abhishekam",
+            "Unique decorations"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 2500,
+      "zones": [
+        {
+          "id": "garbhagriha",
+          "name": "Garbhagriha",
+          "capacity": 200,
+          "description": "Sacred sanctum with Trinity deities",
+          "accessLevel": "public"
+        },
+        {
+          "id": "jagamohan",
+          "name": "Jagamohan Hall",
+          "capacity": 800,
+          "description": "Main assembly hall for devotees",
+          "accessLevel": "public"
+        },
+        {
+          "id": "natamandapa",
+          "name": "Nata Mandapa",
+          "capacity": 600,
+          "description": "Dance hall for cultural performances",
+          "accessLevel": "public"
+        },
+        {
+          "id": "bhogamandapa",
+          "name": "Bhoga Mandapa",
+          "capacity": 500,
+          "description": "Hall where food offerings are prepared",
+          "accessLevel": "restricted"
+        },
+        {
+          "id": "courtyard",
+          "name": "Temple Courtyard",
+          "capacity": 400,
+          "description": "Outer courtyard area",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 250,
+      "disabilityQuota": 150
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Regular darshan of Lord Jagannath",
+        "price": 0,
+        "duration": 20,
+        "capacity": 2000,
+        "zones": ["garbhagriha", "jagamohan", "courtyard"],
+        "features": ["Free darshan", "Trinity viewing", "Mahaprasad opportunity"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Darshan",
+        "description": "Priority darshan with special rituals",
+        "price": 300,
+        "duration": 30,
+        "capacity": 300,
+        "zones": ["garbhagriha", "jagamohan"],
+        "features": ["Priority entry", "Special aarti", "Mahaprasad", "Closer viewing"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "suprabhata",
+        "name": "Suprabhata Darshan",
+        "description": "Early morning awakening ceremony",
+        "price": 500,
+        "duration": 45,
+        "capacity": 100,
+        "zones": ["garbhagriha"],
+        "features": ["Dawn ceremony", "First darshan", "Special prayers", "Prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "non-hindus",
+        "category": "entry",
+        "title": "Hindus Only",
+        "description": "Entry restricted to Hindu devotees only",
+        "severity": "mandatory",
+        "icon": "🚫"
+      },
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Traditional Dress",
+        "description": "Dress modestly in traditional Indian attire",
+        "severity": "mandatory",
+        "icon": "👘"
+      },
+      {
+        "id": "mahaprasad",
+        "category": "food",
+        "title": "Sacred Food",
+        "description": "Mahaprasad is available and should be consumed with reverence",
+        "severity": "info",
+        "icon": "🍛"
+      },
+      {
+        "id": "photography",
+        "category": "photography",
+        "title": "No Photography",
+        "description": "Photography and videography strictly prohibited inside temple",
+        "severity": "mandatory",
+        "icon": "📵"
+      }
+    ],
+    "languages": ["en", "hi", "odia"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "coastal",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "anandabazar",
+        "name": "Ananda Bazar",
+        "description": "Sacred kitchen serving Mahaprasad",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "pilgrim-hall",
+        "name": "Pilgrim Rest House",
+        "description": "Accommodation for devotees",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "museum",
+        "name": "Temple Museum",
+        "description": "Artifacts and history displays",
+        "category": "cultural",
+        "available": true
+      },
+      {
+        "id": "shopping",
+        "name": "Devotional Items",
+        "description": "Religious books, idols, and souvenirs",
+        "category": "shopping",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 2000,
+        "duration": "15-20 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "auto", "cycle"],
+        "parkingFee": 20
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 30 minutes",
+        "cost": 10
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 90,
+    "slotDuration": 60,
+    "maxDevoteesPerBooking": 8,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 50,
+      "refundProcessingDays": 7
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-singhadwar",
+        "type": "people_counter",
+        "location": "Singha Dwar (Lion Gate)",
+        "zone": "courtyard"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entrance",
+        "zone": "garbhagriha"
+      },
+      {
+        "id": "sensor-jagamohan",
+        "type": "thermal",
+        "location": "Jagamohan Hall",
+        "zone": "jagamohan"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "05:00",
+        "end": "09:00",
+        "level": "very_high"
+      },
+      {
+        "start": "17:00",
+        "end": "21:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 85,
+      "updateInterval": 15
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Jagannath darshan confirmed for {date} at {time}. Follow dress code. Booking ID: {bookingId}",
+        "email": "Jagannath Temple Darshan Confirmation"
+      },
+      "festival_alert": {
+        "sms": "Rath Yatra approaching on {date}. Plan your visit. Special arrangements in place.",
+        "email": "Jagannath Temple Festival Update"
+      }
+    },
+    "preferences": {
+      "festivalAlerts": true,
+      "bookingReminders": true,
+      "crowdUpdates": true,
+      "specialEvents": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "devotee_count",
+      "mahaprasad_distribution",
+      "festival_participation",
+      "donation_patterns"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "festivalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-6752-222100",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-6752-222200",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "police",
+        "number": "+91-6752-222300",
+        "description": "Temple Security & Police"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "crowd",
+        "description": "Follow queue system and temple volunteers' instructions"
+      },
+      {
+        "type": "festival",
+        "description": "Extra precautions during Rath Yatra and major festivals"
+      }
+    ]
+  }
+}

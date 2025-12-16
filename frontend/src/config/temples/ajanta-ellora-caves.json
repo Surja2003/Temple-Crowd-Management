@@ -1,0 +1,381 @@
+{
+  "basic": {
+    "id": "temple-022",
+    "slug": "ajanta-ellora-caves",
+    "name": "Ajanta-Ellora Caves",
+    "shortName": "Ajanta-Ellora",
+    "description": "UNESCO World Heritage Sites featuring ancient Buddhist, Hindu, and Jain rock-cut cave temples and monasteries. These archaeological marvels showcase exquisite sculptures, paintings, and architectural heritage spanning over 1,500 years.",
+    "address": {
+      "street": "Ajanta-Ellora Cave Complex",
+      "city": "Aurangabad",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "431001",
+      "coordinates": {
+        "latitude": 20.5519,
+        "longitude": 75.7033
+      }
+    },
+    "contact": {
+      "phone": ["+91-240-2331513", "+91-240-2331514"],
+      "email": ["info@ajantaellora.org", "heritage@asi.gov.in"],
+      "website": "https://www.ajantacaves.in",
+      "socialMedia": {
+        "facebook": "https://facebook.com/ajantaelloracaves",
+        "instagram": "@ajantaelloracaves",
+        "youtube": "https://youtube.com/@ajantaelloracaves"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/ajanta-ellora-caves/logo.jpg",
+      "banner": "/images/temples/ajanta-ellora-caves/banner.jpg",
+      "gallery": [
+        "/images/temples/ajanta-ellora-caves/cave-paintings.jpg",
+        "/images/temples/ajanta-ellora-caves/rock-sculptures.jpg",
+        "/images/temples/ajanta-ellora-caves/buddhist-art.jpg",
+        "/images/temples/ajanta-ellora-caves/ancient-carvings.jpg",
+        "/images/temples/ajanta-ellora-caves/heritage-site.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/ajanta-ellora-caves/cave-complex.jpg",
+        "/images/temples/ajanta-ellora-caves/archaeological-map.jpg"
+      ],
+      "virtualTour": "/images/temples/ajanta-ellora-caves/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "09:00",
+        "close": "17:30",
+        "breaks": [],
+        "lastEntry": "17:00"
+      },
+      "special": [
+        {
+          "date": "2025-12-25",
+          "open": "closed",
+          "close": "closed",
+          "reason": "Christmas Holiday",
+          "lastEntry": "closed"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Heritage Week",
+          "startDate": "2025-11-19",
+          "endDate": "2025-11-25",
+          "open": "09:00",
+          "close": "18:00",
+          "lastEntry": "17:30",
+          "specialRules": [
+            "Special guided tours",
+            "Cultural performances",
+            "Photography exhibitions",
+            "Educational programs"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 2000,
+      "zones": [
+        {
+          "id": "ajanta-caves",
+          "name": "Ajanta Caves",
+          "capacity": 800,
+          "description": "Buddhist cave temples with ancient paintings",
+          "accessLevel": "public"
+        },
+        {
+          "id": "ellora-caves",
+          "name": "Ellora Caves",
+          "capacity": 1000,
+          "description": "Multi-religious cave temples complex",
+          "accessLevel": "public"
+        },
+        {
+          "id": "visitor-center",
+          "name": "Visitor Center",
+          "capacity": 200,
+          "description": "Information and orientation center",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 200,
+      "disabilityQuota": 150
+    },
+    "visitTypes": [
+      {
+        "id": "general-visit",
+        "name": "General Heritage Tour",
+        "description": "Self-guided exploration of cave complexes",
+        "price": 40,
+        "duration": 180,
+        "capacity": 1500,
+        "zones": ["ajanta-caves", "ellora-caves", "visitor-center"],
+        "features": ["Cave access", "Information boards", "Photography allowed", "Audio guide rental"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "guided-tour",
+        "name": "Expert Guided Tour",
+        "description": "Professional guide with historical insights",
+        "price": 200,
+        "duration": 240,
+        "capacity": 300,
+        "zones": ["ajanta-caves", "ellora-caves"],
+        "features": ["Expert guide", "Detailed explanations", "Historical context", "Group interaction"],
+        "accessLevel": "premium",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "photography-tour",
+        "name": "Photography Special Tour",
+        "description": "Special access for photography enthusiasts",
+        "price": 500,
+        "duration": 300,
+        "capacity": 50,
+        "zones": ["ajanta-caves", "ellora-caves"],
+        "features": ["Extended photography time", "Special angles access", "Professional tips", "Equipment allowed"],
+        "accessLevel": "special",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "photography-rules",
+        "category": "photography",
+        "title": "Photography Guidelines",
+        "description": "Flash photography prohibited inside caves",
+        "severity": "mandatory",
+        "icon": "📸"
+      },
+      {
+        "id": "conservation",
+        "category": "heritage",
+        "title": "Heritage Conservation",
+        "description": "Do not touch paintings or sculptures",
+        "severity": "mandatory",
+        "icon": "🏛️"
+      },
+      {
+        "id": "visitor-path",
+        "category": "safety",
+        "title": "Designated Pathways",
+        "description": "Stay on marked paths for safety and conservation",
+        "severity": "mandatory",
+        "icon": "🚶"
+      },
+      {
+        "id": "comfortable-shoes",
+        "category": "practical",
+        "title": "Comfortable Footwear",
+        "description": "Wear comfortable walking shoes for cave exploration",
+        "severity": "recommended",
+        "icon": "👟"
+      }
+    ],
+    "languages": ["en", "hi", "marathi", "german", "french"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "archaeological_site",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "audio-guide",
+        "name": "Audio Guide Service",
+        "description": "Multi-language audio guides for self-tours",
+        "category": "education",
+        "available": true
+      },
+      {
+        "id": "cafeteria",
+        "name": "Visitor Cafeteria",
+        "description": "Food and refreshments for tourists",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "souvenir-shop",
+        "name": "Heritage Souvenir Shop",
+        "description": "Books, replicas, and cultural items",
+        "category": "shopping",
+        "available": true
+      },
+      {
+        "id": "museum",
+        "name": "Archaeological Museum",
+        "description": "Artifacts and information displays",
+        "category": "education",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 1000,
+        "duration": "10-15 minutes between cave groups",
+        "difficulty": "moderate"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["bus", "car", "taxi"],
+        "parkingFee": 30
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 20 minutes",
+        "cost": 20
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 30,
+    "slotDuration": 180,
+    "maxVisitorsPerBooking": 10,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 20,
+      "refundProcessingDays": 7
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-ajanta-entrance",
+        "type": "people_counter",
+        "location": "Ajanta Caves Main Entrance",
+        "zone": "ajanta-caves"
+      },
+      {
+        "id": "sensor-ellora-entrance",
+        "type": "people_counter",
+        "location": "Ellora Caves Main Entrance",
+        "zone": "ellora-caves"
+      },
+      {
+        "id": "sensor-visitor-center",
+        "type": "occupancy",
+        "location": "Visitor Information Center",
+        "zone": "visitor-center"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "10:00",
+        "end": "13:00",
+        "level": "high"
+      },
+      {
+        "start": "14:00",
+        "end": "16:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 88,
+      "updateInterval": 15
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app", "website"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Ajanta-Ellora visit confirmed for {date} at {time}. Entry fee: Rs.{price}. Booking ID: {bookingId}",
+        "email": "Ajanta-Ellora Caves Visit Confirmation"
+      },
+      "weather_alert": {
+        "sms": "Weather update for your cave visit: {weather}. Plan accordingly.",
+        "email": "Weather Alert for Heritage Site Visit"
+      }
+    },
+    "preferences": {
+      "weatherAlerts": true,
+      "crowdUpdates": true,
+      "tourReminders": true,
+      "heritageEvents": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "visitor_demographics",
+      "tour_preferences",
+      "cave_popularity",
+      "seasonal_trends"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "monthlyInsights": true,
+      "heritageImpact": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": true,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "asi",
+        "number": "+91-240-2331513",
+        "description": "Archaeological Survey of India"
+      },
+      {
+        "type": "medical",
+        "number": "+91-240-2334455",
+        "description": "Local Medical Emergency"
+      },
+      {
+        "type": "tourist_helpline",
+        "number": "+91-240-2331100",
+        "description": "Tourist Assistance Helpline"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "cave",
+        "description": "Follow guide instructions inside caves for safety"
+      },
+      {
+        "type": "conservation",
+        "description": "Maintain heritage site integrity and respect ancient art"
+      }
+    ]
+  }
+}

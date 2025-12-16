@@ -1,0 +1,426 @@
+{
+  "basic": {
+    "id": "temple-012",
+    "slug": "shirdi-sai-baba-temple",
+    "name": "Shirdi Sai Baba Temple",
+    "shortName": "Shirdi Sai Baba",
+    "description": "Sacred temple dedicated to Sai Baba of Shirdi, revered by people of all faiths. Known for its message of universal love, harmony, and the famous phrase 'Sabka Malik Ek' (One God governs all).",
+    "address": {
+      "street": "Sai Baba Samadhi Mandir Road",
+      "city": "Shirdi",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "423109",
+      "coordinates": {
+        "latitude": 19.7645,
+        "longitude": 74.4769
+      }
+    },
+    "contact": {
+      "phone": ["+91-2423-258500", "+91-2423-258501"],
+      "email": ["info@sai.org.in", "admin@shirdi.gov.in"],
+      "website": "https://www.sai.org.in",
+      "socialMedia": {
+        "facebook": "https://facebook.com/shirdisaibaba",
+        "instagram": "@shirdisaibaba",
+        "youtube": "https://youtube.com/@shirdisaibaba"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/shirdi-sai-baba/logo.jpg",
+      "banner": "/images/temples/shirdi-sai-baba/banner.jpg",
+      "gallery": [
+        "/images/temples/shirdi-sai-baba/samadhi-mandir.jpg",
+        "/images/temples/shirdi-sai-baba/sai-baba-statue.jpg",
+        "/images/temples/shirdi-sai-baba/devotees-prayer.jpg",
+        "/images/temples/shirdi-sai-baba/dhuni-sacred-fire.jpg",
+        "/images/temples/shirdi-sai-baba/prasadalaya.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/shirdi-sai-baba/temple-layout.jpg",
+        "/images/temples/shirdi-sai-baba/complex-map.jpg"
+      ],
+      "virtualTour": "/images/temples/shirdi-sai-baba/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "04:00",
+        "close": "23:15",
+        "breaks": [
+          {
+            "start": "12:00",
+            "end": "16:00"
+          }
+        ],
+        "lastEntry": "22:45"
+      },
+      "special": [
+        {
+          "date": "2025-10-15",
+          "open": "03:00",
+          "close": "24:00",
+          "reason": "Sai Baba Punyatithi",
+          "lastEntry": "23:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Sai Baba Punyatithi",
+          "startDate": "2025-10-15",
+          "endDate": "2025-10-15",
+          "open": "03:00",
+          "close": "24:00",
+          "lastEntry": "23:30",
+          "specialRules": [
+            "Special commemorative prayers",
+            "Continuous chanting",
+            "Extended prasadam distribution"
+          ]
+        },
+        {
+          "name": "Ram Navami",
+          "startDate": "2025-04-06",
+          "endDate": "2025-04-06",
+          "open": "04:00",
+          "close": "23:30",
+          "lastEntry": "23:00",
+          "specialRules": [
+            "Special decorations",
+            "Cultural programs",
+            "Extended aarti timings"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 3500,
+      "zones": [
+        {
+          "id": "samadhi-mandir",
+          "name": "Samadhi Mandir",
+          "capacity": 800,
+          "description": "Main shrine with Sai Baba's samadhi",
+          "accessLevel": "public"
+        },
+        {
+          "id": "chavadi",
+          "name": "Chavadi",
+          "capacity": 300,
+          "description": "Place where Sai Baba spent alternate nights",
+          "accessLevel": "public"
+        },
+        {
+          "id": "dwarkamai",
+          "name": "Dwarkamai",
+          "capacity": 500,
+          "description": "Mosque where Sai Baba lived",
+          "accessLevel": "public"
+        },
+        {
+          "id": "gurusthan",
+          "name": "Gurusthan",
+          "capacity": 200,
+          "description": "Sacred spot under the neem tree",
+          "accessLevel": "public"
+        },
+        {
+          "id": "prasadalaya",
+          "name": "Prasadalaya",
+          "capacity": 1200,
+          "description": "Community dining hall",
+          "accessLevel": "public"
+        },
+        {
+          "id": "museum",
+          "name": "Sai Baba Museum",
+          "capacity": 300,
+          "description": "Museum with Sai Baba's belongings",
+          "accessLevel": "public"
+        },
+        {
+          "id": "garden",
+          "name": "Temple Gardens",
+          "capacity": 200,
+          "description": "Peaceful garden areas",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 350,
+      "disabilityQuota": 200
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Regular darshan of Sai Baba's samadhi",
+        "price": 0,
+        "duration": 20,
+        "capacity": 2800,
+        "zones": ["samadhi-mandir", "dwarkamai", "chavadi"],
+        "features": ["Free darshan", "All major sites", "Sacred experience"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "aarti",
+        "name": "Aarti Darshan",
+        "description": "Participate in the daily aarti ceremonies",
+        "price": 25,
+        "duration": 45,
+        "capacity": 400,
+        "zones": ["samadhi-mandir"],
+        "features": ["Aarti participation", "Priority seating", "Prasadam", "Spiritual atmosphere"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "abhishek",
+        "name": "Abhishek Darshan",
+        "description": "Special ceremonial bathing of the deity",
+        "price": 100,
+        "duration": 60,
+        "capacity": 200,
+        "zones": ["samadhi-mandir"],
+        "features": ["Abhishek ceremony", "Special prayers", "Blessed prasadam", "Close viewing"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "universal-welcome",
+        "category": "entry",
+        "title": "All Faiths Welcome",
+        "description": "People of all religions and backgrounds are welcome",
+        "severity": "info",
+        "icon": "🤝"
+      },
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Modest Attire",
+        "description": "Dress modestly and respectfully",
+        "severity": "recommended",
+        "icon": "👕"
+      },
+      {
+        "id": "udi-prasadam",
+        "category": "offerings",
+        "title": "Sacred Udi",
+        "description": "Sacred ash (udi) is distributed as prasadam",
+        "severity": "info",
+        "icon": "🙏"
+      },
+      {
+        "id": "dhuni",
+        "category": "spiritual",
+        "title": "Sacred Fire",
+        "description": "The dhuni (sacred fire) burns continuously since Sai Baba's time",
+        "severity": "info",
+        "icon": "🔥"
+      }
+    ],
+    "languages": ["en", "hi", "marathi"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "urban_spiritual",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": true,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "prasadalaya",
+        "name": "Free Meals (Anna Daan)",
+        "description": "Free meals served to all visitors",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "accommodation",
+        "name": "Trust Accommodation",
+        "description": "Pilgrim guesthouses and lodges",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "medical-center",
+        "name": "Medical Facility",
+        "description": "Free medical care for devotees",
+        "category": "medical",
+        "available": true
+      },
+      {
+        "id": "bookstore",
+        "name": "Spiritual Books",
+        "description": "Books on Sai Baba's teachings and philosophy",
+        "category": "shopping",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 2000,
+        "duration": "15-20 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "auto", "tempo"],
+        "parkingFee": 10
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 15 minutes",
+        "cost": 5
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 30,
+    "slotDuration": 60,
+    "maxDevoteesPerBooking": 6,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 10,
+      "refundProcessingDays": 7
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": false,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-main-gate",
+        "type": "people_counter",
+        "location": "Main Entrance Gate",
+        "zone": "samadhi-mandir"
+      },
+      {
+        "id": "sensor-samadhi",
+        "type": "occupancy",
+        "location": "Samadhi Mandir",
+        "zone": "samadhi-mandir"
+      },
+      {
+        "id": "sensor-dwarkamai",
+        "type": "thermal",
+        "location": "Dwarkamai",
+        "zone": "dwarkamai"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "05:00",
+        "end": "09:00",
+        "level": "high"
+      },
+      {
+        "start": "18:00",
+        "end": "21:00",
+        "level": "very_high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 85,
+      "updateInterval": 15
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Shirdi Sai Baba darshan confirmed for {date} at {time}. Om Sai Ram! Booking ID: {bookingId}",
+        "email": "Shirdi Sai Baba Temple Darshan Confirmation"
+      },
+      "aarti_reminder": {
+        "sms": "Sai Baba aarti starting at {time}. Join us for divine blessings.",
+        "email": "Shirdi Temple Aarti Schedule"
+      }
+    },
+    "preferences": {
+      "aartiReminders": true,
+      "bookingReminders": true,
+      "festivalUpdates": true,
+      "specialEvents": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "devotee_count",
+      "prasadam_distribution",
+      "accommodation_usage",
+      "donation_patterns"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "festivalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": true,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-2423-258600",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-2423-258700",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "police",
+        "number": "+91-2423-258800",
+        "description": "Security & Police"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "crowd",
+        "description": "Follow queue management and temple guidelines"
+      },
+      {
+        "type": "festival",
+        "description": "Extra precautions during major festivals and celebrations"
+      }
+    ]
+  }
+}

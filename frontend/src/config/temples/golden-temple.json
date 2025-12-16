@@ -1,0 +1,359 @@
+{
+  "basic": {
+    "id": "temple-005",
+    "slug": "golden-temple",
+    "name": "Golden Temple (Harmandir Sahib)",
+    "shortName": "Golden Temple",
+    "description": "The holiest Gurdwara of Sikhism, known for its stunning golden architecture and the sacred Sarovar (holy pond). Located in Amritsar, Punjab, it welcomes people of all faiths and serves free meals to thousands daily.",
+    "address": {
+      "street": "Golden Temple Road",
+      "city": "Amritsar",
+      "state": "Punjab",
+      "country": "India",
+      "postalCode": "143001",
+      "coordinates": {
+        "latitude": 31.6200,
+        "longitude": 74.8765
+      }
+    },
+    "contact": {
+      "phone": ["+91-183-2553957", "+91-183-2553958"],
+      "email": ["info@goldentemple.org", "seva@goldentemple.org"],
+      "website": "https://www.goldentemple.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/goldentempleamritsar",
+        "instagram": "@goldentempleofficial",
+        "youtube": "https://youtube.com/@goldentemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/golden-temple/logo.jpg",
+      "banner": "/images/temples/golden-temple/banner.jpg",
+      "gallery": [
+        "/images/temples/golden-temple/harmandir-sahib.jpg",
+        "/images/temples/golden-temple/sarovar.jpg",
+        "/images/temples/golden-temple/causeway.jpg",
+        "/images/temples/golden-temple/langar-hall.jpg",
+        "/images/temples/golden-temple/evening-view.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/golden-temple/complex-map.jpg",
+        "/images/temples/golden-temple/darbar-sahib.jpg"
+      ],
+      "virtualTour": "/images/temples/golden-temple/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "04:00",
+        "close": "22:00",
+        "breaks": [],
+        "lastEntry": "21:30"
+      },
+      "special": [
+        {
+          "date": "2025-11-15",
+          "open": "03:00",
+          "close": "23:00",
+          "reason": "Guru Nanak Jayanti",
+          "lastEntry": "22:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Vaisakhi",
+          "startDate": "2025-04-13",
+          "endDate": "2025-04-14",
+          "open": "03:00",
+          "close": "23:30",
+          "lastEntry": "23:00",
+          "specialRules": [
+            "Extended celebration hours",
+            "Special kirtan programs",
+            "Increased langar service"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 1500,
+      "zones": [
+        {
+          "id": "darbar-sahib",
+          "name": "Darbar Sahib (Main Hall)",
+          "capacity": 800,
+          "description": "Sacred hall housing the Guru Granth Sahib",
+          "accessLevel": "public"
+        },
+        {
+          "id": "parikrama",
+          "name": "Parikrama (Circumambulation Path)",
+          "capacity": 500,
+          "description": "Marble walkway around the Sarovar",
+          "accessLevel": "public"
+        },
+        {
+          "id": "sarovar-ghats",
+          "name": "Sarovar Ghats",
+          "capacity": 200,
+          "description": "Steps leading to the holy pond for bathing",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 80,
+      "disabilityQuota": 60
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Free entry and darshan for all visitors regardless of faith",
+        "price": 0,
+        "duration": 30,
+        "capacity": 1200,
+        "zones": ["darbar-sahib", "parikrama", "sarovar-ghats"],
+        "features": ["Free entry", "Kirtan listening", "Langar meal", "Holy water"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Early Morning Darshan",
+        "description": "Peaceful darshan during morning prayers",
+        "price": 0,
+        "duration": 45,
+        "capacity": 300,
+        "zones": ["darbar-sahib", "parikrama"],
+        "features": ["Morning prayers", "Peaceful atmosphere", "Extended stay", "Photography time"],
+        "accessLevel": "public",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "head-covering",
+        "category": "dress_code",
+        "title": "Head Covering Mandatory",
+        "description": "All visitors must cover their head with scarf, turban, or cloth",
+        "severity": "mandatory",
+        "icon": "🧕"
+      },
+      {
+        "id": "shoes-removal",
+        "category": "dress_code",
+        "title": "Remove Footwear",
+        "description": "Shoes must be removed and deposited before entering",
+        "severity": "mandatory",
+        "icon": "👞"
+      },
+      {
+        "id": "alcohol-tobacco",
+        "category": "items_allowed",
+        "title": "No Alcohol or Tobacco",
+        "description": "Alcohol, tobacco, and intoxicants strictly prohibited",
+        "severity": "mandatory",
+        "icon": "🚭"
+      },
+      {
+        "id": "respect",
+        "category": "behavior",
+        "title": "Maintain Respect",
+        "description": "Show respect during prayers and maintain silence",
+        "severity": "warning",
+        "icon": "🙏"
+      }
+    ],
+    "languages": ["en", "hi", "pa", "ur"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "urban",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": true,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "langar-hall",
+        "name": "Guru Ram Das Langar Hall",
+        "description": "Free community kitchen serving meals 24/7",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "accommodation",
+        "name": "Guru Arjan Dev Niwas",
+        "description": "Free accommodation for pilgrims",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "library",
+        "name": "Sikh Reference Library",
+        "description": "Religious texts and historical documents",
+        "category": "cultural",
+        "available": true
+      },
+      {
+        "id": "museum",
+        "name": "Central Sikh Museum",
+        "description": "Sikh history and culture exhibition",
+        "category": "cultural",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 1000,
+        "duration": "15 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "motorcycle", "auto", "cycle-rickshaw"],
+        "parkingFee": 30
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "every 20 minutes",
+        "cost": 0
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 15,
+    "slotDuration": 45,
+    "maxDevoteesPerBooking": 15,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 6,
+      "cancellationFee": 0,
+      "refundProcessingDays": 0
+    },
+    "paymentMethods": [],
+    "requirements": {
+      "identityProof": false,
+      "photoUpload": false,
+      "mobileVerification": true
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-clock-tower-gate",
+        "type": "people_counter",
+        "location": "Clock Tower Entrance",
+        "zone": "parikrama"
+      },
+      {
+        "id": "sensor-darbar-sahib",
+        "type": "occupancy",
+        "location": "Darbar Sahib Entrance",
+        "zone": "darbar-sahib"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "05:00",
+        "end": "08:00",
+        "level": "high"
+      },
+      {
+        "start": "18:00",
+        "end": "21:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 88,
+      "updateInterval": 10
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "push"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Your Golden Temple darshan is confirmed for {date} at {time}. Booking ID: {bookingId}",
+        "email": "Golden Temple Darshan Confirmation",
+        "push": "Darshan confirmed for {date}"
+      },
+      "kirtan_alert": {
+        "sms": "Evening Kirtan at Golden Temple starts in 30 minutes",
+        "push": "Kirtan starting soon"
+      }
+    },
+    "preferences": {
+      "crowdAlerts": true,
+      "bookingReminders": true,
+      "kirtanAlerts": true,
+      "festivalUpdates": true,
+      "langarUpdates": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "visitor_count",
+      "langar_served",
+      "accommodation_occupancy",
+      "international_visitors"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "monthlyAnalytics": true,
+      "yearlyReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": true,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": true,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "medical",
+        "number": "+91-183-2553970",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "security",
+        "number": "+91-183-2553980",
+        "description": "Gurdwara Security"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "evacuation",
+        "description": "Follow sevadar instructions for orderly evacuation"
+      },
+      {
+        "type": "medical",
+        "description": "First aid available at multiple locations"
+      }
+    ]
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "basic": {
+    "id": "temple-007",
+    "slug": "kedarnath-temple",
+    "name": "Kedarnath Temple",
+    "shortName": "Kedarnath",
+    "description": "One of the twelve Jyotirlingas and the northernmost among the Char Dham pilgrimage sites. Located at 3,583 meters above sea level in the Garhwal Himalayas, this ancient temple is dedicated to Lord Shiva.",
+    "address": {
+      "street": "Kedarnath Dham",
+      "city": "Kedarnath",
+      "state": "Uttarakhand",
+      "country": "India",
+      "postalCode": "246445",
+      "coordinates": {
+        "latitude": 30.7346,
+        "longitude": 79.0669
+      }
+    },
+    "contact": {
+      "phone": ["+91-1364-233001", "+91-1364-233002"],
+      "email": ["info@kedarnath.gov.in", "yatra@kedarnath.gov.in"],
+      "website": "https://www.kedarnath.gov.in",
+      "socialMedia": {
+        "facebook": "https://facebook.com/kedarnathtemple",
+        "instagram": "@kedarnathtemple",
+        "youtube": "https://youtube.com/@kedarnathtemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/kedarnath/logo.jpg",
+      "banner": "/images/temples/kedarnath/banner.jpg",
+      "gallery": [
+        "/images/temples/kedarnath/temple-facade.jpg",
+        "/images/temples/kedarnath/himalayan-backdrop.jpg",
+        "/images/temples/kedarnath/snow-covered.jpg",
+        "/images/temples/kedarnath/pilgrims.jpg",
+        "/images/temples/kedarnath/helicopter-view.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/kedarnath/temple-layout.jpg",
+        "/images/temples/kedarnath/trekking-route.jpg"
+      ],
+      "virtualTour": "/images/temples/kedarnath/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "04:00",
+        "close": "19:00",
+        "breaks": [
+          {
+            "start": "14:00",
+            "end": "15:30"
+          }
+        ],
+        "lastEntry": "18:30"
+      },
+      "special": [
+        {
+          "date": "2025-05-15",
+          "open": "03:00",
+          "close": "20:00",
+          "reason": "Temple Opening (Akshaya Tritiya)",
+          "lastEntry": "19:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Kedarnath Opening",
+          "startDate": "2025-05-15",
+          "endDate": "2025-05-15",
+          "open": "03:00",
+          "close": "20:00",
+          "lastEntry": "19:30",
+          "specialRules": [
+            "First darshan after winter closure",
+            "Special puja ceremonies",
+            "Increased helicopter services"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 300,
+      "zones": [
+        {
+          "id": "garbhagriha",
+          "name": "Garbhagriha",
+          "capacity": 50,
+          "description": "Sacred sanctum housing the Jyotirlinga",
+          "accessLevel": "public"
+        },
+        {
+          "id": "mandapa",
+          "name": "Mandapa",
+          "capacity": 150,
+          "description": "Main prayer hall for devotees",
+          "accessLevel": "public"
+        },
+        {
+          "id": "courtyard",
+          "name": "Temple Courtyard",
+          "capacity": 100,
+          "description": "Outer courtyard with mountain views",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 30,
+      "disabilityQuota": 20
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Regular darshan for all pilgrims",
+        "price": 0,
+        "duration": 15,
+        "capacity": 250,
+        "zones": ["garbhagriha", "mandapa", "courtyard"],
+        "features": ["Free darshan", "Jyotirlinga viewing", "Mountain blessings"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Puja Darshan",
+        "description": "Enhanced darshan with special puja participation",
+        "price": 500,
+        "duration": 30,
+        "capacity": 50,
+        "zones": ["garbhagriha", "mandapa"],
+        "features": ["Priority darshan", "Special abhishekam", "Rudrabhishek", "Prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "weather-gear",
+        "category": "dress_code",
+        "title": "Warm Clothing Essential",
+        "description": "Carry warm clothes, raincoat, and proper trekking shoes",
+        "severity": "mandatory",
+        "icon": "🧥"
+      },
+      {
+        "id": "fitness",
+        "category": "health",
+        "title": "Physical Fitness Required",
+        "description": "Trek involves high altitude and challenging terrain",
+        "severity": "warning",
+        "icon": "🏔️"
+      },
+      {
+        "id": "offerings",
+        "category": "offerings",
+        "title": "Simple Offerings Only",
+        "description": "Bring simple offerings suitable for high altitude",
+        "severity": "info",
+        "icon": "🙏"
+      },
+      {
+        "id": "environment",
+        "category": "environment",
+        "title": "Preserve Nature",
+        "description": "Do not litter and maintain cleanliness of the mountains",
+        "severity": "mandatory",
+        "icon": "🌱"
+      }
+    ],
+    "languages": ["en", "hi", "garhwali"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "high_altitude",
+    "accessibility": {
+      "wheelchairAccessible": false,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": false,
+      "publicTransport": false
+    },
+    "amenities": [
+      {
+        "id": "accommodation",
+        "name": "Government Rest House",
+        "description": "Basic accommodation for pilgrims",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "bhojan",
+        "name": "Community Kitchen",
+        "description": "Simple vegetarian meals for pilgrims",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "medical",
+        "name": "First Aid Center",
+        "description": "Basic medical facilities for altitude sickness",
+        "category": "medical",
+        "available": true
+      },
+      {
+        "id": "helicopter",
+        "name": "Helicopter Service",
+        "description": "Helicopter rides from Phata/Sersi",
+        "category": "transport",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 25000,
+        "duration": "16-18 km trek",
+        "difficulty": "very_difficult"
+      },
+      "roadAccess": {
+        "available": false,
+        "vehicleTypes": [],
+        "parkingFee": 0
+      },
+      "shuttleService": {
+        "available": false,
+        "frequency": "",
+        "cost": 0
+      },
+      "helicopter": {
+        "available": true,
+        "from": ["Phata", "Sersi", "Guptkashi"],
+        "cost": 8000,
+        "duration": "8 minutes"
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 60,
+    "slotDuration": 30,
+    "maxDevoteesPerBooking": 6,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 48,
+      "cancellationFee": 100,
+      "refundProcessingDays": 10
+    },
+    "paymentMethods": ["card", "upi", "netbanking"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": true,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-entrance",
+        "type": "people_counter",
+        "location": "Temple Entrance",
+        "zone": "courtyard"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entry",
+        "zone": "garbhagriha"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "06:00",
+        "end": "10:00",
+        "level": "high"
+      },
+      {
+        "start": "16:00",
+        "end": "18:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 75,
+      "updateInterval": 30
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Kedarnath darshan confirmed for {date} at {time}. Carry warm clothes. Booking ID: {bookingId}",
+        "email": "Kedarnath Yatra Confirmation"
+      },
+      "weather_alert": {
+        "sms": "Weather alert for Kedarnath: {weather}. Plan accordingly.",
+        "email": "Kedarnath Weather Update"
+      }
+    },
+    "preferences": {
+      "weatherAlerts": true,
+      "bookingReminders": true,
+      "yatraUpdates": true,
+      "emergencyAlerts": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "pilgrim_count",
+      "helicopter_usage",
+      "weather_impact",
+      "seasonal_patterns"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "seasonalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": false,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": false,
+      "ramps": false,
+      "specialSeating": false,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "medical",
+        "number": "+91-1364-233050",
+        "description": "Medical Emergency & Altitude Sickness"
+      },
+      {
+        "type": "rescue",
+        "number": "+91-1364-233060",
+        "description": "Mountain Rescue Team"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "altitude",
+        "description": "Acclimatize properly and watch for altitude sickness symptoms"
+      },
+      {
+        "type": "weather",
+        "description": "Be prepared for sudden weather changes"
+      }
+    ]
+  }
+}

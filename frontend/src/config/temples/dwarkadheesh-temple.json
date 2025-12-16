@@ -1,0 +1,412 @@
+{
+  "basic": {
+    "id": "temple-013",
+    "slug": "dwarkadheesh-temple",
+    "name": "Dwarkadhish Temple",
+    "shortName": "Dwarkadhish",
+    "description": "One of the Char Dham pilgrimage sites, dedicated to Lord Krishna as Dwarkadhish (King of Dwarka). This ancient temple is believed to be built over the original residential palace of Lord Krishna.",
+    "address": {
+      "street": "Dwarka City",
+      "city": "Dwarka",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "361335",
+      "coordinates": {
+        "latitude": 22.2394,
+        "longitude": 68.9678
+      }
+    },
+    "contact": {
+      "phone": ["+91-2892-234567", "+91-2892-234568"],
+      "email": ["info@dwarkadhish.org", "admin@dwarka.gov.in"],
+      "website": "https://www.dwarkadhish.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/dwarkadhishtemple",
+        "instagram": "@dwarkadhishtemple",
+        "youtube": "https://youtube.com/@dwarkadhishtemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/dwarkadhish/logo.jpg",
+      "banner": "/images/temples/dwarkadhish/banner.jpg",
+      "gallery": [
+        "/images/temples/dwarkadhish/temple-tower.jpg",
+        "/images/temples/dwarkadhish/krishna-deity.jpg",
+        "/images/temples/dwarkadhish/arabian-sea-view.jpg",
+        "/images/temples/dwarkadhish/jagat-mandir.jpg",
+        "/images/temples/dwarkadhish/sunset-view.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/dwarkadhish/temple-layout.jpg",
+        "/images/temples/dwarkadhish/dwarka-city-map.jpg"
+      ],
+      "virtualTour": "/images/temples/dwarkadhish/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "06:00",
+        "close": "21:30",
+        "breaks": [
+          {
+            "start": "13:00",
+            "end": "17:00"
+          }
+        ],
+        "lastEntry": "21:00"
+      },
+      "special": [
+        {
+          "date": "2025-08-26",
+          "open": "04:00",
+          "close": "23:00",
+          "reason": "Krishna Janmashtami",
+          "lastEntry": "22:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Krishna Janmashtami",
+          "startDate": "2025-08-26",
+          "endDate": "2025-08-26",
+          "open": "04:00",
+          "close": "23:00",
+          "lastEntry": "22:30",
+          "specialRules": [
+            "Special midnight celebrations",
+            "Krishna birth ceremony",
+            "Extended darshan hours"
+          ]
+        },
+        {
+          "name": "Diwali",
+          "startDate": "2025-11-01",
+          "endDate": "2025-11-01",
+          "open": "05:00",
+          "close": "22:00",
+          "lastEntry": "21:30",
+          "specialRules": [
+            "Special lighting decorations",
+            "Lakshmi puja",
+            "Extended evening aarti"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 2000,
+      "zones": [
+        {
+          "id": "garbhagriha",
+          "name": "Garbhagriha",
+          "capacity": 150,
+          "description": "Sacred sanctum with Lord Krishna's deity",
+          "accessLevel": "public"
+        },
+        {
+          "id": "jagat-mandir",
+          "name": "Jagat Mandir",
+          "capacity": 800,
+          "description": "Main temple hall",
+          "accessLevel": "public"
+        },
+        {
+          "id": "gomti-ghat",
+          "name": "Gomti Ghat",
+          "capacity": 400,
+          "description": "Sacred bathing ghat on river Gomti",
+          "accessLevel": "public"
+        },
+        {
+          "id": "rukmini-temple",
+          "name": "Rukmini Temple",
+          "capacity": 300,
+          "description": "Nearby temple dedicated to Krishna's consort",
+          "accessLevel": "public"
+        },
+        {
+          "id": "courtyard",
+          "name": "Temple Courtyard",
+          "capacity": 350,
+          "description": "Open courtyard with sea breeze",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 200,
+      "disabilityQuota": 120
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Regular darshan of Lord Dwarkadhish",
+        "price": 0,
+        "duration": 25,
+        "capacity": 1600,
+        "zones": ["garbhagriha", "jagat-mandir", "courtyard"],
+        "features": ["Free darshan", "Krishna viewing", "Coastal spirituality"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Darshan",
+        "description": "Priority darshan with enhanced experience",
+        "price": 200,
+        "duration": 40,
+        "capacity": 250,
+        "zones": ["garbhagriha", "jagat-mandir"],
+        "features": ["Priority entry", "Closer viewing", "Special aarti", "Prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "sunset",
+        "name": "Sunset Darshan",
+        "description": "Evening darshan with Arabian Sea sunset view",
+        "price": 150,
+        "duration": 60,
+        "capacity": 150,
+        "zones": ["garbhagriha", "courtyard"],
+        "features": ["Sunset view", "Evening aarti", "Peaceful atmosphere", "Sea breeze"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Traditional Attire",
+        "description": "Traditional Indian dress preferred",
+        "severity": "recommended",
+        "icon": "👕"
+      },
+      {
+        "id": "photography",
+        "category": "photography",
+        "title": "Limited Photography",
+        "description": "Photography allowed in certain areas only",
+        "severity": "info",
+        "icon": "📸"
+      },
+      {
+        "id": "offerings",
+        "category": "offerings",
+        "title": "Krishna Offerings",
+        "description": "Butter, milk, and tulsi leaves are traditional offerings",
+        "severity": "info",
+        "icon": "🧈"
+      },
+      {
+        "id": "sea-proximity",
+        "category": "environment",
+        "title": "Coastal Environment",
+        "description": "Be mindful of sea winds and salt air effects",
+        "severity": "info",
+        "icon": "🌊"
+      }
+    ],
+    "languages": ["en", "hi", "gujarati"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "coastal",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "gomti-ghat",
+        "name": "Gomti River Ghat",
+        "description": "Sacred bathing steps at river confluence",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "pilgrim-facilities",
+        "name": "Pilgrim Rest House",
+        "description": "Accommodation for visiting devotees",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "prasadam-center",
+        "name": "Prasadam Distribution",
+        "description": "Sacred food offerings for devotees",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "lighthouse",
+        "name": "Dwarka Lighthouse",
+        "description": "Historic lighthouse with panoramic views",
+        "category": "sightseeing",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 1500,
+        "duration": "10-15 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "auto"],
+        "parkingFee": 20
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 20 minutes",
+        "cost": 10
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 45,
+    "slotDuration": 90,
+    "maxDevoteesPerBooking": 8,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 50,
+      "refundProcessingDays": 7
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-main-gate",
+        "type": "people_counter",
+        "location": "Main Temple Gate",
+        "zone": "courtyard"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entry",
+        "zone": "garbhagriha"
+      },
+      {
+        "id": "sensor-ghat",
+        "type": "thermal",
+        "location": "Gomti Ghat",
+        "zone": "gomti-ghat"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "07:00",
+        "end": "10:00",
+        "level": "high"
+      },
+      {
+        "start": "18:00",
+        "end": "20:30",
+        "level": "very_high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 80,
+      "updateInterval": 25
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Dwarkadhish darshan confirmed for {date} at {time}. Hare Krishna! Booking ID: {bookingId}",
+        "email": "Dwarkadhish Temple Darshan Confirmation"
+      },
+      "sunset_reminder": {
+        "sms": "Beautiful sunset darshan at Dwarkadhish starting at {time}. Experience divine serenity.",
+        "email": "Dwarka Sunset Darshan Alert"
+      }
+    },
+    "preferences": {
+      "sunsetAlerts": true,
+      "bookingReminders": true,
+      "festivalUpdates": true,
+      "weatherUpdates": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "devotee_count",
+      "coastal_weather_impact",
+      "sunset_darshan_popularity",
+      "seasonal_patterns"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "festivalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-2892-234600",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-2892-234700",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "coastal",
+        "number": "+91-2892-234800",
+        "description": "Coastal Guard & Marine Safety"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "crowd",
+        "description": "Follow designated pathways and queue management"
+      },
+      {
+        "type": "coastal",
+        "description": "Be cautious near water bodies and follow safety guidelines"
+      }
+    ]
+  }
+}

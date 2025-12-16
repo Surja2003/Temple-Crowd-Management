@@ -1,0 +1,241 @@
+{
+  "basic": {
+    "id": "temple-001",
+    "slug": "sri-ganesh-temple",
+    "name": "Sri Ganesh Temple",
+    "shortName": "Ganesh Temple",
+    "description": "Historic Ganesh temple known for its spiritual significance and beautiful architecture. Established in 1650, this temple has been a center of devotion for generations.",
+    "address": {
+      "street": "123 Temple Street",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400001",
+      "coordinates": {
+        "latitude": 19.0760,
+        "longitude": 72.8777
+      }
+    },
+    "contact": {
+      "phone": ["+91-22-12345678", "+91-9876543210"],
+      "email": ["info@sriganeshtemple.org", "bookings@sriganeshtemple.org"],
+      "website": "https://sriganeshtemple.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/sriganeshtemple",
+        "instagram": "@sriganeshtemple",
+        "youtube": "https://youtube.com/@sriganeshtemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temple-logo.jpg",
+      "banner": "/images/temple-banner.jpg",
+      "gallery": [
+        "/images/gallery/main-deity.svg",
+        "/images/gallery/hall.svg",
+        "/images/gallery/entrance.svg",
+        "/images/gallery/festival.svg"
+      ],
+      "zoneMaps": [
+        "/images/maps/ground-floor.jpg",
+        "/images/maps/first-floor.jpg"
+      ],
+      "virtualTour": "/images/gallery/360-view.svg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "05:00",
+        "close": "22:00",
+        "breaks": [
+          {
+            "start": "12:00",
+            "end": "16:00"
+          }
+        ],
+        "lastEntry": "21:30"
+      },
+      "special": [
+        {
+          "date": "2025-12-25",
+          "open": "04:00",
+          "close": "23:00",
+          "reason": "Christmas Special",
+          "lastEntry": "22:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Ganesh Chaturthi",
+          "startDate": "2025-08-29",
+          "endDate": "2025-09-07",
+          "open": "03:00",
+          "close": "23:30",
+          "lastEntry": "23:00",
+          "specialRules": [
+            "Extended darshan hours",
+            "Special queue management",
+            "Festival offerings available"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 500,
+      "zones": [
+        {
+          "id": "main-hall",
+          "name": "Main Darshan Hall",
+          "capacity": 300,
+          "description": "Primary worship area with close deity view",
+          "accessLevel": "public"
+        },
+
+        {
+          "id": "outer-courtyard",
+          "name": "Outer Courtyard",
+          "capacity": 150,
+          "description": "General viewing area and queue space",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 30,
+      "disabilityQuota": 15
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Standard temple visit with regular queue",
+        "price": 0,
+        "duration": 15,
+        "capacity": 300,
+        "zones": ["main-hall", "outer-courtyard"],
+        "features": ["Free entry", "Traditional prayers", "Prasadam"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Darshan",
+        "description": "Enhanced darshan with closer deity access",
+        "price": 100,
+        "duration": 20,
+        "capacity": 100,
+        "zones": ["main-hall"],
+        "features": ["Priority queue", "Extended darshan time", "Special prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "dress-code-1",
+        "category": "dress_code",
+        "title": "Traditional Attire Required",
+        "description": "Please wear traditional Indian clothing or modest western attire",
+        "severity": "mandatory",
+        "icon": "👕"
+      },
+      {
+        "id": "items-1",
+        "category": "items_allowed",
+        "title": "No Electronic Devices",
+        "description": "Mobile phones, cameras, and electronic devices are not allowed inside",
+        "severity": "mandatory",
+        "icon": "📱"
+      },
+      {
+        "id": "behavior-1",
+        "category": "behavior",
+        "title": "Maintain Silence",
+        "description": "Please maintain peaceful atmosphere and speak softly",
+        "severity": "warning",
+        "icon": "🤫"
+      },
+      {
+        "id": "photo-1",
+        "category": "photography",
+        "title": "Photography Restrictions",
+        "description": "Photography is allowed only in designated areas",
+        "severity": "info",
+        "icon": "📸"
+      }
+    ],
+    "languages": ["en", "hi", "mr"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "booking": {
+    "advanceBookingDays": 7,
+    "cancellationPolicy": {
+      "freeUntilHours": 2,
+      "refundPercentage": 100
+    },
+    "slotDuration": 30,
+    "bufferTime": 5,
+    "notifications": {
+      "channels": {
+        "sms": true,
+        "email": true,
+        "whatsapp": true,
+        "push": true
+      },
+      "triggers": {
+        "bookingConfirmation": true,
+        "slotReminder": true,
+        "queueUpdates": true,
+        "emergencyAlerts": true,
+        "festivalAnnouncements": true
+      },
+      "timing": {
+        "reminderHours": [24, 2],
+        "emergencyRetryMinutes": 5
+      }
+    },
+    "paymentMethods": [
+      {
+        "id": "upi",
+        "name": "UPI",
+        "type": "online",
+        "enabled": true,
+        "minAmount": 1,
+        "maxAmount": 10000,
+        "processingFee": 0
+      },
+      {
+        "id": "card",
+        "name": "Credit/Debit Card",
+        "type": "online",
+        "enabled": true,
+        "minAmount": 1,
+        "maxAmount": 50000,
+        "processingFee": 2
+      },
+      {
+        "id": "cash",
+        "name": "Cash at Counter",
+        "type": "offline",
+        "enabled": true,
+        "minAmount": 1,
+        "maxAmount": 5000,
+        "processingFee": 0
+      }
+    ]
+  },
+  "features": {
+    "liveTracking": true,
+    "qrCodeEntry": true,
+    "multiLanguage": true,
+    "accessibility": true,
+    "analytics": true,
+    "crowdPrediction": true,
+    "weatherIntegration": false
+  },
+  "access": {
+    "publicRegistration": true,
+    "guestBooking": true,
+    "staffRoles": ["admin", "manager", "operator", "security"],
+    "adminEmails": ["admin@sriganeshtemple.org", "manager@sriganeshtemple.org"]
+  }
+}

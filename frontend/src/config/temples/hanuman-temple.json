@@ -1,0 +1,373 @@
+{
+  "basic": {
+    "id": "temple-021",
+    "slug": "hanuman-temple",
+    "name": "Hanuman Temple",
+    "shortName": "Hanuman",
+    "description": "A revered temple dedicated to Lord Hanuman, known for strength, devotion, and protection. This temple serves devotees with traditional prayers, aarti ceremonies, and special occasions for Hanuman worship.",
+    "address": {
+      "street": "Hanuman Mandir Road",
+      "city": "Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110001",
+      "coordinates": {
+        "latitude": 28.6139,
+        "longitude": 77.2090
+      }
+    },
+    "contact": {
+      "phone": ["+91-11-23456789", "+91-11-23456790"],
+      "email": ["info@hanumantemple.org", "admin@hanumantemple.org"],
+      "website": "https://www.hanumantemple.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/hanumantempleofficial",
+        "instagram": "@hanumantempleofficial",
+        "youtube": "https://youtube.com/@hanumantempleofficial"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/hanuman-temple/logo.jpg",
+      "banner": "/images/temples/hanuman-temple/banner.jpg",
+      "gallery": [
+        "/images/temples/hanuman-temple/main-temple.jpg",
+        "/images/temples/hanuman-temple/hanuman-deity.jpg",
+        "/images/temples/hanuman-temple/main-hall.jpg",
+        "/images/temples/hanuman-temple/entrance.jpg",
+        "/images/temples/hanuman-temple/devotees.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/hanuman-temple/temple-layout.jpg",
+        "/images/temples/hanuman-temple/prayer-areas.jpg"
+      ],
+      "virtualTour": "/images/temples/hanuman-temple/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "05:00",
+        "close": "22:00",
+        "breaks": [
+          {
+            "start": "12:00",
+            "end": "16:00"
+          }
+        ],
+        "lastEntry": "21:30"
+      },
+      "special": [
+        {
+          "date": "2025-04-15",
+          "open": "04:00",
+          "close": "23:00",
+          "reason": "Hanuman Jayanti",
+          "lastEntry": "22:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Hanuman Jayanti",
+          "startDate": "2025-04-15",
+          "endDate": "2025-04-15",
+          "open": "04:00",
+          "close": "23:00",
+          "lastEntry": "22:30",
+          "specialRules": [
+            "Special prayers throughout the day",
+            "Extended darshan hours",
+            "Free prasadam distribution",
+            "Cultural programs"
+          ]
+        },
+        {
+          "name": "Mangalwar (Tuesday) Special",
+          "startDate": "2025-01-01",
+          "endDate": "2025-12-31",
+          "open": "05:00",
+          "close": "22:00",
+          "lastEntry": "21:30",
+          "specialRules": [
+            "Special aarti on Tuesdays",
+            "Increased devotee participation",
+            "Traditional bhajans"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 1500,
+      "zones": [
+        {
+          "id": "sanctum",
+          "name": "Main Sanctum",
+          "capacity": 150,
+          "description": "Sacred area with Hanuman deity",
+          "accessLevel": "public"
+        },
+        {
+          "id": "prayer-hall",
+          "name": "Prayer Hall",
+          "capacity": 500,
+          "description": "Main area for devotee prayers and aarti",
+          "accessLevel": "public"
+        },
+        {
+          "id": "courtyard",
+          "name": "Temple Courtyard",
+          "capacity": 600,
+          "description": "Open area for gathering and ceremonies",
+          "accessLevel": "public"
+        },
+        {
+          "id": "entrance-area",
+          "name": "Entrance Area",
+          "capacity": 250,
+          "description": "Entry and waiting area for devotees",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 150,
+      "disabilityQuota": 100
+    },
+    "darshanTypes": [
+      {
+        "id": "general-darshan",
+        "name": "General Darshan",
+        "description": "Open darshan for all devotees",
+        "price": 0,
+        "duration": 30,
+        "capacity": 1200,
+        "zones": ["sanctum", "prayer-hall", "courtyard"],
+        "features": ["Free darshan", "Prayer participation", "Aarti viewing", "Prasadam"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special-puja",
+        "name": "Special Puja",
+        "description": "Dedicated prayer service with priest",
+        "price": 101,
+        "duration": 20,
+        "capacity": 50,
+        "zones": ["sanctum"],
+        "features": ["Personal puja", "Priest service", "Special offerings", "Blessed prasadam"],
+        "accessLevel": "special",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "tuesday-special",
+        "category": "worship",
+        "title": "Tuesday Special Prayers",
+        "description": "Tuesdays are especially auspicious for Hanuman worship",
+        "severity": "info",
+        "icon": "🙏"
+      },
+      {
+        "id": "coconut-offering",
+        "category": "offerings",
+        "title": "Traditional Offerings",
+        "description": "Coconut, flowers, and sweets are welcome offerings",
+        "severity": "optional",
+        "icon": "🥥"
+      },
+      {
+        "id": "respectful-behavior",
+        "category": "behavior",
+        "title": "Respectful Conduct",
+        "description": "Maintain silence during prayers and aarti",
+        "severity": "mandatory",
+        "icon": "🤫"
+      }
+    ],
+    "languages": ["en", "hi", "punjabi"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "urban_temple",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "parking",
+        "name": "Parking Facility",
+        "description": "Dedicated parking space for devotees",
+        "category": "transport",
+        "available": true
+      },
+      {
+        "id": "prasadam-counter",
+        "name": "Prasadam Distribution",
+        "description": "Traditional prasadam and religious items",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "water-facility",
+        "name": "Drinking Water",
+        "description": "Clean drinking water for devotees",
+        "category": "amenity",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 0,
+        "duration": "Direct access",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "motorcycle", "auto-rickshaw"],
+        "parkingFee": 20
+      },
+      "publicTransport": {
+        "available": true,
+        "nearestStation": "Rajiv Chowk Metro",
+        "distance": "2 km"
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 7,
+    "slotDuration": 30,
+    "maxDevoteesPerBooking": 8,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 2,
+      "cancellationFee": 0,
+      "refundProcessingDays": 1
+    },
+    "paymentMethods": ["card", "upi", "cash"],
+    "requirements": {
+      "identityProof": false,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-entrance",
+        "type": "people_counter",
+        "location": "Main Entrance",
+        "zone": "entrance-area"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Area",
+        "zone": "sanctum"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "06:00",
+        "end": "09:00",
+        "level": "high"
+      },
+      {
+        "start": "18:00",
+        "end": "21:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 85,
+      "updateInterval": 10
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Hanuman Temple visit confirmed for {date} at {time}. Jai Hanuman! Booking ID: {bookingId}",
+        "email": "Hanuman Temple Darshan Confirmation"
+      },
+      "aarti_reminder": {
+        "sms": "Evening aarti starts in 30 minutes. Join us for blessed prayers.",
+        "email": "Hanuman Temple Aarti Reminder"
+      }
+    },
+    "preferences": {
+      "aartiReminders": true,
+      "bookingReminders": true,
+      "festivalAlerts": true,
+      "tuesdaySpecials": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "devotee_count",
+      "peak_hour_analysis",
+      "offering_trends",
+      "aarti_attendance"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "tuesdayAnalysis": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": false,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": false,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-11-23456789",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-11-102",
+        "description": "Emergency Medical Services"
+      },
+      {
+        "type": "police",
+        "number": "+91-11-100",
+        "description": "Police Emergency"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "crowd",
+        "description": "Follow temple staff instructions during busy periods"
+      },
+      {
+        "type": "emergency",
+        "description": "Emergency exits clearly marked near all areas"
+      }
+    ]
+  }
+}

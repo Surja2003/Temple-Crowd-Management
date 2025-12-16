@@ -1,0 +1,109 @@
+{
+  "imageRequirements": {
+    "description": "Temple-specific image requirements for all 20 temples in the registry",
+    "standardImages": {
+      "required": ["logo.jpg", "banner.jpg", "main-temple.jpg", "deity.jpg"],
+      "gallery": ["interior.jpg", "architecture.jpg", "surroundings.jpg", "festivals.jpg"],
+      "maps": ["complex-layout.jpg", "darshan-routes.jpg"],
+      "virtual": ["360-view.jpg"]
+    }
+  },
+  "temples": {
+    "hanuman-temple": {
+      "location": "Delhi",
+      "specificImages": ["hanuman-deity.jpg", "main-hall.jpg", "entrance.jpg", "sunset-view.jpg", "devotees.jpg"]
+    },
+    "somnath-temple": {
+      "location": "Gujarat",
+      "specificImages": ["ocean-view.jpg", "jyotirlinga.jpg", "night-illumination.jpg", "shore-temple.jpg", "pilgrims.jpg"]
+    },
+    "meenakshi-temple": {
+      "location": "Madurai",
+      "specificImages": ["gopuram-towers.jpg", "meenakshi-deity.jpg", "thousand-pillar-hall.jpg", "temple-tank.jpg", "sculptures.jpg"]
+    },
+    "golden-temple": {
+      "location": "Amritsar",
+      "specificImages": ["golden-building.jpg", "sarovar-lake.jpg", "langar-hall.jpg", "reflection.jpg", "evening-glow.jpg"]
+    },
+    "jagannath-puri-temple": {
+      "location": "Puri",
+      "specificImages": ["jagannath-deity.jpg", "rath-yatra.jpg", "beach-view.jpg", "temple-flag.jpg", "chariot-festival.jpg"]
+    },
+    "vaishno-devi-temple": {
+      "location": "Kashmir",
+      "specificImages": ["cave-entrance.jpg", "mountain-path.jpg", "helicopter-view.jpg", "shrine-interior.jpg", "pilgrimage-route.jpg"]
+    },
+    "kashi-vishwanath-temple": {
+      "location": "Varanasi",
+      "specificImages": ["temple-spire.jpg", "ganga-ghat.jpg", "vishwanath-linga.jpg", "aarti-ceremony.jpg", "corridor.jpg"]
+    },
+    "sri-ganesh-temple": {
+      "location": "Mumbai",
+      "specificImages": ["ganesh-idol.jpg", "temple-facade.jpg", "festival-crowd.jpg", "offerings.jpg", "interior-hall.jpg"]
+    },
+    "rameshwaram-temple": {
+      "location": "Tamil Nadu",
+      "specificImages": ["corridor-pillars.jpg", "sea-temple.jpg", "lingam-shrine.jpg", "holy-water.jpg", "bridge-view.jpg"]
+    },
+    "kedarnath-temple": {
+      "location": "Uttarakhand",
+      "specificImages": ["snow-mountains.jpg", "stone-temple.jpg", "trek-path.jpg", "helicopter-landing.jpg", "winter-view.jpg"]
+    },
+    "sabarimala-temple": {
+      "location": "Kerala",
+      "specificImages": ["forest-temple.jpg", "ayyappa-shrine.jpg", "pilgrimage-steps.jpg", "hill-station.jpg", "devotee-climb.jpg"]
+    },
+    "tirupati-balaji-temple": {
+      "location": "Andhra Pradesh",
+      "specificImages": ["balaji-deity.jpg", "queue-complex.jpg", "seven-hills.jpg", "golden-chariot.jpg", "crowd-management.jpg"]
+    },
+    "dwarkadhish-temple": {
+      "location": "Gujarat",
+      "specificImages": ["krishna-temple.jpg", "coastal-view.jpg", "temple-tower.jpg", "evening-aarti.jpg", "pilgrimage-site.jpg"]
+    },
+    "badrinath-temple": {
+      "location": "Uttarakhand",
+      "specificImages": ["vishnu-shrine.jpg", "himalayan-backdrop.jpg", "temple-entrance.jpg", "snow-peaks.jpg", "river-view.jpg"]
+    },
+    "ajanta-ellora-caves": {
+      "location": "Maharashtra",
+      "specificImages": ["cave-paintings.jpg", "rock-sculptures.jpg", "buddhist-art.jpg", "ancient-carvings.jpg", "heritage-site.jpg"]
+    },
+    "siddhivinayak-temple": {
+      "location": "Mumbai",
+      "specificImages": ["ganesha-idol.jpg", "queue-system.jpg", "temple-exterior.jpg", "devotee-hall.jpg", "mumbai-temple.jpg"]
+    },
+    "lotus-temple": {
+      "location": "Delhi",
+      "specificImages": ["lotus-architecture.jpg", "meditation-hall.jpg", "gardens.jpg", "modern-temple.jpg", "bahai-temple.jpg"]
+    },
+    "akshardham-temple": {
+      "location": "Delhi",
+      "specificImages": ["temple-complex.jpg", "exhibitions.jpg", "boat-ride.jpg", "water-show.jpg", "cultural-center.jpg"]
+    },
+    "mahabodhi-temple": {
+      "location": "Bihar",
+      "specificImages": ["bodhi-tree.jpg", "buddha-statue.jpg", "meditation-area.jpg", "unesco-site.jpg", "buddhist-pilgrims.jpg"]
+    },
+    "khajuraho-temples": {
+      "location": "Madhya Pradesh",
+      "specificImages": ["temple-sculptures.jpg", "dance-festival.jpg", "heritage-architecture.jpg", "archaeological-site.jpg", "tourist-guide.jpg"]
+    },
+    "tirumala-venkateswara-temple": {
+      "location": "Andhra Pradesh", 
+      "specificImages": ["venkateswara-deity.jpg", "hill-temple.jpg", "queue-management.jpg", "laddu-prasadam.jpg", "donation-hall.jpg"]
+    }
+  },
+  "imageGuidelines": {
+    "resolution": {
+      "logo": "300x300",
+      "banner": "1200x400",
+      "gallery": "800x600",
+      "maps": "1000x800"
+    },
+    "format": "JPG/JPEG for photos, PNG for logos with transparency",
+    "quality": "High resolution for detailed temple architecture",
+    "naming": "Use descriptive names matching temple features",
+    "accessibility": "Include alt text descriptions for all images"
+  }
+}

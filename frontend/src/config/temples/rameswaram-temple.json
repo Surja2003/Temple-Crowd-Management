@@ -1,0 +1,412 @@
+{
+  "basic": {
+    "id": "temple-014",
+    "slug": "rameswaram-temple",
+    "name": "Ramanathaswamy Temple",
+    "shortName": "Rameswaram",
+    "description": "One of the twelve Jyotirlingas and Char Dham pilgrimage sites, dedicated to Lord Shiva. Famous for its magnificent corridors and 22 sacred wells (theerthams) within the temple complex.",
+    "address": {
+      "street": "Rameswaram Island",
+      "city": "Rameswaram",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "postalCode": "623526",
+      "coordinates": {
+        "latitude": 9.2876,
+        "longitude": 79.3129
+      }
+    },
+    "contact": {
+      "phone": ["+91-4573-221223", "+91-4573-221224"],
+      "email": ["info@ramanathaswamy.org", "admin@rameswaram.tn.gov.in"],
+      "website": "https://www.ramanathaswamy.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/rameshwaramtemple",
+        "instagram": "@rameshwaramtemple",
+        "youtube": "https://youtube.com/@rameshwaramtemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/rameswaram/logo.jpg",
+      "banner": "/images/temples/rameswaram/banner.jpg",
+      "gallery": [
+        "/images/temples/rameswaram/long-corridors.jpg",
+        "/images/temples/rameswaram/jyotirlinga.jpg",
+        "/images/temples/rameswaram/sacred-wells.jpg",
+        "/images/temples/rameswaram/island-view.jpg",
+        "/images/temples/rameswaram/pillar-architecture.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/rameswaram/temple-layout.jpg",
+        "/images/temples/rameswaram/theertha-map.jpg"
+      ],
+      "virtualTour": "/images/temples/rameswaram/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "05:00",
+        "close": "21:00",
+        "breaks": [
+          {
+            "start": "13:00",
+            "end": "15:00"
+          }
+        ],
+        "lastEntry": "20:30"
+      },
+      "special": [
+        {
+          "date": "2025-03-04",
+          "open": "04:00",
+          "close": "22:00",
+          "reason": "Maha Shivratri",
+          "lastEntry": "21:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Maha Shivratri",
+          "startDate": "2025-03-04",
+          "endDate": "2025-03-04",
+          "open": "04:00",
+          "close": "22:00",
+          "lastEntry": "21:30",
+          "specialRules": [
+            "Special night-long prayers",
+            "Rudrabhishek ceremonies",
+            "Sacred well rituals"
+          ]
+        },
+        {
+          "name": "Thirukalyanam",
+          "startDate": "2025-12-15",
+          "endDate": "2025-12-15",
+          "open": "05:00",
+          "close": "21:30",
+          "lastEntry": "21:00",
+          "specialRules": [
+            "Divine wedding ceremony",
+            "Special decorations",
+            "Cultural programs"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 3000,
+      "zones": [
+        {
+          "id": "garbhagriha",
+          "name": "Garbhagriha",
+          "capacity": 200,
+          "description": "Sacred sanctum with Jyotirlinga",
+          "accessLevel": "public"
+        },
+        {
+          "id": "corridors",
+          "name": "Temple Corridors",
+          "capacity": 1500,
+          "description": "World's longest temple corridor",
+          "accessLevel": "public"
+        },
+        {
+          "id": "theertha-area",
+          "name": "Sacred Wells Area",
+          "capacity": 600,
+          "description": "Area with 22 sacred wells",
+          "accessLevel": "public"
+        },
+        {
+          "id": "outer-prakaram",
+          "name": "Outer Prakaram",
+          "capacity": 400,
+          "description": "Outer circumambulation path",
+          "accessLevel": "public"
+        },
+        {
+          "id": "agni-theertham",
+          "name": "Agni Theertham",
+          "capacity": 300,
+          "description": "Sacred sea bathing area",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 300,
+      "disabilityQuota": 180
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Regular darshan with corridor walk",
+        "price": 0,
+        "duration": 45,
+        "capacity": 2400,
+        "zones": ["garbhagriha", "corridors", "theertha-area"],
+        "features": ["Free darshan", "Jyotirlinga viewing", "Corridor experience", "Sacred wells"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Darshan",
+        "description": "Priority darshan with theertha ritual",
+        "price": 100,
+        "duration": 60,
+        "capacity": 400,
+        "zones": ["garbhagriha", "theertha-area"],
+        "features": ["Priority entry", "Sacred well ritual", "Special prayers", "Prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "abhishek",
+        "name": "Abhishek Darshan",
+        "description": "Special abhishekam ceremony",
+        "price": 300,
+        "duration": 90,
+        "capacity": 200,
+        "zones": ["garbhagriha"],
+        "features": ["Abhishekam ceremony", "Rudrabhishek", "Vedic chanting", "Special prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "theertha-ritual",
+        "category": "spiritual",
+        "title": "Sacred Well Bathing",
+        "description": "Traditional to bathe in all 22 sacred wells",
+        "severity": "recommended",
+        "icon": "🚿"
+      },
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Traditional Attire",
+        "description": "Traditional South Indian dress preferred",
+        "severity": "recommended",
+        "icon": "🥻"
+      },
+      {
+        "id": "sea-bath",
+        "category": "spiritual",
+        "title": "Agni Theertham",
+        "description": "Sea bathing at Agni Theertham is considered sacred",
+        "severity": "recommended",
+        "icon": "🌊"
+      },
+      {
+        "id": "corridor-walk",
+        "category": "spiritual",
+        "title": "Corridor Meditation",
+        "description": "Walk through the corridors meditatively",
+        "severity": "info",
+        "icon": "🚶"
+      }
+    ],
+    "languages": ["en", "hi", "tamil"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "island_coastal",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "theertha-facilities",
+        "name": "Sacred Well Facilities",
+        "description": "Bathing facilities at 22 sacred wells",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "agni-theertham",
+        "name": "Sea Bathing Area",
+        "description": "Sacred sea bathing point",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "pilgrim-lodge",
+        "name": "Temple Accommodation",
+        "description": "Pilgrim rest houses and lodges",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "prasadam-hall",
+        "name": "Prasadam Distribution",
+        "description": "Sacred food serving area",
+        "category": "food",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 5000,
+        "duration": "30-40 minutes",
+        "difficulty": "moderate"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "auto"],
+        "parkingFee": 25
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 30 minutes",
+        "cost": 15
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 60,
+    "slotDuration": 120,
+    "maxDevoteesPerBooking": 8,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 50,
+      "refundProcessingDays": 10
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-main-gate",
+        "type": "people_counter",
+        "location": "Main Temple Entrance",
+        "zone": "corridors"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entry",
+        "zone": "garbhagriha"
+      },
+      {
+        "id": "sensor-theertha",
+        "type": "thermal",
+        "location": "Sacred Wells Area",
+        "zone": "theertha-area"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "06:00",
+        "end": "10:00",
+        "level": "high"
+      },
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "level": "very_high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 83,
+      "updateInterval": 20
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Rameswaram Jyotirlinga darshan confirmed for {date} at {time}. Plan for theertha rituals. Booking ID: {bookingId}",
+        "email": "Ramanathaswamy Temple Darshan Confirmation"
+      },
+      "theertha_guide": {
+        "sms": "Complete your sacred well ritual at Rameswaram. 22 theerthams await your purification.",
+        "email": "Rameswaram Sacred Wells Guide"
+      }
+    },
+    "preferences": {
+      "therrthaGuidance": true,
+      "bookingReminders": true,
+      "festivalUpdates": true,
+      "weatherAlerts": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "devotee_count",
+      "theertha_participation",
+      "corridor_traffic",
+      "seasonal_patterns"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "festivalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-4573-221300",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-4573-221400",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "marine",
+        "number": "+91-4573-221500",
+        "description": "Marine Safety & Coast Guard"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "water",
+        "description": "Exercise caution during sacred well rituals and sea bathing"
+      },
+      {
+        "type": "corridor",
+        "description": "Follow one-way traffic in temple corridors during peak hours"
+      }
+    ]
+  }
+}

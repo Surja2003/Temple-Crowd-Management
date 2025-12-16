@@ -1,0 +1,426 @@
+{
+  "basic": {
+    "id": "temple-017",
+    "slug": "tirumala-venkateswara-temple",
+    "name": "Tirumala Venkateswara Temple",
+    "shortName": "Tirumala",
+    "description": "One of the richest and most visited temples in the world, dedicated to Lord Venkateswara (Vishnu). Located on the seven hills of Tirumala, it attracts millions of devotees annually and is famous for its massive donation collections.",
+    "address": {
+      "street": "Tirumala Hills",
+      "city": "Tirumala",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "postalCode": "517504",
+      "coordinates": {
+        "latitude": 13.6833,
+        "longitude": 79.3500
+      }
+    },
+    "contact": {
+      "phone": ["+91-877-2277777", "+91-877-2233333"],
+      "email": ["info@tirumala.org", "admin@ttd.gov.in"],
+      "website": "https://www.tirumala.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/tirumalaofficial",
+        "instagram": "@tirumalaofficial",
+        "youtube": "https://youtube.com/@tirumalaofficial"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/tirumala/logo.jpg",
+      "banner": "/images/temples/tirumala/banner.jpg",
+      "gallery": [
+        "/images/temples/tirumala/main-temple.jpg",
+        "/images/temples/tirumala/venkateswara-deity.jpg",
+        "/images/temples/tirumala/seven-hills.jpg",
+        "/images/temples/tirumala/queue-complex.jpg",
+        "/images/temples/tirumala/golden-chariot.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/tirumala/temple-complex.jpg",
+        "/images/temples/tirumala/darshan-routes.jpg"
+      ],
+      "virtualTour": "/images/temples/tirumala/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "02:30",
+        "close": "01:00",
+        "breaks": [
+          {
+            "start": "13:00",
+            "end": "16:00"
+          }
+        ],
+        "lastEntry": "23:30"
+      },
+      "special": [
+        {
+          "date": "2025-09-05",
+          "open": "02:00",
+          "close": "01:30",
+          "reason": "Brahmotsavam Festival",
+          "lastEntry": "01:00"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Annual Brahmotsavam",
+          "startDate": "2025-09-05",
+          "endDate": "2025-09-13",
+          "open": "02:00",
+          "close": "01:30",
+          "lastEntry": "01:00",
+          "specialRules": [
+            "9-day grand festival",
+            "Special processions",
+            "Extended darshan hours",
+            "Cultural celebrations"
+          ]
+        },
+        {
+          "name": "Vaikunta Ekadashi",
+          "startDate": "2025-01-10",
+          "endDate": "2025-01-10",
+          "open": "02:00",
+          "close": "01:30",
+          "lastEntry": "01:00",
+          "specialRules": [
+            "Vaikunta Dwaram opening",
+            "Special significance",
+            "Increased devotee flow"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 8000,
+      "zones": [
+        {
+          "id": "garbhagriha",
+          "name": "Garbhagriha",
+          "capacity": 200,
+          "description": "Sacred sanctum with Lord Venkateswara",
+          "accessLevel": "public"
+        },
+        {
+          "id": "queue-complex-1",
+          "name": "Queue Complex 1",
+          "capacity": 2000,
+          "description": "First level queue management area",
+          "accessLevel": "public"
+        },
+        {
+          "id": "queue-complex-2",
+          "name": "Queue Complex 2",
+          "capacity": 2500,
+          "description": "Second level queue management area",
+          "accessLevel": "public"
+        },
+        {
+          "id": "compartments",
+          "name": "Compartment Darshan",
+          "capacity": 1000,
+          "description": "Separate queue lines for organized darshan",
+          "accessLevel": "special"
+        },
+        {
+          "id": "vip-area",
+          "name": "Special Entry Darshan",
+          "capacity": 800,
+          "description": "Paid darshan with reduced waiting time",
+          "accessLevel": "premium"
+        },
+        {
+          "id": "outer-areas",
+          "name": "Outer Temple Areas",
+          "capacity": 1500,
+          "description": "Outer circumambulation and facilities",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 800,
+      "disabilityQuota": 500
+    },
+    "darshanTypes": [
+      {
+        "id": "sarvadarshan",
+        "name": "Sarva Darshan",
+        "description": "Free darshan for all devotees (long wait)",
+        "price": 0,
+        "duration": 15,
+        "capacity": 6000,
+        "zones": ["garbhagriha", "queue-complex-1", "queue-complex-2"],
+        "features": ["Free darshan", "Traditional experience", "Queue system", "Prasadam"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special-entry",
+        "name": "Special Entry Darshan",
+        "description": "Paid darshan with reduced waiting time",
+        "price": 300,
+        "duration": 20,
+        "capacity": 800,
+        "zones": ["garbhagriha", "vip-area"],
+        "features": ["Shorter queue", "Quick darshan", "Special route", "Prasadam"],
+        "accessLevel": "premium",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "compartment",
+        "name": "Compartment Darshan",
+        "description": "Online booked time-slot darshan",
+        "price": 0,
+        "duration": 15,
+        "capacity": 1000,
+        "zones": ["garbhagriha", "compartments"],
+        "features": ["Time slot booking", "Organized entry", "No waiting", "Digital management"],
+        "accessLevel": "special",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Traditional Dress Mandatory",
+        "description": "Men: Dhoti/Pancha and Shirt, Women: Saree/Churidar",
+        "severity": "mandatory",
+        "icon": "👘"
+      },
+      {
+        "id": "head-tonsure",
+        "category": "offerings",
+        "title": "Hair Offering",
+        "description": "Many devotees offer hair as part of their vows",
+        "severity": "optional",
+        "icon": "💇"
+      },
+      {
+        "id": "mobile-phones",
+        "category": "electronics",
+        "title": "No Mobile Phones",
+        "description": "Mobile phones must be deposited before entering temple",
+        "severity": "mandatory",
+        "icon": "📵"
+      },
+      {
+        "id": "laddu-prasadam",
+        "category": "offerings",
+        "title": "Famous Laddu Prasadam",
+        "description": "Tirupati laddu is the signature prasadam",
+        "severity": "info",
+        "icon": "🍯"
+      }
+    ],
+    "languages": ["en", "hi", "telugu", "tamil"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "hill_temple",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": true,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "accommodation",
+        "name": "TTD Guest Houses",
+        "description": "Multiple guest houses and lodges for pilgrims",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "annadanam",
+        "name": "Free Food Service",
+        "description": "Free meals served to all devotees",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "tonsure-hall",
+        "name": "Hair Offering Center",
+        "description": "Facilities for ritual head shaving",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "shopping-complex",
+        "name": "Religious Shopping",
+        "description": "Prasadam, religious items, and souvenirs",
+        "category": "shopping",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 4000,
+        "duration": "30-45 minutes",
+        "difficulty": "moderate"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["bus", "car", "ttd-vehicles"],
+        "parkingFee": 50
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 10 minutes",
+        "cost": 0
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 90,
+    "slotDuration": 30,
+    "maxDevoteesPerBooking": 6,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 50,
+      "refundProcessingDays": 14
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "ttd-counters"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": true,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-vaikuntam-1",
+        "type": "people_counter",
+        "location": "Vaikuntam Queue Complex 1",
+        "zone": "queue-complex-1"
+      },
+      {
+        "id": "sensor-vaikuntam-2",
+        "type": "people_counter",
+        "location": "Vaikuntam Queue Complex 2",
+        "zone": "queue-complex-2"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entry",
+        "zone": "garbhagriha"
+      },
+      {
+        "id": "sensor-special-entry",
+        "type": "thermal",
+        "location": "Special Entry Gate",
+        "zone": "vip-area"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "04:00",
+        "end": "10:00",
+        "level": "very_high"
+      },
+      {
+        "start": "18:00",
+        "end": "23:00",
+        "level": "very_high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 92,
+      "updateInterval": 5
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app", "ttd-portal"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Tirumala darshan confirmed for {date} at {time}. Follow dress code. Om Namo Venkatesaya! Booking ID: {bookingId}",
+        "email": "Tirumala Venkateswara Temple Darshan Confirmation"
+      },
+      "queue_status": {
+        "sms": "Current wait time for Sarva Darshan: {waitTime}. Plan your visit accordingly.",
+        "email": "Tirumala Queue Status Update"
+      }
+    },
+    "preferences": {
+      "queueUpdates": true,
+      "bookingReminders": true,
+      "festivalAlerts": true,
+      "brahmotsavamUpdates": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "devotee_count",
+      "donation_amounts",
+      "queue_efficiency",
+      "accommodation_usage"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "festivalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": true,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "ttd",
+        "number": "+91-877-2277770",
+        "description": "TTD Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-877-2277780",
+        "description": "Medical Emergency & Hospital"
+      },
+      {
+        "type": "security",
+        "number": "+91-877-2277790",
+        "description": "Temple Security & Vigilance"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "crowd",
+        "description": "Follow queue discipline and TTD volunteer instructions"
+      },
+      {
+        "type": "hill",
+        "description": "Be cautious on hill roads and follow safety guidelines"
+      }
+    ]
+  }
+}

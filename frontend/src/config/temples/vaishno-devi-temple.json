@@ -1,0 +1,132 @@
+{
+  "basic": {
+    "id": "temple-002",
+    "slug": "vaishno-devi-temple",
+    "name": "Vaishno Devi Temple",
+    "shortName": "Vaishno Devi",
+    "description": "Sacred Hindu temple dedicated to Goddess Vaishno Devi, located in the Trikuta Mountains. One of the most visited pilgrimage sites in India with millions of devotees annually.",
+    "address": {
+      "street": "Trikuta Hills",
+      "city": "Katra",
+      "state": "Jammu and Kashmir",
+      "country": "India",
+      "postalCode": "182301",
+      "coordinates": {
+        "latitude": 32.9928,
+        "longitude": 74.9450
+      }
+    },
+    "contact": {
+      "phone": ["+91-1991-232440", "+91-1991-232441"],
+      "email": ["info@maavaishnodevi.org", "bookings@maavaishnodevi.org"],
+      "fax": "+91-1991-232442",
+      "website": "https://maavaishnodevi.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/maavaishnodevi",
+        "instagram": "@maavaishnodevi",
+        "youtube": "https://youtube.com/@maavaishnodevi"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/vaishno-devi-logo.jpg",
+      "banner": "/images/temples/vaishno-devi-banner.jpg",
+      "gallery": [
+        "/images/temples/vaishno-devi/main-cave.jpg",
+        "/images/temples/vaishno-devi/darshan-hall.jpg",
+        "/images/temples/vaishno-devi/pathway.jpg",
+        "/images/temples/vaishno-devi/helicopter-view.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/vaishno-devi/cave-map.jpg",
+        "/images/temples/vaishno-devi/route-map.jpg"
+      ],
+      "virtualTour": "/images/temples/vaishno-devi/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "special": {
+        "navratri": {
+          "open": "04:00",
+          "close": "23:00"
+        }
+      }
+    },
+    "capacity": {
+      "total": 1000,
+      "zones": {
+        "main_cave": 50,
+        "waiting_area": 300,
+        "yatra_path": 650
+      }
+    },
+    "restrictions": {
+      "photography": false,
+      "mobilePhones": true,
+      "offerings": ["flowers", "coconut", "sweets"],
+      "dresscode": {
+        "required": true,
+        "guidelines": "Traditional Indian attire preferred. Avoid leather items and non-vegetarian food."
+      }
+    }
+  },
+  "features": {
+    "liveTracking": true,
+    "qrCodeEntry": true,
+    "audioGuide": true,
+    "wheelchairAccess": false,
+    "parkingAvailable": true,
+    "cloakroom": true,
+    "prasadamCounter": true,
+    "donationCounter": true,
+    "emergencyServices": true,
+    "multilingual": true,
+    "virtualDarshan": false
+  },
+  "services": {
+    "darshan": {
+      "types": ["general", "vip", "senior_citizen"],
+      "bookingRequired": true,
+      "onlineBooking": true,
+      "prePaidEntry": false
+    },
+    "accommodation": {
+      "available": true,
+      "types": ["guesthouse", "dormitory"],
+      "bookingUrl": "https://maavaishnodevi.org/accommodation"
+    },
+    "prasadam": {
+      "available": true,
+      "types": ["mahaprasad", "dry_fruits", "sweets"],
+      "counter": true,
+      "online": true
+    },
+    "pooja": {
+      "available": true,
+      "types": ["special_aarti", "havan", "abhishek"],
+      "advance_booking": true
+    }
+  },
+  "crowd": {
+    "peakHours": ["06:00-09:00", "17:00-20:00"],
+    "festivals": ["navratri", "diwali", "dussehra"],
+    "seasonalVariation": {
+      "high": ["March-June", "September-November"],
+      "medium": ["December-February"],
+      "low": ["July-August"]
+    }
+  },
+  "accessibility": {
+    "wheelchairAccess": false,
+    "elevators": false,
+    "brailleSignage": false,
+    "assistanceAvailable": true,
+    "specialNeeds": "Contact temple administration for assistance"
+  },
+  "languages": ["hi", "en", "ur", "punjabi"],
+  "currency": "INR"
+}

@@ -1,0 +1,364 @@
+{
+  "basic": {
+    "id": "temple-003",
+    "slug": "tirupati-balaji-temple",
+    "name": "Tirumala Venkateswara Temple",
+    "shortName": "Tirupati Balaji",
+    "description": "One of the richest and most visited Hindu temples in the world, dedicated to Lord Venkateswara (Balaji). Located in the hills of Tirumala in Andhra Pradesh, this temple attracts millions of devotees annually.",
+    "address": {
+      "street": "Tirumala Hills",
+      "city": "Tirupati",
+      "state": "Andhra Pradesh",
+      "country": "India",
+      "postalCode": "517501",
+      "coordinates": {
+        "latitude": 13.6833,
+        "longitude": 79.3167
+      }
+    },
+    "contact": {
+      "phone": ["+91-877-2277777", "+91-877-2277778"],
+      "email": ["info@tirumala.org", "booking@tirumala.org"],
+      "website": "https://www.tirumala.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/tirumalaofficial",
+        "instagram": "@tirumalaofficial",
+        "youtube": "https://youtube.com/@tirumalaofficial"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/tirupati/logo.jpg",
+      "banner": "/images/temples/tirupati/banner.jpg",
+      "gallery": [
+        "/images/temples/tirupati/main-deity.jpg",
+        "/images/temples/tirupati/complex.jpg",
+        "/images/temples/tirupati/entrance.jpg",
+        "/images/temples/tirupati/gopuram.jpg",
+        "/images/temples/tirupati/festival.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/tirupati/map-level1.jpg",
+        "/images/temples/tirupati/map-level2.jpg"
+      ],
+      "virtualTour": "/images/temples/tirupati/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "02:30",
+        "close": "01:00",
+        "breaks": [
+          {
+            "start": "13:00",
+            "end": "15:00"
+          }
+        ],
+        "lastEntry": "00:30"
+      },
+      "special": [
+        {
+          "date": "2025-12-25",
+          "open": "02:00",
+          "close": "01:30",
+          "reason": "Christmas Special",
+          "lastEntry": "01:00"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Brahmotsavam",
+          "startDate": "2025-09-15",
+          "endDate": "2025-09-23",
+          "open": "02:00",
+          "close": "02:00",
+          "lastEntry": "01:30",
+          "specialRules": [
+            "Extended festival hours",
+            "Special queue management",
+            "Festival sevas available"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 2000,
+      "zones": [
+        {
+          "id": "main-sanctum",
+          "name": "Main Sanctum Sanctorum",
+          "capacity": 500,
+          "description": "Sacred inner chamber with direct deity view",
+          "accessLevel": "public"
+        },
+        {
+          "id": "mukha-mandapa",
+          "name": "Mukha Mandapa",
+          "capacity": 800,
+          "description": "Main hall with clear deity darshan",
+          "accessLevel": "public"
+        },
+        {
+          "id": "maha-dwara",
+          "name": "Maha Dwara",
+          "capacity": 700,
+          "description": "Grand entrance hall and viewing area",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 100,
+      "disabilityQuota": 50
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "Sarva Darshan",
+        "description": "Free darshan for all devotees through regular queue",
+        "price": 0,
+        "duration": 10,
+        "capacity": 1500,
+        "zones": ["main-sanctum", "mukha-mandapa", "maha-dwara"],
+        "features": ["Free entry", "Traditional prayers", "Prasadam"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Entry Darshan",
+        "description": "Paid darshan with shorter waiting time",
+        "price": 300,
+        "duration": 15,
+        "capacity": 500,
+        "zones": ["main-sanctum", "mukha-mandapa"],
+        "features": ["Priority entry", "Extended darshan time", "Special prasadam", "Archana"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "dress-code-1",
+        "category": "dress_code",
+        "title": "Traditional Attire Mandatory",
+        "description": "Men: Dhoti/Kurta, Women: Saree/Salwar with dupatta covering head",
+        "severity": "mandatory",
+        "icon": "👕"
+      },
+      {
+        "id": "items-1",
+        "category": "items_allowed",
+        "title": "No Electronic Devices",
+        "description": "Mobile phones, cameras, and all electronic items prohibited",
+        "severity": "mandatory",
+        "icon": "📱"
+      },
+      {
+        "id": "hair-1",
+        "category": "hair_offering",
+        "title": "Hair Offering (Optional)",
+        "description": "Head tonsuring available at designated centers",
+        "severity": "info",
+        "icon": "✂️"
+      },
+      {
+        "id": "offerings-1",
+        "category": "offerings",
+        "title": "Laddu Prasadam",
+        "description": "Famous Tirupati laddu available for purchase",
+        "severity": "info",
+        "icon": "🍬"
+      }
+    ],
+    "languages": ["en", "hi", "te", "ta", "kn"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "hilltop",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": true,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "accommodation",
+        "name": "TTD Guest Houses",
+        "description": "Temple-managed accommodation for devotees",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "canteen",
+        "name": "Anna Prasadam",
+        "description": "Free meals for all devotees",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "hospital",
+        "name": "SVIMS Hospital",
+        "description": "Medical facilities for devotees",
+        "category": "medical",
+        "available": true
+      },
+      {
+        "id": "museum",
+        "name": "Temple Museum",
+        "description": "Religious artifacts and temple history",
+        "category": "cultural",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 3500,
+        "duration": "3-4 hours",
+        "difficulty": "moderate"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "motorcycle"],
+        "parkingFee": 50
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "every 10 minutes",
+        "cost": 150
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 90,
+    "slotDuration": 30,
+    "maxDevoteesPerBooking": 10,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 25,
+      "refundProcessingDays": 7
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "wallet"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": false,
+      "mobileVerification": true
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-main-entrance",
+        "type": "people_counter",
+        "location": "Main Entrance",
+        "zone": "maha-dwara"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entrance",
+        "zone": "main-sanctum"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "06:00",
+        "end": "12:00",
+        "level": "high"
+      },
+      {
+        "start": "17:00",
+        "end": "21:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 85,
+      "updateInterval": 15
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "whatsapp", "push"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Your darshan at Tirupati Balaji is confirmed for {date} at {time}. Booking ID: {bookingId}",
+        "email": "Tirumala Darshan Confirmation",
+        "push": "Darshan confirmed for {date}"
+      },
+      "crowd_alert": {
+        "sms": "Current crowd level at Tirupati: {level}. Expected wait time: {waitTime}",
+        "push": "Crowd update: {level} crowd"
+      }
+    },
+    "preferences": {
+      "crowdAlerts": true,
+      "bookingReminders": true,
+      "festivalUpdates": true,
+      "emergencyAlerts": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "visitor_count",
+      "average_wait_time",
+      "zone_utilization",
+      "peak_hours",
+      "satisfaction_score"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "monthlyAnalytics": true,
+      "festivalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": true,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "medical",
+        "number": "+91-877-2277733",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "security",
+        "number": "+91-877-2277766",
+        "description": "Security & Safety"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "evacuation",
+        "description": "Follow designated exit routes in case of emergency"
+      },
+      {
+        "type": "medical",
+        "description": "Medical assistance available at multiple points"
+      }
+    ]
+  }
+}

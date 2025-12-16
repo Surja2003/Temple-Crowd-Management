@@ -1,0 +1,405 @@
+{
+  "basic": {
+    "id": "temple-008",
+    "slug": "badrinath-temple",
+    "name": "Badrinath Temple",
+    "shortName": "Badrinath",
+    "description": "One of the most sacred Char Dham pilgrimage sites, dedicated to Lord Vishnu as Badrinath. Located at 3,133 meters in the Garhwal Himalayas, this ancient temple is believed to be established by Adi Shankaracharya.",
+    "address": {
+      "street": "Badrinath Dham",
+      "city": "Badrinath",
+      "state": "Uttarakhand",
+      "country": "India",
+      "postalCode": "246422",
+      "coordinates": {
+        "latitude": 30.7433,
+        "longitude": 79.4938
+      }
+    },
+    "contact": {
+      "phone": ["+91-1381-222001", "+91-1381-222002"],
+      "email": ["info@badrinathtemple.org", "admin@badrinath.gov.in"],
+      "website": "https://www.badrinathtemple.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/badrinathtemple",
+        "instagram": "@badrinathtemple",
+        "youtube": "https://youtube.com/@badrinathtemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/badrinath/logo.jpg",
+      "banner": "/images/temples/badrinath/banner.jpg",
+      "gallery": [
+        "/images/temples/badrinath/temple-facade.jpg",
+        "/images/temples/badrinath/neelkanth-peak.jpg",
+        "/images/temples/badrinath/vishnu-idol.jpg",
+        "/images/temples/badrinath/tapt-kund.jpg",
+        "/images/temples/badrinath/mountain-view.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/badrinath/temple-layout.jpg",
+        "/images/temples/badrinath/pilgrimage-route.jpg"
+      ],
+      "virtualTour": "/images/temples/badrinath/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "04:30",
+        "close": "21:00",
+        "breaks": [
+          {
+            "start": "13:00",
+            "end": "15:30"
+          }
+        ],
+        "lastEntry": "20:30"
+      },
+      "special": [
+        {
+          "date": "2025-05-18",
+          "open": "04:00",
+          "close": "22:00",
+          "reason": "Temple Opening (Akshaya Tritiya)",
+          "lastEntry": "21:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Badrinath Opening",
+          "startDate": "2025-05-18",
+          "endDate": "2025-05-18",
+          "open": "04:00",
+          "close": "22:00",
+          "lastEntry": "21:30",
+          "specialRules": [
+            "First darshan after winter closure",
+            "Special puja ceremonies",
+            "Grand celebration"
+          ]
+        },
+        {
+          "name": "Mata Murti Ka Mela",
+          "startDate": "2025-09-08",
+          "endDate": "2025-09-08",
+          "open": "04:00",
+          "close": "21:30",
+          "lastEntry": "21:00",
+          "specialRules": [
+            "Mother's Day celebration",
+            "Special offerings",
+            "Cultural programs"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 800,
+      "zones": [
+        {
+          "id": "garbhagriha",
+          "name": "Garbhagriha",
+          "capacity": 100,
+          "description": "Sacred sanctum with Lord Badrinath idol",
+          "accessLevel": "public"
+        },
+        {
+          "id": "mandapa",
+          "name": "Main Mandapa",
+          "capacity": 300,
+          "description": "Primary prayer hall",
+          "accessLevel": "public"
+        },
+        {
+          "id": "courtyard",
+          "name": "Temple Courtyard",
+          "capacity": 250,
+          "description": "Open courtyard with mountain backdrop",
+          "accessLevel": "public"
+        },
+        {
+          "id": "tapt-kund",
+          "name": "Tapt Kund Area",
+          "capacity": 150,
+          "description": "Hot water spring for ritual bathing",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 80,
+      "disabilityQuota": 50
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Regular darshan of Lord Badrinath",
+        "price": 0,
+        "duration": 20,
+        "capacity": 650,
+        "zones": ["garbhagriha", "mandapa", "courtyard"],
+        "features": ["Free darshan", "Lord Vishnu viewing", "Mountain blessings"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Puja Darshan",
+        "description": "Enhanced darshan with special rituals",
+        "price": 500,
+        "duration": 45,
+        "capacity": 100,
+        "zones": ["garbhagriha", "mandapa"],
+        "features": ["Priority darshan", "Special abhishekam", "Vedic chanting", "Prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "brahma-muhurat",
+        "name": "Brahma Muhurat Darshan",
+        "description": "Early morning special darshan",
+        "price": 300,
+        "duration": 30,
+        "capacity": 50,
+        "zones": ["garbhagriha"],
+        "features": ["Dawn ceremony", "First darshan", "Sacred atmosphere", "Special prayers"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "warm-clothing",
+        "category": "dress_code",
+        "title": "Warm Clothing Essential",
+        "description": "Carry warm clothes due to high altitude and cold weather",
+        "severity": "mandatory",
+        "icon": "🧥"
+      },
+      {
+        "id": "tapt-kund-bath",
+        "category": "rituals",
+        "title": "Holy Bath",
+        "description": "Bathe in Tapt Kund hot springs before darshan",
+        "severity": "recommended",
+        "icon": "🛁"
+      },
+      {
+        "id": "altitude-care",
+        "category": "health",
+        "title": "Altitude Awareness",
+        "description": "Be cautious of altitude sickness symptoms",
+        "severity": "warning",
+        "icon": "🏔️"
+      },
+      {
+        "id": "prasadam",
+        "category": "offerings",
+        "title": "Sacred Offerings",
+        "description": "Tulsi leaves and lotus flowers are traditional offerings",
+        "severity": "info",
+        "icon": "🪷"
+      }
+    ],
+    "languages": ["en", "hi", "garhwali", "sanskrit"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "high_altitude",
+    "accessibility": {
+      "wheelchairAccessible": false,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "tapt-kund",
+        "name": "Tapt Kund Hot Springs",
+        "description": "Natural hot water springs for ritual bathing",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "accommodation",
+        "name": "Pilgrim Lodges",
+        "description": "Government and private accommodation facilities",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "medical-center",
+        "name": "Medical Facility",
+        "description": "Basic medical care for altitude-related issues",
+        "category": "medical",
+        "available": true
+      },
+      {
+        "id": "prasadam-hall",
+        "name": "Prasadam Distribution",
+        "description": "Sacred food distribution center",
+        "category": "food",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 1000,
+        "duration": "5-10 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus"],
+        "parkingFee": 50
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 30 minutes",
+        "cost": 20
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 60,
+    "slotDuration": 60,
+    "maxDevoteesPerBooking": 6,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 48,
+      "cancellationFee": 100,
+      "refundProcessingDays": 10
+    },
+    "paymentMethods": ["card", "upi", "netbanking"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": true,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-entrance",
+        "type": "people_counter",
+        "location": "Temple Entrance",
+        "zone": "courtyard"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entry",
+        "zone": "garbhagriha"
+      },
+      {
+        "id": "sensor-tapt-kund",
+        "type": "occupancy",
+        "location": "Tapt Kund Area",
+        "zone": "tapt-kund"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "05:00",
+        "end": "09:00",
+        "level": "high"
+      },
+      {
+        "start": "17:00",
+        "end": "20:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 78,
+      "updateInterval": 30
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Badrinath darshan confirmed for {date} at {time}. Carry warm clothes and ID. Booking ID: {bookingId}",
+        "email": "Badrinath Temple Darshan Confirmation"
+      },
+      "weather_alert": {
+        "sms": "Weather update for Badrinath: {weather}. Plan accordingly for your visit.",
+        "email": "Badrinath Weather Alert"
+      }
+    },
+    "preferences": {
+      "weatherAlerts": true,
+      "bookingReminders": true,
+      "templeUpdates": true,
+      "seasonalAlerts": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "pilgrim_count",
+      "seasonal_patterns",
+      "weather_impact",
+      "accommodation_usage"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "seasonalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": false,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": false,
+      "ramps": false,
+      "specialSeating": false,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-1381-222050",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-1381-222060",
+        "description": "Medical Emergency & Altitude Sickness"
+      },
+      {
+        "type": "police",
+        "number": "+91-1381-222070",
+        "description": "Local Police & Security"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "altitude",
+        "description": "Monitor for altitude sickness symptoms and seek help if needed"
+      },
+      {
+        "type": "weather",
+        "description": "Be prepared for sudden weather changes in mountain conditions"
+      }
+    ]
+  }
+}

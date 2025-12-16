@@ -1,0 +1,400 @@
+{
+  "basic": {
+    "id": "temple-015",
+    "slug": "khajuraho-temples",
+    "name": "Khajuraho Temples",
+    "shortName": "Khajuraho",
+    "description": "UNESCO World Heritage Site featuring a group of Hindu and Jain temples famous for their architectural brilliance and intricate sculptures. Built between 950-1150 CE by the Chandela dynasty.",
+    "address": {
+      "street": "Khajuraho Temple Complex",
+      "city": "Khajuraho",
+      "state": "Madhya Pradesh",
+      "country": "India",
+      "postalCode": "471606",
+      "coordinates": {
+        "latitude": 24.8318,
+        "longitude": 79.9199
+      }
+    },
+    "contact": {
+      "phone": ["+91-7686-274051", "+91-7686-274052"],
+      "email": ["info@khajuraho.org", "admin@khajuraho.mp.gov.in"],
+      "website": "https://www.khajuraho.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/khajurahotemples",
+        "instagram": "@khajurahotemples",
+        "youtube": "https://youtube.com/@khajurahotemples"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/khajuraho/logo.jpg",
+      "banner": "/images/temples/khajuraho/banner.jpg",
+      "gallery": [
+        "/images/temples/khajuraho/kandariya-mahadev.jpg",
+        "/images/temples/khajuraho/intricate-sculptures.jpg",
+        "/images/temples/khajuraho/western-group.jpg",
+        "/images/temples/khajuraho/lakshmana-temple.jpg",
+        "/images/temples/khajuraho/sunset-view.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/khajuraho/temple-complex-map.jpg",
+        "/images/temples/khajuraho/western-group-layout.jpg"
+      ],
+      "virtualTour": "/images/temples/khajuraho/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "06:00",
+        "close": "18:00",
+        "breaks": [],
+        "lastEntry": "17:30"
+      },
+      "special": [
+        {
+          "date": "2025-02-20",
+          "open": "06:00",
+          "close": "22:00",
+          "reason": "Khajuraho Dance Festival",
+          "lastEntry": "21:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Khajuraho Dance Festival",
+          "startDate": "2025-02-20",
+          "endDate": "2025-02-26",
+          "open": "06:00",
+          "close": "22:00",
+          "lastEntry": "21:30",
+          "specialRules": [
+            "Evening cultural performances",
+            "Classical dance shows",
+            "Extended visiting hours"
+          ]
+        },
+        {
+          "name": "Mahashivratri",
+          "startDate": "2025-03-04",
+          "endDate": "2025-03-04",
+          "open": "05:00",
+          "close": "19:00",
+          "lastEntry": "18:30",
+          "specialRules": [
+            "Special prayers at Shiva temples",
+            "Cultural programs",
+            "Extended darshan"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 1500,
+      "zones": [
+        {
+          "id": "western-group",
+          "name": "Western Group Temples",
+          "capacity": 800,
+          "description": "Main complex with Kandariya Mahadev and other major temples",
+          "accessLevel": "ticketed"
+        },
+        {
+          "id": "eastern-group",
+          "name": "Eastern Group Temples",
+          "capacity": 300,
+          "description": "Jain temples including Adinath and Shantinath",
+          "accessLevel": "public"
+        },
+        {
+          "id": "southern-group",
+          "name": "Southern Group Temples",
+          "capacity": 200,
+          "description": "Duladeo and Chaturbhuj temples",
+          "accessLevel": "public"
+        },
+        {
+          "id": "museum-area",
+          "name": "Archaeological Museum",
+          "capacity": 200,
+          "description": "Sculpture gallery and artifacts",
+          "accessLevel": "ticketed"
+        }
+      ],
+      "seniorCitizenQuota": 150,
+      "disabilityQuota": 100
+    },
+    "darshanTypes": [
+      {
+        "id": "heritage-tour",
+        "name": "Heritage Architecture Tour",
+        "description": "Comprehensive tour of all temple groups",
+        "price": 35,
+        "duration": 180,
+        "capacity": 1000,
+        "zones": ["western-group", "eastern-group", "southern-group"],
+        "features": ["All temple groups", "Architecture viewing", "Heritage walk", "Sculpture appreciation"],
+        "accessLevel": "ticketed",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "guided-tour",
+        "name": "Expert Guided Tour",
+        "description": "Detailed tour with archaeological expert",
+        "price": 200,
+        "duration": 240,
+        "capacity": 100,
+        "zones": ["western-group", "museum-area"],
+        "features": ["Expert guide", "Historical insights", "Archaeological details", "Sculpture interpretation"],
+        "accessLevel": "premium",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "photography-tour",
+        "name": "Photography Experience",
+        "description": "Special photography access during golden hours",
+        "price": 500,
+        "duration": 120,
+        "capacity": 50,
+        "zones": ["western-group"],
+        "features": ["Photography permits", "Golden hour access", "Professional guidance", "Unique angles"],
+        "accessLevel": "premium",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "heritage-protection",
+        "category": "heritage",
+        "title": "Protect Heritage Structures",
+        "description": "Do not touch or climb on ancient sculptures and temples",
+        "severity": "mandatory",
+        "icon": "🏛️"
+      },
+      {
+        "id": "photography",
+        "category": "photography",
+        "title": "Photography Guidelines",
+        "description": "Photography allowed with entry ticket, no tripods without permit",
+        "severity": "info",
+        "icon": "📸"
+      },
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Appropriate Attire",
+        "description": "Dress respectfully while visiting religious and heritage sites",
+        "severity": "recommended",
+        "icon": "👕"
+      },
+      {
+        "id": "guided-appreciation",
+        "category": "cultural",
+        "title": "Cultural Appreciation",
+        "description": "Learn about medieval art and architecture significance",
+        "severity": "info",
+        "icon": "🎨"
+      }
+    ],
+    "languages": ["en", "hi", "bundeli"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "heritage_archaeological",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "archaeological-museum",
+        "name": "Archaeological Museum",
+        "description": "Sculptures and artifacts from Khajuraho temples",
+        "category": "cultural",
+        "available": true
+      },
+      {
+        "id": "sound-light-show",
+        "name": "Sound & Light Show",
+        "description": "Evening multimedia show on temple history",
+        "category": "cultural",
+        "available": true
+      },
+      {
+        "id": "interpretation-center",
+        "name": "Heritage Interpretation Center",
+        "description": "Interactive exhibits on Chandela dynasty and temples",
+        "category": "educational",
+        "available": true
+      },
+      {
+        "id": "cafeteria",
+        "name": "Tourist Cafeteria",
+        "description": "Refreshments and local cuisine",
+        "category": "food",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 3000,
+        "duration": "45-60 minutes",
+        "difficulty": "moderate"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "auto", "cycle"],
+        "parkingFee": 20
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 30 minutes",
+        "cost": 10
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 30,
+    "slotDuration": 240,
+    "maxDevoteesPerBooking": 8,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 35,
+      "refundProcessingDays": 7
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-main-gate",
+        "type": "people_counter",
+        "location": "Western Group Main Gate",
+        "zone": "western-group"
+      },
+      {
+        "id": "sensor-kandariya",
+        "type": "occupancy",
+        "location": "Kandariya Mahadev Temple",
+        "zone": "western-group"
+      },
+      {
+        "id": "sensor-museum",
+        "type": "thermal",
+        "location": "Museum Entrance",
+        "zone": "museum-area"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "09:00",
+        "end": "12:00",
+        "level": "high"
+      },
+      {
+        "start": "15:00",
+        "end": "17:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 75,
+      "updateInterval": 30
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Khajuraho heritage visit confirmed for {date} at {time}. Discover medieval artistry! Booking ID: {bookingId}",
+        "email": "Khajuraho Temples Heritage Tour Confirmation"
+      },
+      "dance_festival": {
+        "sms": "Khajuraho Dance Festival on {date}. Experience classical performances at heritage temples.",
+        "email": "Khajuraho Cultural Festival Update"
+      }
+    },
+    "preferences": {
+      "culturalEvents": true,
+      "bookingReminders": true,
+      "heritageUpdates": true,
+      "photographyTips": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "visitor_count",
+      "heritage_engagement",
+      "photography_sessions",
+      "cultural_participation"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "monthlyReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "heritage",
+        "number": "+91-7686-274100",
+        "description": "Archaeological Survey of India"
+      },
+      {
+        "type": "medical",
+        "number": "+91-7686-274200",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "security",
+        "number": "+91-7686-274300",
+        "description": "Heritage Site Security"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "heritage",
+        "description": "Follow UNESCO World Heritage Site guidelines and protect monuments"
+      },
+      {
+        "type": "photography",
+        "description": "Obtain proper permits for professional photography equipment"
+      }
+    ]
+  }
+}

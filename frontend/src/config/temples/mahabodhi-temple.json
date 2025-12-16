@@ -1,0 +1,407 @@
+{
+  "basic": {
+    "id": "temple-020",
+    "slug": "mahabodhi-temple",
+    "name": "Mahabodhi Temple",
+    "shortName": "Mahabodhi",
+    "description": "UNESCO World Heritage Site marking the spot where Buddha attained enlightenment under the Bodhi Tree. This ancient temple complex is one of the holiest Buddhist pilgrimage sites in the world.",
+    "address": {
+      "street": "Bodhgaya",
+      "city": "Gaya",
+      "state": "Bihar",
+      "country": "India",
+      "postalCode": "824231",
+      "coordinates": {
+        "latitude": 24.6960,
+        "longitude": 84.9910
+      }
+    },
+    "contact": {
+      "phone": ["+91-631-2200445", "+91-631-2200446"],
+      "email": ["info@mahabodhi.org", "admin@bodhgaya.gov.in"],
+      "website": "https://www.mahabodhi.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/mahabodhitemple",
+        "instagram": "@mahabodhitemple",
+        "youtube": "https://youtube.com/@mahabodhitemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/mahabodhi/logo.jpg",
+      "banner": "/images/temples/mahabodhi/banner.jpg",
+      "gallery": [
+        "/images/temples/mahabodhi/main-temple.jpg",
+        "/images/temples/mahabodhi/bodhi-tree.jpg",
+        "/images/temples/mahabodhi/buddha-statue.jpg",
+        "/images/temples/mahabodhi/meditation-pilgrims.jpg",
+        "/images/temples/mahabodhi/ancient-architecture.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/mahabodhi/temple-complex.jpg",
+        "/images/temples/mahabodhi/meditation-areas.jpg"
+      ],
+      "virtualTour": "/images/temples/mahabodhi/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "05:00",
+        "close": "21:00",
+        "breaks": [],
+        "lastEntry": "20:30"
+      },
+      "special": [
+        {
+          "date": "2025-05-26",
+          "open": "04:00",
+          "close": "22:00",
+          "reason": "Buddha Purnima",
+          "lastEntry": "21:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Buddha Purnima",
+          "startDate": "2025-05-26",
+          "endDate": "2025-05-26",
+          "open": "04:00",
+          "close": "22:00",
+          "lastEntry": "21:30",
+          "specialRules": [
+            "Buddha's birthday celebration",
+            "Special meditation sessions",
+            "International Buddhist gathering"
+          ]
+        },
+        {
+          "name": "Bodhi Day",
+          "startDate": "2025-12-08",
+          "endDate": "2025-12-08",
+          "open": "04:00",
+          "close": "21:30",
+          "lastEntry": "21:00",
+          "specialRules": [
+            "Enlightenment Day celebration",
+            "Extended meditation periods",
+            "Buddhist teachings"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 2000,
+      "zones": [
+        {
+          "id": "main-temple",
+          "name": "Main Temple",
+          "capacity": 300,
+          "description": "Central temple with Buddha statue",
+          "accessLevel": "public"
+        },
+        {
+          "id": "bodhi-tree",
+          "name": "Bodhi Tree Area",
+          "capacity": 400,
+          "description": "Sacred spot where Buddha attained enlightenment",
+          "accessLevel": "public"
+        },
+        {
+          "id": "meditation-area",
+          "name": "Meditation Grounds",
+          "capacity": 800,
+          "description": "Open areas for meditation and prayer",
+          "accessLevel": "public"
+        },
+        {
+          "id": "circumambulation",
+          "name": "Circumambulation Path",
+          "capacity": 300,
+          "description": "Walking meditation path around temple",
+          "accessLevel": "public"
+        },
+        {
+          "id": "museum",
+          "name": "Archaeological Museum",
+          "capacity": 200,
+          "description": "Buddhist art and archaeological artifacts",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 200,
+      "disabilityQuota": 120
+    },
+    "darshanTypes": [
+      {
+        "id": "meditation",
+        "name": "Meditation Visit",
+        "description": "Peaceful meditation under the Bodhi Tree",
+        "price": 0,
+        "duration": 60,
+        "capacity": 1600,
+        "zones": ["bodhi-tree", "meditation-area", "circumambulation"],
+        "features": ["Free access", "Bodhi Tree meditation", "Peaceful environment", "Walking meditation"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "guided-tour",
+        "name": "Guided Buddhist Tour",
+        "description": "Educational tour about Buddha's life and teachings",
+        "price": 50,
+        "duration": 90,
+        "capacity": 200,
+        "zones": ["main-temple", "bodhi-tree", "museum"],
+        "features": ["Expert guide", "Buddhist history", "Archaeological insights", "Spiritual teachings"],
+        "accessLevel": "public",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "sunrise-meditation",
+        "name": "Sunrise Meditation",
+        "description": "Early morning meditation session under Bodhi Tree",
+        "price": 0,
+        "duration": 120,
+        "capacity": 200,
+        "zones": ["bodhi-tree", "meditation-area"],
+        "features": ["Dawn meditation", "Peaceful atmosphere", "Spiritual awakening", "Monk guidance"],
+        "accessLevel": "public",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "silence",
+        "category": "conduct",
+        "title": "Maintain Silence",
+        "description": "Maintain peaceful silence for meditation environment",
+        "severity": "mandatory",
+        "icon": "🤫"
+      },
+      {
+        "id": "respect",
+        "category": "spiritual",
+        "title": "Respect Sacred Space",
+        "description": "Show respect to the enlightenment site and Buddhist traditions",
+        "severity": "mandatory",
+        "icon": "🙏"
+      },
+      {
+        "id": "photography",
+        "category": "photography",
+        "title": "Photography Guidelines",
+        "description": "Photography allowed but maintain respectful distance from meditators",
+        "severity": "info",
+        "icon": "📸"
+      },
+      {
+        "id": "offerings",
+        "category": "offerings",
+        "title": "Buddhist Offerings",
+        "description": "Flowers, incense, and candles are traditional offerings",
+        "severity": "info",
+        "icon": "🌸"
+      }
+    ],
+    "languages": ["en", "hi", "pali", "tibetan", "japanese", "thai"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "heritage_spiritual",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "meditation-cushions",
+        "name": "Meditation Supplies",
+        "description": "Cushions and mats for comfortable meditation",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "international-monasteries",
+        "name": "International Monasteries",
+        "description": "Various Buddhist monasteries from different countries",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "library",
+        "name": "Buddhist Library",
+        "description": "Collection of Buddhist texts and teachings",
+        "category": "educational",
+        "available": true
+      },
+      {
+        "id": "guest-house",
+        "name": "Pilgrim Accommodation",
+        "description": "Simple lodging for visiting pilgrims",
+        "category": "lodging",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 2000,
+        "duration": "15-20 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "auto", "cycle"],
+        "parkingFee": 10
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 30 minutes",
+        "cost": 5
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 14,
+    "slotDuration": 120,
+    "maxDevoteesPerBooking": 6,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 0,
+      "refundProcessingDays": 3
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": false,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-entrance",
+        "type": "people_counter",
+        "location": "Main Gate",
+        "zone": "meditation-area"
+      },
+      {
+        "id": "sensor-bodhi-tree",
+        "type": "occupancy",
+        "location": "Bodhi Tree Platform",
+        "zone": "bodhi-tree"
+      },
+      {
+        "id": "sensor-temple",
+        "type": "thermal",
+        "location": "Temple Entrance",
+        "zone": "main-temple"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "06:00",
+        "end": "09:00",
+        "level": "high"
+      },
+      {
+        "start": "16:00",
+        "end": "19:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 80,
+      "updateInterval": 30
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Mahabodhi Temple visit confirmed for {date} at {time}. Namo Buddhaya! Booking ID: {bookingId}",
+        "email": "Mahabodhi Temple Visit Confirmation"
+      },
+      "meditation_session": {
+        "sms": "Sunrise meditation at Mahabodhi Temple starts at {time}. Experience inner peace.",
+        "email": "Mahabodhi Meditation Session"
+      }
+    },
+    "preferences": {
+      "meditationAlerts": true,
+      "bookingReminders": true,
+      "buddhistEvents": true,
+      "teachingSessions": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "pilgrim_count",
+      "meditation_participation",
+      "international_visitors",
+      "spiritual_engagement"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "monthlyReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-631-2200500",
+        "description": "Temple Management Committee"
+      },
+      {
+        "type": "medical",
+        "number": "+91-631-2200600",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "archaeological",
+        "number": "+91-631-2200700",
+        "description": "Archaeological Survey of India"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "meditation",
+        "description": "Respect meditation environment and maintain peaceful atmosphere"
+      },
+      {
+        "type": "heritage",
+        "description": "Protect UNESCO World Heritage Site - no damage to structures"
+      }
+    ]
+  }
+}

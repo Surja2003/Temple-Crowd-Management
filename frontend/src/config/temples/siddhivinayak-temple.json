@@ -1,0 +1,401 @@
+{
+  "basic": {
+    "id": "temple-016",
+    "slug": "siddhivinayak-temple",
+    "name": "Siddhivinayak Temple",
+    "shortName": "Siddhivinayak",
+    "description": "Mumbai's most revered Ganesha temple, known for fulfilling devotees' wishes. The temple houses a self-emerged (swayambhu) idol of Lord Ganesha and attracts millions of visitors annually.",
+    "address": {
+      "street": "S.K. Bole Road, Dadar",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalCode": "400028",
+      "coordinates": {
+        "latitude": 19.0170,
+        "longitude": 72.8310
+      }
+    },
+    "contact": {
+      "phone": ["+91-22-2430-2331", "+91-22-2430-2332"],
+      "email": ["info@siddhivinayak.org", "admin@siddhivinayaktemple.org"],
+      "website": "https://www.siddhivinayak.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/siddhivinayaktemple",
+        "instagram": "@siddhivinayaktemple",
+        "youtube": "https://youtube.com/@siddhivinayaktemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/siddhivinayak/logo.jpg",
+      "banner": "/images/temples/siddhivinayak/banner.jpg",
+      "gallery": [
+        "/images/temples/siddhivinayak/main-temple.jpg",
+        "/images/temples/siddhivinayak/ganesha-idol.jpg",
+        "/images/temples/siddhivinayak/devotees-queue.jpg",
+        "/images/temples/siddhivinayak/mumbai-skyline.jpg",
+        "/images/temples/siddhivinayak/aarti-ceremony.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/siddhivinayak/temple-layout.jpg",
+        "/images/temples/siddhivinayak/queue-system.jpg"
+      ],
+      "virtualTour": "/images/temples/siddhivinayak/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "05:30",
+        "close": "22:00",
+        "breaks": [],
+        "lastEntry": "21:30"
+      },
+      "special": [
+        {
+          "date": "2025-08-31",
+          "open": "04:00",
+          "close": "23:30",
+          "reason": "Ganesh Chaturthi",
+          "lastEntry": "23:00"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Ganesh Chaturthi",
+          "startDate": "2025-08-31",
+          "endDate": "2025-09-09",
+          "open": "04:00",
+          "close": "23:30",
+          "lastEntry": "23:00",
+          "specialRules": [
+            "Extended celebration hours",
+            "Special decorations",
+            "Cultural programs",
+            "Increased crowd management"
+          ]
+        },
+        {
+          "name": "Sankashti Chaturthi",
+          "startDate": "2025-01-21",
+          "endDate": "2025-01-21",
+          "open": "05:00",
+          "close": "22:30",
+          "lastEntry": "22:00",
+          "specialRules": [
+            "Monthly special day",
+            "Extended evening aarti",
+            "Special offerings"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 1500,
+      "zones": [
+        {
+          "id": "garbhagriha",
+          "name": "Garbhagriha",
+          "capacity": 100,
+          "description": "Sacred sanctum with Ganesha idol",
+          "accessLevel": "public"
+        },
+        {
+          "id": "mandapa",
+          "name": "Main Hall",
+          "capacity": 400,
+          "description": "Primary prayer hall",
+          "accessLevel": "public"
+        },
+        {
+          "id": "queue-area",
+          "name": "Queue Management Area",
+          "capacity": 800,
+          "description": "Organized waiting area for devotees",
+          "accessLevel": "public"
+        },
+        {
+          "id": "outer-courtyard",
+          "name": "Outer Courtyard",
+          "capacity": 200,
+          "description": "Outer temple area",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 150,
+      "disabilityQuota": 100
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Regular darshan of Lord Ganesha",
+        "price": 0,
+        "duration": 15,
+        "capacity": 1200,
+        "zones": ["garbhagriha", "mandapa"],
+        "features": ["Free darshan", "Ganesha blessings", "Mumbai experience"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Darshan",
+        "description": "Priority darshan with reduced waiting",
+        "price": 101,
+        "duration": 30,
+        "capacity": 200,
+        "zones": ["garbhagriha", "mandapa"],
+        "features": ["Quick access", "Priority queue", "Special prayers", "Prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "aarti",
+        "name": "Aarti Darshan",
+        "description": "Participate in the daily aarti ceremony",
+        "price": 21,
+        "duration": 45,
+        "capacity": 100,
+        "zones": ["garbhagriha"],
+        "features": ["Aarti participation", "Close viewing", "Sacred atmosphere", "Modak prasadam"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "queue-system",
+        "category": "crowd_management",
+        "title": "Follow Queue System",
+        "description": "Mandatory to follow the organized queue system",
+        "severity": "mandatory",
+        "icon": "📋"
+      },
+      {
+        "id": "mobile-restrictions",
+        "category": "electronics",
+        "title": "Mobile Phone Guidelines",
+        "description": "Silent mode required, limited photography allowed",
+        "severity": "mandatory",
+        "icon": "📱"
+      },
+      {
+        "id": "offerings",
+        "category": "offerings",
+        "title": "Modak Offerings",
+        "description": "Modak (sweet dumplings) are Lord Ganesha's favorite offering",
+        "severity": "info",
+        "icon": "🍯"
+      },
+      {
+        "id": "tuesday-crowds",
+        "category": "timing",
+        "title": "Tuesday Rush",
+        "description": "Tuesdays are extremely busy - plan accordingly",
+        "severity": "warning",
+        "icon": "⏰"
+      }
+    ],
+    "languages": ["en", "hi", "marathi"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "urban_metropolitan",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": true,
+      "specialAssistance": true,
+      "parkingAvailable": false,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "prasadam-counter",
+        "name": "Prasadam Distribution",
+        "description": "Modak and other sacred offerings",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "donation-center",
+        "name": "Donation Facility",
+        "description": "Digital and cash donation options",
+        "category": "services",
+        "available": true
+      },
+      {
+        "id": "waiting-area",
+        "name": "Air-conditioned Waiting",
+        "description": "Comfortable waiting areas for devotees",
+        "category": "comfort",
+        "available": true
+      },
+      {
+        "id": "medical-aid",
+        "name": "First Aid Center",
+        "description": "Basic medical assistance for visitors",
+        "category": "medical",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 500,
+        "duration": "3-5 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["taxi", "auto", "bus"],
+        "parkingFee": 0
+      },
+      "shuttleService": {
+        "available": false,
+        "frequency": "",
+        "cost": 0
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 15,
+    "slotDuration": 30,
+    "maxDevoteesPerBooking": 4,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 6,
+      "cancellationFee": 21,
+      "refundProcessingDays": 3
+    },
+    "paymentMethods": ["card", "upi", "netbanking"],
+    "requirements": {
+      "identityProof": false,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-entrance",
+        "type": "people_counter",
+        "location": "Main Entrance",
+        "zone": "queue-area"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entry",
+        "zone": "garbhagriha"
+      },
+      {
+        "id": "sensor-queue",
+        "type": "thermal",
+        "location": "Queue Management Area",
+        "zone": "queue-area"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "07:00",
+        "end": "10:00",
+        "level": "very_high"
+      },
+      {
+        "start": "18:00",
+        "end": "21:00",
+        "level": "very_high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 90,
+      "updateInterval": 10
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Siddhivinayak darshan confirmed for {date} at {time}. Ganpati Bappa Morya! Booking ID: {bookingId}",
+        "email": "Siddhivinayak Temple Darshan Confirmation"
+      },
+      "crowd_alert": {
+        "sms": "High crowd at Siddhivinayak. Current wait time: {waitTime} minutes. Plan accordingly.",
+        "email": "Siddhivinayak Crowd Update"
+      }
+    },
+    "preferences": {
+      "crowdAlerts": true,
+      "bookingReminders": true,
+      "tuesdayAlerts": true,
+      "festivalUpdates": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "devotee_count",
+      "tuesday_spike_analysis",
+      "queue_efficiency",
+      "donation_patterns"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "festivalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": true,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-22-2430-2400",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-22-2430-2500",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "police",
+        "number": "+91-22-2430-2600",
+        "description": "Mumbai Police & Security"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "crowd",
+        "description": "Follow queue system and security guidelines strictly"
+      },
+      {
+        "type": "urban",
+        "description": "Be aware of urban environment and traffic around temple"
+      }
+    ]
+  }
+}

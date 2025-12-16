@@ -1,0 +1,35 @@
+[
+  {
+    "id": "f39e1cbf-2dee-420d-8a73-eba805ac1686",
+    "booking_id": "booking-test-001",
+    "phone_e164": "+919999999999",
+    "temple": "Test Temple",
+    "queue_number": 12,
+    "time_slot": "06:00-07:00",
+    "enabled": true,
+    "created_at": "2025-12-15T07:25:12.280786+00:00",
+    "last_sent_at": "2025-12-16T16:51:56.386718+00:00"
+  },
+  {
+    "id": "35d62592-470e-4e79-a78b-061df0acd311",
+    "booking_id": "booking-test-002",
+    "phone_e164": "+918888888888",
+    "temple": "Test Temple",
+    "queue_number": 99,
+    "time_slot": "07:00-08:00",
+    "enabled": true,
+    "created_at": "2025-12-15T07:27:17.645878+00:00",
+    "last_sent_at": "2025-12-16T16:51:56.405268+00:00"
+  },
+  {
+    "id": "8624c3a9-bb60-4838-ace3-88eb81a6296e",
+    "booking_id": "booking-test-003",
+    "phone_e164": "+917777777777",
+    "temple": "Test Temple",
+    "queue_number": 101,
+    "time_slot": "08:00-09:00",
+    "enabled": true,
+    "created_at": "2025-12-15T07:28:18.027765+00:00",
+    "last_sent_at": "2025-12-16T16:51:56.417944+00:00"
+  }
+]

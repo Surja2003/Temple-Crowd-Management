@@ -1,0 +1,414 @@
+{
+  "basic": {
+    "id": "temple-019",
+    "slug": "akshardham-temple",
+    "name": "Akshardham Temple",
+    "shortName": "Akshardham",
+    "description": "A magnificent complex showcasing Indian art, culture, and architecture. Built without steel, this sandstone and marble temple complex is dedicated to Bhagwan Swaminarayan and features exhibitions, gardens, and cultural shows.",
+    "address": {
+      "street": "National Highway 24, Akshardham Setu",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110092",
+      "coordinates": {
+        "latitude": 28.6127,
+        "longitude": 77.2773
+      }
+    },
+    "contact": {
+      "phone": ["+91-11-4302-4344", "+91-11-4302-4345"],
+      "email": ["info@akshardham.com", "admin@swaminarayan.org"],
+      "website": "https://www.akshardham.com",
+      "socialMedia": {
+        "facebook": "https://facebook.com/akshardhamdelhi",
+        "instagram": "@akshardhamdelhi",
+        "youtube": "https://youtube.com/@akshardhamdelhi"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/akshardham/logo.jpg",
+      "banner": "/images/temples/akshardham/banner.jpg",
+      "gallery": [
+        "/images/temples/akshardham/main-monument.jpg",
+        "/images/temples/akshardham/swaminarayan-murti.jpg",
+        "/images/temples/akshardham/cultural-boat-ride.jpg",
+        "/images/temples/akshardham/yagnapurush-kund.jpg",
+        "/images/temples/akshardham/exhibition-halls.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/akshardham/complex-layout.jpg",
+        "/images/temples/akshardham/attraction-map.jpg"
+      ],
+      "virtualTour": "/images/temples/akshardham/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "09:30",
+        "close": "18:30",
+        "breaks": [],
+        "lastEntry": "18:00"
+      },
+      "special": [
+        {
+          "date": "2025-04-14",
+          "open": "09:00",
+          "close": "19:30",
+          "reason": "Ram Navami",
+          "lastEntry": "19:00"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Diwali Festival",
+          "startDate": "2025-11-01",
+          "endDate": "2025-11-01",
+          "open": "09:00",
+          "close": "20:00",
+          "lastEntry": "19:30",
+          "specialRules": [
+            "Special light and sound show",
+            "Cultural performances",
+            "Extended exhibition hours"
+          ]
+        },
+        {
+          "name": "Swaminarayan Jayanti",
+          "startDate": "2025-04-14",
+          "endDate": "2025-04-14",
+          "open": "09:00",
+          "close": "19:30",
+          "lastEntry": "19:00",
+          "specialRules": [
+            "Birthday celebrations",
+            "Special prayers and abhishek",
+            "Cultural programs"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 8000,
+      "zones": [
+        {
+          "id": "main-monument",
+          "name": "Main Monument Temple",
+          "capacity": 1500,
+          "description": "Central temple with Swaminarayan murti",
+          "accessLevel": "public"
+        },
+        {
+          "id": "sahaj-anand-hall",
+          "name": "Sahaj Anand Water Show",
+          "capacity": 1200,
+          "description": "Musical fountain and water show",
+          "accessLevel": "ticketed"
+        },
+        {
+          "id": "neelkanth-theater",
+          "name": "Neelkanth Theater",
+          "capacity": 400,
+          "description": "Large format film experience",
+          "accessLevel": "ticketed"
+        },
+        {
+          "id": "sanskruti-vihar",
+          "name": "Sanskruti Vihar Boat Ride",
+          "capacity": 800,
+          "description": "Cultural boat ride through Indian heritage",
+          "accessLevel": "ticketed"
+        },
+        {
+          "id": "exhibition-halls",
+          "name": "Exhibition Halls",
+          "capacity": 2000,
+          "description": "Interactive exhibitions on Indian culture",
+          "accessLevel": "public"
+        },
+        {
+          "id": "gardens",
+          "name": "Temple Gardens",
+          "capacity": 2100,
+          "description": "Beautiful landscaped gardens and walkways",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 800,
+      "disabilityQuota": 500
+    },
+    "darshanTypes": [
+      {
+        "id": "temple-visit",
+        "name": "Temple Visit",
+        "description": "Visit to main temple and free exhibitions",
+        "price": 0,
+        "duration": 120,
+        "capacity": 5000,
+        "zones": ["main-monument", "exhibition-halls", "gardens"],
+        "features": ["Free temple entry", "Free exhibitions", "Garden walk", "Architecture viewing"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "complete-experience",
+        "name": "Complete Cultural Experience",
+        "description": "Full experience with all attractions",
+        "price": 200,
+        "duration": 240,
+        "capacity": 2000,
+        "zones": ["main-monument", "sahaj-anand-hall", "neelkanth-theater", "sanskruti-vihar"],
+        "features": ["All attractions", "Boat ride", "Water show", "Theater experience", "Exhibitions"],
+        "accessLevel": "ticketed",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "premium-experience",
+        "name": "Premium Experience",
+        "description": "VIP experience with guided tour and priority access",
+        "price": 500,
+        "duration": 300,
+        "capacity": 500,
+        "zones": ["main-monument", "sahaj-anand-hall", "neelkanth-theater", "sanskruti-vihar", "exhibition-halls"],
+        "features": ["Priority access", "Guided tour", "All attractions", "Special seating", "Refreshments"],
+        "accessLevel": "premium",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "security-check",
+        "category": "security",
+        "title": "Mandatory Security Check",
+        "description": "All visitors must pass through security screening",
+        "severity": "mandatory",
+        "icon": "🔐"
+      },
+      {
+        "id": "photography",
+        "category": "photography",
+        "title": "Photography Restrictions",
+        "description": "Photography allowed in gardens, restricted in temple and shows",
+        "severity": "mandatory",
+        "icon": "📵"
+      },
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Modest Dress",
+        "description": "Dress modestly and appropriately for temple visit",
+        "severity": "mandatory",
+        "icon": "👕"
+      },
+      {
+        "id": "monday-closed",
+        "category": "timing",
+        "title": "Closed on Mondays",
+        "description": "Complex remains closed every Monday",
+        "severity": "info",
+        "icon": "🚫"
+      }
+    ],
+    "languages": ["en", "hi", "gujarati"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "urban_cultural",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": true,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "food-court",
+        "name": "Premvati Food Court",
+        "description": "Vegetarian restaurant with traditional Indian cuisine",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "gift-shop",
+        "name": "Cultural Gift Shop",
+        "description": "Books, handicrafts, and spiritual items",
+        "category": "shopping",
+        "available": true
+      },
+      {
+        "id": "medical-center",
+        "name": "Medical Facility",
+        "description": "First aid and medical assistance",
+        "category": "medical",
+        "available": true
+      },
+      {
+        "id": "audio-guides",
+        "name": "Audio Guide Service",
+        "description": "Multi-language audio guides available",
+        "category": "educational",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 8000,
+        "duration": "60-90 minutes",
+        "difficulty": "moderate"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "metro", "auto"],
+        "parkingFee": 30
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 15 minutes",
+        "cost": 0
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 30,
+    "slotDuration": 300,
+    "maxDevoteesPerBooking": 10,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 24,
+      "cancellationFee": 50,
+      "refundProcessingDays": 7
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-main-gate",
+        "type": "people_counter",
+        "location": "Main Entrance Gate",
+        "zone": "gardens"
+      },
+      {
+        "id": "sensor-temple",
+        "type": "occupancy",
+        "location": "Temple Entrance",
+        "zone": "main-monument"
+      },
+      {
+        "id": "sensor-exhibition",
+        "type": "thermal",
+        "location": "Exhibition Halls",
+        "zone": "exhibition-halls"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "11:00",
+        "end": "14:00",
+        "level": "very_high"
+      },
+      {
+        "start": "15:30",
+        "end": "17:30",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 85,
+      "updateInterval": 20
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Akshardham visit confirmed for {date} at {time}. Carry ID proof. Jai Swaminarayan! Booking ID: {bookingId}",
+        "email": "Akshardham Cultural Experience Confirmation"
+      },
+      "show_schedule": {
+        "sms": "Water show at Akshardham starts at {time}. Experience the divine spectacle.",
+        "email": "Akshardham Show Schedule Update"
+      }
+    },
+    "preferences": {
+      "showSchedules": true,
+      "bookingReminders": true,
+      "culturalEvents": true,
+      "exhibitionUpdates": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "visitor_count",
+      "attraction_popularity",
+      "cultural_engagement",
+      "exhibition_attendance"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "monthlyReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": true,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": true,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "complex",
+        "number": "+91-11-4302-4400",
+        "description": "Complex Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-11-4302-4500",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "security",
+        "number": "+91-11-4302-4600",
+        "description": "Security Services"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "security",
+        "description": "Follow security guidelines and cooperate with screening process"
+      },
+      {
+        "type": "cultural",
+        "description": "Respect cultural exhibits and follow venue guidelines for shows"
+      }
+    ]
+  }
+}

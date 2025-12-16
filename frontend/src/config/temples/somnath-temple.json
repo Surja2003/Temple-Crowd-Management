@@ -1,0 +1,362 @@
+{
+  "basic": {
+    "id": "temple-004",
+    "slug": "somnath-temple",
+    "name": "Somnath Temple",
+    "shortName": "Somnath",
+    "description": "First among the twelve Aadi Jyotirlingas of Lord Shiva, known as the 'Eternal Shrine'. Located on the western coast of Gujarat, this ancient temple has been rebuilt multiple times throughout history.",
+    "address": {
+      "street": "Somnath Temple Road",
+      "city": "Somnath",
+      "state": "Gujarat",
+      "country": "India",
+      "postalCode": "362268",
+      "coordinates": {
+        "latitude": 20.8880,
+        "longitude": 70.4017
+      }
+    },
+    "contact": {
+      "phone": ["+91-2876-231007", "+91-2876-231008"],
+      "email": ["info@somnath.org", "darshan@somnath.org"],
+      "website": "https://www.somnath.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/somnathtemple",
+        "instagram": "@somnathtempleofficial",
+        "youtube": "https://youtube.com/@somnathtemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/somnath/logo.jpg",
+      "banner": "/images/temples/somnath/banner.jpg",
+      "gallery": [
+        "/images/temples/somnath/jyotirlinga.jpg",
+        "/images/temples/somnath/temple-complex.jpg",
+        "/images/temples/somnath/sea-view.jpg",
+        "/images/temples/somnath/evening-aarti.jpg",
+        "/images/temples/somnath/architecture.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/somnath/ground-floor.jpg",
+        "/images/temples/somnath/upper-level.jpg"
+      ],
+      "virtualTour": "/images/temples/somnath/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "06:00",
+        "close": "21:00",
+        "breaks": [
+          {
+            "start": "12:30",
+            "end": "16:00"
+          }
+        ],
+        "lastEntry": "20:30"
+      },
+      "special": [
+        {
+          "date": "2025-02-13",
+          "open": "05:00",
+          "close": "22:00",
+          "reason": "Maha Shivratri",
+          "lastEntry": "21:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Kartik Purnima",
+          "startDate": "2025-11-15",
+          "endDate": "2025-11-15",
+          "open": "04:00",
+          "close": "23:00",
+          "lastEntry": "22:30",
+          "specialRules": [
+            "Extended darshan hours",
+            "Special abhishekam ceremonies",
+            "Cultural programs"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 800,
+      "zones": [
+        {
+          "id": "garbhagriha",
+          "name": "Garbhagriha (Sanctum)",
+          "capacity": 200,
+          "description": "Sacred inner chamber housing the Jyotirlinga",
+          "accessLevel": "public"
+        },
+        {
+          "id": "sabha-mandapa",
+          "name": "Sabha Mandapa",
+          "capacity": 400,
+          "description": "Main prayer hall for devotees",
+          "accessLevel": "public"
+        },
+        {
+          "id": "pradakshina-path",
+          "name": "Pradakshina Path",
+          "capacity": 200,
+          "description": "Circumambulation path around the temple",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 50,
+      "disabilityQuota": 30
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Free darshan for all devotees with regular queue",
+        "price": 0,
+        "duration": 10,
+        "capacity": 600,
+        "zones": ["garbhagriha", "sabha-mandapa", "pradakshina-path"],
+        "features": ["Free entry", "Jyotirlinga darshan", "Prasadam"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Darshan",
+        "description": "Priority darshan with special abhishekam viewing",
+        "price": 200,
+        "duration": 20,
+        "capacity": 200,
+        "zones": ["garbhagriha", "sabha-mandapa"],
+        "features": ["Priority entry", "Abhishekam darshan", "Special prasadam", "Rudrabhishek participation"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "dress-code-1",
+        "category": "dress_code",
+        "title": "Modest Traditional Attire",
+        "description": "Wear traditional Indian clothing or modest western attire",
+        "severity": "mandatory",
+        "icon": "👕"
+      },
+      {
+        "id": "items-1",
+        "category": "items_allowed",
+        "title": "No Leather Items",
+        "description": "Leather shoes, belts, and accessories not allowed",
+        "severity": "mandatory",
+        "icon": "👞"
+      },
+      {
+        "id": "photography-1",
+        "category": "photography",
+        "title": "Photography Restrictions",
+        "description": "Photography allowed only in designated outer areas",
+        "severity": "warning",
+        "icon": "📸"
+      },
+      {
+        "id": "offerings-1",
+        "category": "offerings",
+        "title": "Bilva Leaves Offering",
+        "description": "Sacred bilva leaves available for Lord Shiva puja",
+        "severity": "info",
+        "icon": "🍃"
+      }
+    ],
+    "languages": ["en", "hi", "gu", "mr"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "coastal",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "accommodation",
+        "name": "Dharamshala",
+        "description": "Temple-managed guest house for pilgrims",
+        "category": "lodging",
+        "available": true
+      },
+      {
+        "id": "prasadalaya",
+        "name": "Prasadalaya",
+        "description": "Vegetarian meals for devotees",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "museum",
+        "name": "Somnath Museum",
+        "description": "Temple history and archaeological artifacts",
+        "category": "cultural",
+        "available": true
+      },
+      {
+        "id": "beach",
+        "name": "Somnath Beach",
+        "description": "Sacred beach adjacent to the temple",
+        "category": "natural",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 500,
+        "duration": "10 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "motorcycle", "auto"],
+        "parkingFee": 20
+      },
+      "shuttleService": {
+        "available": false,
+        "frequency": "",
+        "cost": 0
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 30,
+    "slotDuration": 30,
+    "maxDevoteesPerBooking": 8,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 12,
+      "cancellationFee": 20,
+      "refundProcessingDays": 5
+    },
+    "paymentMethods": ["card", "upi", "netbanking"],
+    "requirements": {
+      "identityProof": false,
+      "photoUpload": false,
+      "mobileVerification": true
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-main-gate",
+        "type": "people_counter",
+        "location": "Main Gate",
+        "zone": "sabha-mandapa"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entry",
+        "zone": "garbhagriha"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "07:00",
+        "end": "11:00",
+        "level": "high"
+      },
+      {
+        "start": "18:00",
+        "end": "20:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 80,
+      "updateInterval": 20
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "push"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Your Somnath Temple darshan is confirmed for {date} at {time}. Booking ID: {bookingId}",
+        "email": "Somnath Darshan Confirmation",
+        "push": "Darshan confirmed for {date}"
+      },
+      "aarti_alert": {
+        "sms": "Evening Aarti at Somnath Temple begins in 30 minutes",
+        "push": "Aarti starting soon"
+      }
+    },
+    "preferences": {
+      "crowdAlerts": true,
+      "bookingReminders": true,
+      "aartiAlerts": true,
+      "festivalUpdates": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "visitor_count",
+      "darshan_duration",
+      "zone_utilization",
+      "seasonal_trends"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "monthlyAnalytics": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "medical",
+        "number": "+91-2876-231020",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "security",
+        "number": "+91-2876-231030",
+        "description": "Temple Security"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "evacuation",
+        "description": "Follow temple staff instructions for safe evacuation"
+      },
+      {
+        "type": "weather",
+        "description": "Coastal weather alerts and safety measures"
+      }
+    ]
+  }
+}

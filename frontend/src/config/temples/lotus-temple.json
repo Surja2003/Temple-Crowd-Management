@@ -1,0 +1,400 @@
+{
+  "basic": {
+    "id": "temple-018",
+    "slug": "lotus-temple",
+    "name": "Lotus Temple (Bahá'í House of Worship)",
+    "shortName": "Lotus Temple",
+    "description": "A magnificent architectural marvel shaped like a lotus flower, serving as the Bahá'í House of Worship. Known for its inclusive philosophy welcoming people of all faiths for prayer and meditation.",
+    "address": {
+      "street": "Lotus Temple Road, Bahapur",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "country": "India",
+      "postalCode": "110019",
+      "coordinates": {
+        "latitude": 28.5535,
+        "longitude": 77.2588
+      }
+    },
+    "contact": {
+      "phone": ["+91-11-2644-4029", "+91-11-2644-2024"],
+      "email": ["info@lotustemple.in", "admin@bahai.in"],
+      "website": "https://www.lotustemple.in",
+      "socialMedia": {
+        "facebook": "https://facebook.com/lotustemple",
+        "instagram": "@lotustemple",
+        "youtube": "https://youtube.com/@lotustempledelhi"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/lotus-temple/logo.jpg",
+      "banner": "/images/temples/lotus-temple/banner.jpg",
+      "gallery": [
+        "/images/temples/lotus-temple/lotus-architecture.jpg",
+        "/images/temples/lotus-temple/interior-hall.jpg",
+        "/images/temples/lotus-temple/gardens.jpg",
+        "/images/temples/lotus-temple/night-illumination.jpg",
+        "/images/temples/lotus-temple/meditation-hall.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/lotus-temple/temple-layout.jpg",
+        "/images/temples/lotus-temple/garden-map.jpg"
+      ],
+      "virtualTour": "/images/temples/lotus-temple/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "09:00",
+        "close": "19:00",
+        "breaks": [],
+        "lastEntry": "18:30"
+      },
+      "special": [
+        {
+          "date": "2025-05-23",
+          "open": "08:00",
+          "close": "20:00",
+          "reason": "Bahá'í Holy Day - Declaration of the Báb",
+          "lastEntry": "19:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "World Religion Day",
+          "startDate": "2025-01-19",
+          "endDate": "2025-01-19",
+          "open": "09:00",
+          "close": "19:00",
+          "lastEntry": "18:30",
+          "specialRules": [
+            "Interfaith prayers",
+            "Unity celebrations",
+            "Cultural programs"
+          ]
+        },
+        {
+          "name": "International Day of Peace",
+          "startDate": "2025-09-21",
+          "endDate": "2025-09-21",
+          "open": "09:00",
+          "close": "19:00",
+          "lastEntry": "18:30",
+          "specialRules": [
+            "Peace meditation sessions",
+            "Harmony prayers",
+            "Unity of mankind focus"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 2500,
+      "zones": [
+        {
+          "id": "main-hall",
+          "name": "Main Prayer Hall",
+          "capacity": 1300,
+          "description": "Central meditation and prayer hall",
+          "accessLevel": "public"
+        },
+        {
+          "id": "gardens",
+          "name": "Lotus Gardens",
+          "capacity": 800,
+          "description": "Beautiful landscaped gardens around the temple",
+          "accessLevel": "public"
+        },
+        {
+          "id": "information-center",
+          "name": "Information Center",
+          "capacity": 200,
+          "description": "Learning center about Bahá'í faith and temple",
+          "accessLevel": "public"
+        },
+        {
+          "id": "reflection-areas",
+          "name": "Quiet Reflection Areas",
+          "capacity": 200,
+          "description": "Peaceful spots for contemplation",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 250,
+      "disabilityQuota": 150
+    },
+    "darshanTypes": [
+      {
+        "id": "meditation",
+        "name": "Silent Meditation",
+        "description": "Peaceful meditation in the main hall",
+        "price": 0,
+        "duration": 30,
+        "capacity": 2000,
+        "zones": ["main-hall", "gardens"],
+        "features": ["Free entry", "Silent meditation", "Universal worship", "Architectural beauty"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "guided-tour",
+        "name": "Guided Architecture Tour",
+        "description": "Educational tour about temple architecture and philosophy",
+        "price": 0,
+        "duration": 45,
+        "capacity": 300,
+        "zones": ["main-hall", "gardens", "information-center"],
+        "features": ["Free guided tour", "Architecture insights", "Bahá'í philosophy", "Garden walk"],
+        "accessLevel": "public",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "group-prayer",
+        "name": "Group Prayer Session",
+        "description": "Interfaith group prayer and meditation",
+        "price": 0,
+        "duration": 60,
+        "capacity": 200,
+        "zones": ["main-hall"],
+        "features": ["Interfaith prayers", "Guided meditation", "Unity focus", "Peaceful atmosphere"],
+        "accessLevel": "public",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "silence",
+        "category": "conduct",
+        "title": "Maintain Silence",
+        "description": "Complete silence must be maintained inside the main hall",
+        "severity": "mandatory",
+        "icon": "🤫"
+      },
+      {
+        "id": "universal-welcome",
+        "category": "entry",
+        "title": "All Faiths Welcome",
+        "description": "People of all religions and backgrounds are welcome",
+        "severity": "info",
+        "icon": "🌍"
+      },
+      {
+        "id": "no-rituals",
+        "category": "spiritual",
+        "title": "No Religious Rituals",
+        "description": "No specific religious rituals are performed - only meditation and prayer",
+        "severity": "info",
+        "icon": "🙏"
+      },
+      {
+        "id": "photography",
+        "category": "photography",
+        "title": "Photography Guidelines",
+        "description": "Photography allowed in gardens, restricted in prayer hall",
+        "severity": "info",
+        "icon": "📸"
+      }
+    ],
+    "languages": ["en", "hi", "urdu", "punjabi"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "urban_architectural",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": true,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "information-center",
+        "name": "Visitor Information Center",
+        "description": "Information about Bahá'í faith and temple architecture",
+        "category": "educational",
+        "available": true
+      },
+      {
+        "id": "garden-cafeteria",
+        "name": "Garden Cafeteria",
+        "description": "Light refreshments and beverages",
+        "category": "food",
+        "available": true
+      },
+      {
+        "id": "bookstore",
+        "name": "Spiritual Literature",
+        "description": "Books on Bahá'í teachings and world religions",
+        "category": "shopping",
+        "available": true
+      },
+      {
+        "id": "meditation-gardens",
+        "name": "Meditation Gardens",
+        "description": "Peaceful outdoor spaces for reflection",
+        "category": "spiritual",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 1000,
+        "duration": "8-10 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "bus", "metro", "auto"],
+        "parkingFee": 20
+      },
+      "shuttleService": {
+        "available": false,
+        "frequency": "",
+        "cost": 0
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 7,
+    "slotDuration": 60,
+    "maxDevoteesPerBooking": 10,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 12,
+      "cancellationFee": 0,
+      "refundProcessingDays": 1
+    },
+    "paymentMethods": [],
+    "requirements": {
+      "identityProof": false,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-entrance",
+        "type": "people_counter",
+        "location": "Main Gate",
+        "zone": "gardens"
+      },
+      {
+        "id": "sensor-hall",
+        "type": "occupancy",
+        "location": "Prayer Hall Entry",
+        "zone": "main-hall"
+      },
+      {
+        "id": "sensor-garden",
+        "type": "thermal",
+        "location": "Garden Pathways",
+        "zone": "gardens"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "10:00",
+        "end": "12:00",
+        "level": "high"
+      },
+      {
+        "start": "15:00",
+        "end": "17:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 75,
+      "updateInterval": 30
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Lotus Temple visit confirmed for {date} at {time}. Maintain silence in prayer hall. Booking ID: {bookingId}",
+        "email": "Lotus Temple Visit Confirmation"
+      },
+      "meditation_reminder": {
+        "sms": "Peace meditation session at Lotus Temple starting at {time}. Join for unity and reflection.",
+        "email": "Lotus Temple Meditation Session"
+      }
+    },
+    "preferences": {
+      "meditationAlerts": true,
+      "bookingReminders": true,
+      "interfaithEvents": true,
+      "architecturalTours": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "visitor_count",
+      "meditation_participation",
+      "tour_attendance",
+      "interfaith_engagement"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "monthlyReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": true,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": true,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-11-2644-4100",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-11-2644-4200",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "security",
+        "number": "+91-11-2644-4300",
+        "description": "Security Services"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "silence",
+        "description": "Maintain complete silence in prayer hall and respect meditation environment"
+      },
+      {
+        "type": "inclusive",
+        "description": "Respect diversity and practice unity of all faiths"
+      }
+    ]
+  }
+}

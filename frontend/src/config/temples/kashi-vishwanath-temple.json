@@ -1,0 +1,416 @@
+{
+  "basic": {
+    "id": "temple-010",
+    "slug": "kashi-vishwanath-temple",
+    "name": "Kashi Vishwanath Temple",
+    "shortName": "Kashi Vishwanath",
+    "description": "One of the twelve Jyotirlingas and the most sacred temple in Varanasi. Known as the Golden Temple for its gold-plated spire, this ancient temple is dedicated to Lord Shiva as Vishwanath, the ruler of the universe.",
+    "address": {
+      "street": "Vishwanath Gali, Lahori Tola",
+      "city": "Varanasi",
+      "state": "Uttar Pradesh",
+      "country": "India",
+      "postalCode": "221001",
+      "coordinates": {
+        "latitude": 25.3109,
+        "longitude": 83.0107
+      }
+    },
+    "contact": {
+      "phone": ["+91-542-2393056", "+91-542-2392289"],
+      "email": ["info@shrikashivishwanath.org", "admin@kvt.gov.in"],
+      "website": "https://www.shrikashivishwanath.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/kashivishwanath",
+        "instagram": "@kashivishwanath",
+        "youtube": "https://youtube.com/@kashivishwanathtemple"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/kashi-vishwanath/logo.jpg",
+      "banner": "/images/temples/kashi-vishwanath/banner.jpg",
+      "gallery": [
+        "/images/temples/kashi-vishwanath/golden-spire.jpg",
+        "/images/temples/kashi-vishwanath/jyotirlinga.jpg",
+        "/images/temples/kashi-vishwanath/temple-corridor.jpg",
+        "/images/temples/kashi-vishwanath/ganga-aarti.jpg",
+        "/images/temples/kashi-vishwanath/pilgrims.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/kashi-vishwanath/temple-layout.jpg",
+        "/images/temples/kashi-vishwanath/kashi-corridor.jpg"
+      ],
+      "virtualTour": "/images/temples/kashi-vishwanath/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "03:00",
+        "close": "23:00",
+        "breaks": [
+          {
+            "start": "11:30",
+            "end": "12:00"
+          },
+          {
+            "start": "19:00",
+            "end": "19:30"
+          }
+        ],
+        "lastEntry": "22:30"
+      },
+      "special": [
+        {
+          "date": "2025-03-04",
+          "open": "00:00",
+          "close": "24:00",
+          "reason": "Maha Shivratri",
+          "lastEntry": "23:30"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Maha Shivratri",
+          "startDate": "2025-03-04",
+          "endDate": "2025-03-04",
+          "open": "00:00",
+          "close": "24:00",
+          "lastEntry": "23:30",
+          "specialRules": [
+            "24-hour darshan",
+            "Special rudrabhishek",
+            "Ganga aarti participation"
+          ]
+        },
+        {
+          "name": "Shravan Month",
+          "startDate": "2025-07-16",
+          "endDate": "2025-08-13",
+          "open": "03:00",
+          "close": "24:00",
+          "lastEntry": "23:30",
+          "specialRules": [
+            "Extended hours",
+            "Special Kanwar yatra support",
+            "Continuous abhishekam"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 3000,
+      "zones": [
+        {
+          "id": "garbhagriha",
+          "name": "Garbhagriha",
+          "capacity": 150,
+          "description": "Sacred sanctum with Jyotirlinga",
+          "accessLevel": "public"
+        },
+        {
+          "id": "mandapa",
+          "name": "Main Mandapa",
+          "capacity": 800,
+          "description": "Primary prayer hall",
+          "accessLevel": "public"
+        },
+        {
+          "id": "corridor",
+          "name": "Kashi Vishwanath Corridor",
+          "capacity": 1500,
+          "description": "Modern corridor connecting to Ganga",
+          "accessLevel": "public"
+        },
+        {
+          "id": "annapurna",
+          "name": "Annapurna Temple",
+          "capacity": 300,
+          "description": "Adjacent temple dedicated to Goddess Annapurna",
+          "accessLevel": "public"
+        },
+        {
+          "id": "courtyard",
+          "name": "Temple Courtyard",
+          "capacity": 250,
+          "description": "Traditional temple courtyard",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 300,
+      "disabilityQuota": 200
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Regular darshan of Jyotirlinga",
+        "price": 0,
+        "duration": 20,
+        "capacity": 2500,
+        "zones": ["garbhagriha", "mandapa", "corridor"],
+        "features": ["Free darshan", "Jyotirlinga viewing", "Ganga proximity"],
+        "accessLevel": "public",
+        "advanceBookingRequired": false
+      },
+      {
+        "id": "special",
+        "name": "Special Darshan",
+        "description": "Priority darshan with special rituals",
+        "price": 300,
+        "duration": 30,
+        "capacity": 300,
+        "zones": ["garbhagriha", "mandapa"],
+        "features": ["Priority entry", "Special abhishekam", "Prasadam", "Closer viewing"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "aarti",
+        "name": "Aarti Darshan",
+        "description": "Evening aarti participation",
+        "price": 200,
+        "duration": 45,
+        "capacity": 200,
+        "zones": ["garbhagriha", "mandapa"],
+        "features": ["Aarti participation", "Special prayers", "Prasadam", "Spiritual atmosphere"],
+        "accessLevel": "registered",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "security",
+        "category": "security",
+        "title": "Security Check",
+        "description": "All visitors must pass through security screening",
+        "severity": "mandatory",
+        "icon": "🔐"
+      },
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Modest Dress",
+        "description": "Dress modestly and respectfully",
+        "severity": "mandatory",
+        "icon": "👕"
+      },
+      {
+        "id": "mobile",
+        "category": "electronics",
+        "title": "Mobile Phones",
+        "description": "Mobile phones allowed but silent mode required",
+        "severity": "info",
+        "icon": "📱"
+      },
+      {
+        "id": "offerings",
+        "category": "offerings",
+        "title": "Sacred Offerings",
+        "description": "Flowers, milk, and bilva leaves are traditional offerings",
+        "severity": "info",
+        "icon": "🌸"
+      }
+    ],
+    "languages": ["en", "hi", "bhojpuri"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "urban_heritage",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "elevatorAccess": true,
+      "specialAssistance": true,
+      "parkingAvailable": true,
+      "publicTransport": true
+    },
+    "amenities": [
+      {
+        "id": "corridor-facilities",
+        "name": "Modern Corridor Facilities",
+        "description": "Air-conditioned waiting areas and facilities",
+        "category": "comfort",
+        "available": true
+      },
+      {
+        "id": "ganga-ghat",
+        "name": "Ganga Ghat Access",
+        "description": "Direct access to sacred Ganga ghats",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "shopping",
+        "name": "Religious Items Shop",
+        "description": "Spiritual books, rudraksha, and offerings",
+        "category": "shopping",
+        "available": true
+      },
+      {
+        "id": "food-court",
+        "name": "Prasadam Counter",
+        "description": "Sacred food and refreshments",
+        "category": "food",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 1500,
+        "duration": "10-15 minutes",
+        "difficulty": "easy"
+      },
+      "roadAccess": {
+        "available": true,
+        "vehicleTypes": ["car", "auto", "cycle", "e-rickshaw"],
+        "parkingFee": 30
+      },
+      "shuttleService": {
+        "available": true,
+        "frequency": "Every 15 minutes",
+        "cost": 5
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 30,
+    "slotDuration": 60,
+    "maxDevoteesPerBooking": 6,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 12,
+      "cancellationFee": 50,
+      "refundProcessingDays": 5
+    },
+    "paymentMethods": ["card", "upi", "netbanking", "cash"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": false,
+      "mobileVerification": true,
+      "healthCertificate": false
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-entrance",
+        "type": "people_counter",
+        "location": "Main Entrance",
+        "zone": "corridor"
+      },
+      {
+        "id": "sensor-sanctum",
+        "type": "occupancy",
+        "location": "Sanctum Entry",
+        "zone": "garbhagriha"
+      },
+      {
+        "id": "sensor-corridor",
+        "type": "thermal",
+        "location": "Corridor Midpoint",
+        "zone": "corridor"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "05:00",
+        "end": "08:00",
+        "level": "very_high"
+      },
+      {
+        "start": "18:00",
+        "end": "21:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 88,
+      "updateInterval": 10
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email", "app"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Kashi Vishwanath darshan confirmed for {date} at {time}. Carry ID proof. Booking ID: {bookingId}",
+        "email": "Kashi Vishwanath Temple Darshan Confirmation"
+      },
+      "crowd_alert": {
+        "sms": "High crowd at Kashi Vishwanath. Expected wait time: {waitTime} minutes.",
+        "email": "Temple Crowd Update"
+      }
+    },
+    "preferences": {
+      "crowdAlerts": true,
+      "bookingReminders": true,
+      "festivalUpdates": true,
+      "specialEvents": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "devotee_count",
+      "corridor_usage",
+      "peak_hour_analysis",
+      "festival_participation"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "festivalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": true,
+      "brailleSignage": true,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": true,
+      "ramps": true,
+      "specialSeating": true,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-542-2393000",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-542-2393100",
+        "description": "Medical Emergency"
+      },
+      {
+        "type": "police",
+        "number": "+91-542-2393200",
+        "description": "Temple Security"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "crowd",
+        "description": "Follow designated paths and queue management system"
+      },
+      {
+        "type": "security",
+        "description": "Cooperate with security checks and follow guidelines"
+      }
+    ]
+  }
+}

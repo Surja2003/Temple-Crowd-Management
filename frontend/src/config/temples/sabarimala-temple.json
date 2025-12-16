@@ -1,0 +1,412 @@
+{
+  "basic": {
+    "id": "temple-012",
+    "slug": "sabarimala-temple",
+    "name": "Sabarimala Temple",
+    "shortName": "Sabarimala",
+    "description": "Sacred hilltop temple dedicated to Lord Ayyappa, famous for its rigorous pilgrimage traditions and the 41-day vratham (penance) observed by devotees before the journey.",
+    "address": {
+      "street": "Sabarimala Hills",
+      "city": "Pathanamthitta",
+      "state": "Kerala",
+      "country": "India",
+      "postalCode": "689647",
+      "coordinates": {
+        "latitude": 9.4345,
+        "longitude": 77.0847
+      }
+    },
+    "contact": {
+      "phone": ["+91-468-2322223", "+91-468-2322224"],
+      "email": ["info@sabarimala.org", "admin@sabarimalatemple.tn.gov.in"],
+      "website": "https://www.sabarimala.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/sabarimala",
+        "instagram": "@sabarimalatemple",
+        "youtube": "https://youtube.com/@sabarimala"
+      }
+    },
+    "images": {
+      "logo": "/images/temples/sabarimala/logo.jpg",
+      "banner": "/images/temples/sabarimala/banner.jpg",
+      "gallery": [
+        "/images/temples/sabarimala/temple-hilltop.jpg",
+        "/images/temples/sabarimala/ayyappa-idol.jpg",
+        "/images/temples/sabarimala/pilgrims-trek.jpg",
+        "/images/temples/sabarimala/18-steps.jpg",
+        "/images/temples/sabarimala/makara-jyothi.jpg"
+      ],
+      "zoneMaps": [
+        "/images/temples/sabarimala/temple-layout.jpg",
+        "/images/temples/sabarimala/trek-routes.jpg"
+      ],
+      "virtualTour": "/images/temples/sabarimala/360-view.jpg"
+    }
+  },
+  "operations": {
+    "timings": {
+      "general": {
+        "open": "05:00",
+        "close": "22:00",
+        "breaks": [
+          {
+            "start": "13:30",
+            "end": "17:00"
+          }
+        ],
+        "lastEntry": "21:30"
+      },
+      "special": [
+        {
+          "date": "2025-01-14",
+          "open": "03:00",
+          "close": "23:30",
+          "reason": "Makara Sankranti",
+          "lastEntry": "23:00"
+        }
+      ],
+      "festivals": [
+        {
+          "name": "Mandala-Makaravilakku Season",
+          "startDate": "2024-11-16",
+          "endDate": "2025-01-20",
+          "open": "05:00",
+          "close": "22:00",
+          "lastEntry": "21:30",
+          "specialRules": [
+            "41-day vratham required",
+            "Traditional black/blue attire",
+            "Irumudi (sacred bundle) carrying"
+          ]
+        },
+        {
+          "name": "Makara Sankranti",
+          "startDate": "2025-01-14",
+          "endDate": "2025-01-14",
+          "open": "03:00",
+          "close": "23:30",
+          "lastEntry": "23:00",
+          "specialRules": [
+            "Makara Jyothi viewing",
+            "Special ceremonies",
+            "Extended darshan"
+          ]
+        }
+      ]
+    },
+    "capacity": {
+      "total": 1500,
+      "zones": [
+        {
+          "id": "sannidhanam",
+          "name": "Sannidhanam",
+          "capacity": 300,
+          "description": "Main temple sanctum with Lord Ayyappa",
+          "accessLevel": "restricted"
+        },
+        {
+          "id": "eighteen-steps",
+          "name": "Eighteen Sacred Steps",
+          "capacity": 100,
+          "description": "Sacred steps leading to the temple",
+          "accessLevel": "restricted"
+        },
+        {
+          "id": "namaskara-mandapam",
+          "name": "Namaskara Mandapam",
+          "capacity": 400,
+          "description": "Prayer hall for devotees",
+          "accessLevel": "public"
+        },
+        {
+          "id": "malikappuram",
+          "name": "Malikappuram",
+          "capacity": 300,
+          "description": "Devi temple area",
+          "accessLevel": "public"
+        },
+        {
+          "id": "sabarimala-base",
+          "name": "Temple Base Area",
+          "capacity": 400,
+          "description": "Lower area of the temple complex",
+          "accessLevel": "public"
+        }
+      ],
+      "seniorCitizenQuota": 150,
+      "disabilityQuota": 100
+    },
+    "darshanTypes": [
+      {
+        "id": "general",
+        "name": "General Darshan",
+        "description": "Standard darshan after 41-day vratham",
+        "price": 0,
+        "duration": 30,
+        "capacity": 1200,
+        "zones": ["sannidhanam", "namaskara-mandapam"],
+        "features": ["Free darshan", "Ayyappa viewing", "Sacred experience"],
+        "accessLevel": "restricted",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "neyyabhishekam",
+        "name": "Neyyabhishekam",
+        "description": "Ghee offering ceremony",
+        "price": 200,
+        "duration": 45,
+        "capacity": 200,
+        "zones": ["sannidhanam"],
+        "features": ["Ghee offering", "Special prayers", "Enhanced blessing", "Prasadam"],
+        "accessLevel": "restricted",
+        "advanceBookingRequired": true
+      },
+      {
+        "id": "pushpabhishekam",
+        "name": "Pushpabhishekam",
+        "description": "Flower offering ceremony",
+        "price": 500,
+        "duration": 60,
+        "capacity": 100,
+        "zones": ["sannidhanam"],
+        "features": ["Flower offerings", "Special abhishekam", "Vedic chanting", "Special prasadam"],
+        "accessLevel": "restricted",
+        "advanceBookingRequired": true
+      }
+    ],
+    "rules": [
+      {
+        "id": "vratham",
+        "category": "spiritual",
+        "title": "41-Day Vratham Mandatory",
+        "description": "Complete 41-day penance period required before pilgrimage",
+        "severity": "mandatory",
+        "icon": "📿"
+      },
+      {
+        "id": "dress-code",
+        "category": "dress_code",
+        "title": "Black/Blue Attire",
+        "description": "Traditional black or blue clothes only",
+        "severity": "mandatory",
+        "icon": "👕"
+      },
+      {
+        "id": "women-restriction",
+        "category": "entry",
+        "title": "Age Restriction for Women",
+        "description": "Women aged 10-50 are traditionally not permitted",
+        "severity": "mandatory",
+        "icon": "🚫"
+      },
+      {
+        "id": "irumudi",
+        "category": "offerings",
+        "title": "Irumudi Kettu",
+        "description": "Sacred bundle with offerings must be carried",
+        "severity": "mandatory",
+        "icon": "🎒"
+      }
+    ],
+    "languages": ["en", "hi", "malayalam", "tamil"],
+    "currency": "INR",
+    "timezone": "Asia/Kolkata"
+  },
+  "location": {
+    "type": "hill_forest",
+    "accessibility": {
+      "wheelchairAccessible": false,
+      "elevatorAccess": false,
+      "specialAssistance": true,
+      "parkingAvailable": false,
+      "publicTransport": false
+    },
+    "amenities": [
+      {
+        "id": "pamba-river",
+        "name": "Pamba River Bathing",
+        "description": "Sacred river for ritual purification",
+        "category": "spiritual",
+        "available": true
+      },
+      {
+        "id": "pilgrim-facilities",
+        "name": "Pilgrim Rest Areas",
+        "description": "Basic rest facilities during trek",
+        "category": "comfort",
+        "available": true
+      },
+      {
+        "id": "medical-aid",
+        "name": "Medical Aid Posts",
+        "description": "First aid stations along the route",
+        "category": "medical",
+        "available": true
+      },
+      {
+        "id": "prasadam-center",
+        "name": "Prasadam Distribution",
+        "description": "Sacred food distribution",
+        "category": "food",
+        "available": true
+      }
+    ],
+    "transportation": {
+      "walkingPath": {
+        "available": true,
+        "steps": 30000,
+        "duration": "4-6 hours trek",
+        "difficulty": "very_difficult"
+      },
+      "roadAccess": {
+        "available": false,
+        "vehicleTypes": [],
+        "parkingFee": 0
+      },
+      "shuttleService": {
+        "available": false,
+        "frequency": "",
+        "cost": 0
+      }
+    }
+  },
+  "booking": {
+    "enabled": true,
+    "advanceBookingDays": 60,
+    "slotDuration": 120,
+    "maxDevoteesPerBooking": 4,
+    "cancellationPolicy": {
+      "allowCancellation": true,
+      "freeBeforeHours": 72,
+      "cancellationFee": 100,
+      "refundProcessingDays": 15
+    },
+    "paymentMethods": ["card", "upi", "netbanking"],
+    "requirements": {
+      "identityProof": true,
+      "photoUpload": true,
+      "mobileVerification": true,
+      "healthCertificate": true
+    }
+  },
+  "crowdTracking": {
+    "enabled": true,
+    "sensors": [
+      {
+        "id": "sensor-pamba",
+        "type": "people_counter",
+        "location": "Pamba Base Camp",
+        "zone": "sabarimala-base"
+      },
+      {
+        "id": "sensor-steps",
+        "type": "occupancy",
+        "location": "Eighteen Steps",
+        "zone": "eighteen-steps"
+      },
+      {
+        "id": "sensor-sannidhanam",
+        "type": "thermal",
+        "location": "Sannidhanam Entrance",
+        "zone": "sannidhanam"
+      }
+    ],
+    "peakHours": [
+      {
+        "start": "05:00",
+        "end": "08:00",
+        "level": "very_high"
+      },
+      {
+        "start": "17:00",
+        "end": "20:00",
+        "level": "high"
+      }
+    ],
+    "predictions": {
+      "enabled": true,
+      "accuracy": 70,
+      "updateInterval": 45
+    }
+  },
+  "notifications": {
+    "channels": ["sms", "email"],
+    "templates": {
+      "booking_confirmation": {
+        "sms": "Sabarimala darshan confirmed for {date}. Complete vratham and carry Irumudi. Booking ID: {bookingId}",
+        "email": "Sabarimala Temple Pilgrimage Confirmation"
+      },
+      "vratham_reminder": {
+        "sms": "Vratham day {day}/41. Continue your spiritual practices for Sabarimala yatra.",
+        "email": "Sabarimala Vratham Progress"
+      }
+    },
+    "preferences": {
+      "vrathramReminders": true,
+      "bookingReminders": true,
+      "weatherAlerts": true,
+      "seasonalUpdates": true
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "metrics": [
+      "pilgrim_count",
+      "vratham_completion",
+      "seasonal_patterns",
+      "route_usage"
+    ],
+    "reporting": {
+      "dailyReports": true,
+      "weeklyInsights": true,
+      "seasonalReports": true
+    }
+  },
+  "accessibility": {
+    "visualImpairment": {
+      "audioGuides": false,
+      "brailleSignage": false,
+      "guidedTours": true
+    },
+    "mobilityImpairment": {
+      "wheelchairPaths": false,
+      "ramps": false,
+      "specialSeating": false,
+      "assistedAccess": true
+    },
+    "hearingImpairment": {
+      "signLanguage": false,
+      "visualAlerts": true,
+      "textualGuidance": true
+    }
+  },
+  "safety": {
+    "emergencyContacts": [
+      {
+        "type": "temple",
+        "number": "+91-468-2322250",
+        "description": "Temple Administration"
+      },
+      {
+        "type": "medical",
+        "number": "+91-468-2322260",
+        "description": "Medical Emergency & Forest Rescue"
+      },
+      {
+        "type": "police",
+        "number": "+91-468-2322270",
+        "description": "Police & Security"
+      }
+    ],
+    "procedures": [
+      {
+        "type": "trek",
+        "description": "Follow designated trekking paths and stay with groups"
+      },
+      {
+        "type": "forest",
+        "description": "Be aware of wildlife and follow forest department guidelines"
+      }
+    ]
+  }
+}

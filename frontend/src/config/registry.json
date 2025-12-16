@@ -1,0 +1,235 @@
+{
+  "temples": [
+    {
+      "id": "temple-001",
+      "slug": "sri-ganesh-temple",
+      "name": "Sri Ganesh Temple",
+      "configPath": "/config/temples/sri-ganesh-temple.json",
+      "status": "active",
+      "featured": true
+    },
+    {
+      "id": "temple-002",
+      "slug": "vaishno-devi-temple",
+      "name": "Vaishno Devi Temple",
+      "configPath": "/config/temples/vaishno-devi-temple.json",
+      "status": "active",
+      "featured": true
+    },
+    {
+      "id": "temple-003",
+      "slug": "tirupati-balaji-temple",
+      "name": "Tirupati Balaji Temple",
+      "configPath": "/config/temples/tirupati-balaji-temple.json",
+      "status": "active",
+      "featured": true
+    },
+    {
+      "id": "temple-004",
+      "slug": "somnath-temple",
+      "name": "Somnath Temple",
+      "configPath": "/config/temples/somnath-temple.json",
+      "status": "active",
+      "featured": true
+    },
+    {
+      "id": "temple-005",
+      "slug": "golden-temple",
+      "name": "Golden Temple (Harmandir Sahib)",
+      "configPath": "/config/temples/golden-temple.json",
+      "status": "active",
+      "featured": true
+    },
+    {
+      "id": "temple-006",
+      "slug": "jagannath-puri-temple",
+      "name": "Jagannath Puri Temple",
+      "configPath": "/config/temples/jagannath-puri-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-007",
+      "slug": "kedarnath-temple",
+      "name": "Kedarnath Temple",
+      "configPath": "/config/temples/kedarnath-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-008",
+      "slug": "badrinath-temple",
+      "name": "Badrinath Temple",
+      "configPath": "/config/temples/badrinath-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-009",
+      "slug": "kashi-vishwanath-temple",
+      "name": "Kashi Vishwanath Temple",
+      "configPath": "/config/temples/kashi-vishwanath-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-010",
+      "slug": "meenakshi-temple",
+      "name": "Meenakshi Amman Temple",
+      "configPath": "/config/temples/meenakshi-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-011",
+      "slug": "sabarimala-temple",
+      "name": "Sabarimala Temple",
+      "configPath": "/config/temples/sabarimala-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-012",
+      "slug": "shirdi-sai-baba-temple",
+      "name": "Shirdi Sai Baba Temple",
+      "configPath": "/config/temples/shirdi-sai-baba-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-013",
+      "slug": "dwarkadheesh-temple",
+      "name": "Dwarkadhish Temple",
+      "configPath": "/config/temples/dwarkadheesh-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-014",
+      "slug": "rameswaram-temple",
+      "name": "Ramanathaswamy Temple",
+      "configPath": "/config/temples/rameswaram-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-021",
+      "slug": "hanuman-temple",
+      "name": "Hanuman Temple",
+      "configPath": "/config/temples/hanuman-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-022",
+      "slug": "ajanta-ellora-caves",
+      "name": "Ajanta-Ellora Caves",
+      "configPath": "/config/temples/ajanta-ellora-caves.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-015",
+      "slug": "khajuraho-temples",
+      "name": "Khajuraho Temples",
+      "configPath": "/config/temples/khajuraho-temples.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-016",
+      "slug": "siddhivinayak-temple",
+      "name": "Siddhivinayak Temple",
+      "configPath": "/config/temples/siddhivinayak-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-017",
+      "slug": "tirumala-venkateswara-temple",
+      "name": "Tirumala Venkateswara Temple",
+      "configPath": "/config/temples/tirumala-venkateswara-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-018",
+      "slug": "lotus-temple",
+      "name": "Lotus Temple (Bahá'í House of Worship)",
+      "configPath": "/config/temples/lotus-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-019",
+      "slug": "akshardham-temple",
+      "name": "Akshardham Temple",
+      "configPath": "/config/temples/akshardham-temple.json",
+      "status": "active",
+      "featured": false
+    },
+    {
+      "id": "temple-020",
+      "slug": "mahabodhi-temple",
+      "name": "Mahabodhi Temple",
+      "configPath": "/config/temples/mahabodhi-temple.json",
+      "status": "active",
+      "featured": false
+    }
+  ],
+  "defaultTemple": "sri-ganesh-temple",
+  "globalSettings": {
+    "defaultLanguage": "en",
+    "supportedLanguages": ["en", "hi", "mr", "ta", "te", "bn"],
+    "theme": {
+      "primaryColor": "#FF6B35",
+      "secondaryColor": "#F7931E",
+      "fontFamily": "Inter"
+    },
+    "features": {
+      "multiTenancy": true,
+      "globalSearch": false,
+      "crossTempleBooking": false
+    },
+    "analytics": {
+      "googleAnalyticsId": "",
+      "enableHeatmaps": true,
+      "trackUserBehavior": true,
+      "retentionDays": 730
+    },
+    "integrations": {
+      "paymentGateway": {
+        "provider": "razorpay",
+        "sandbox": true
+      },
+      "notifications": {
+        "smsProvider": "twilio",
+        "emailProvider": "sendgrid",
+        "whatsappProvider": "twilio"
+      },
+      "maps": {
+        "provider": "google",
+        "apiKey": ""
+      }
+    },
+    "security": {
+      "sessionTimeout": 3600,
+      "maxLoginAttempts": 5,
+      "passwordPolicy": {
+        "minLength": 8,
+        "requireNumbers": true,
+        "requireSpecialChars": true,
+        "requireUppercase": true
+      },
+      "dataEncryption": true,
+      "auditLogging": true
+    },
+    "compliance": {
+      "gdprCompliant": true,
+      "dataRetentionDays": 2555,
+      "cookieConsent": true,
+      "privacyPolicyUrl": "/privacy",
+      "termsOfServiceUrl": "/terms"
+    }
+  }
+}
