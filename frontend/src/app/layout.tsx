@@ -4,6 +4,7 @@ import "./globals.css";
 import { TempleConfigProvider } from "@/config/hooks";
 import { AuthProvider } from "@/contexts/auth-context";
 import { ToastProvider } from "@/components/ui/toast";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -117,6 +118,7 @@ export default function RootLayout({
           <AuthProvider>
             <ToastProvider>
               {children}
+              <Analytics />
             </ToastProvider>
           </AuthProvider>
         </TempleConfigProvider>
