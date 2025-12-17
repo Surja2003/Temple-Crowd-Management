@@ -15,7 +15,7 @@ import {
   TrackingConfig
 } from '@/types/crowd-tracking';
 import { apiFetch } from './http';
-import { templePath, wsPath, livePath, analyticsPath } from './paths';
+import { wsPath, livePath, analyticsPath } from './paths';
 
 export class CrowdTrackingService {
   private templeSlug: string;

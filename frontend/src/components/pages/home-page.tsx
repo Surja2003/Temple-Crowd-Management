@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { useAuth } from '@/contexts/auth-context'
 import { trackEvent } from '@/lib/ga'
 
@@ -90,6 +91,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex items-center gap-2">
+              <ThemeToggle />
               <Button asChild variant="outline">
                 <Link
                   href="/login"
