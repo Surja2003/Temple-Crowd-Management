@@ -4,7 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { useMemo } from 'react'
-import { Bell, BarChart3, Shield, Video, Users, LogOut, Moon, Sun } from 'lucide-react'
+import { Bell, BarChart3, Shield, Video, Users, LogOut, Moon, Sun, Menu, X } from 'lucide-react'
 import AdminLanguageSwitcher from '@/components/admin/admin-language-switcher'
 import { Button } from '@/components/ui/button'
 import { useAuth } from '@/contexts/auth-context'
@@ -24,6 +24,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   }, [pathname])
 
   const [isDark, setIsDark] = React.useState(false)
+  const [isMobileNavOpen, setIsMobileNavOpen] = React.useState(false)
 
   React.useEffect(() => {
     setIsDark(document.documentElement.classList.contains('dark'))
@@ -59,7 +60,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   return (
     <div className="flex h-screen bg-background overflow-hidden" data-locale={locale}>
       {/* Sidebar */}
-      <div className="w-64 bg-gradient-to-b from-purple-600 to-purple-700 text-white flex flex-col flex-shrink-0">
+      <div className="hidden md:flex w-64 bg-gradient-to-b from-purple-600 to-purple-700 text-white flex-col flex-shrink-0">
         <div className="p-6">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
@@ -113,13 +114,105 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         </div>
       </div>
 
+      {/* Mobile Sidebar Drawer */}
+      {isMobileNavOpen ? (
+        <div className="fixed inset-0 z-50 md:hidden" role="dialog" aria-modal="true" aria-label="Admin navigation menu">
+          <button
+            type="button"
+            className="absolute inset-0 bg-black/50"
+            aria-label="Close menu"
+            onClick={() => setIsMobileNavOpen(false)}
+          />
+          <div className="relative h-full w-72 max-w-[85vw] bg-gradient-to-b from-purple-600 to-purple-700 text-white flex flex-col">
+            <div className="p-6">
+              <div className="flex items-start justify-between gap-3 mb-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                    <Shield className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="font-bold text-lg">{t('admin', 'controlCenter') || 'Control Center'}</div>
+                    <div className="text-xs text-purple-100">{t('admin', 'adminDashboard') || 'Admin Dashboard'}</div>
+                  </div>
+                </div>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setIsMobileNavOpen(false)}
+                  className="text-white hover:bg-white/10"
+                  aria-label="Close menu"
+                >
+                  <X className="w-5 h-5" />
+                </Button>
+              </div>
+            </div>
+
+            <nav className="flex-1 px-3">
+              {navItems.map((item) => {
+                const Icon = item.icon
+                const isActive = pathname === item.href
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => {
+                      setIsMobileNavOpen(false)
+                      trackEvent('admin_nav_click', {
+                        source_page: 'admin_layout',
+                        from: pathname,
+                        to: item.href,
+                        label: item.label,
+                      })
+                    }}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-lg mb-1 transition-colors ${
+                      isActive
+                        ? 'bg-white text-purple-600 font-medium shadow-lg'
+                        : 'text-white hover:bg-white/10'
+                    }`}
+                  >
+                    <Icon className="w-5 h-5" />
+                    <span>{item.label}</span>
+                  </Link>
+                )
+              })}
+            </nav>
+
+            <div className="p-4 border-t border-white/20">
+              <Button
+                onClick={() => {
+                  setIsMobileNavOpen(false)
+                  handleLogout()
+                }}
+                variant="ghost"
+                className="w-full text-white hover:bg-white/10 justify-start"
+              >
+                <LogOut className="w-4 h-4 mr-2" />
+                {t('admin', 'logout') || 'Logout'}
+              </Button>
+            </div>
+          </div>
+        </div>
+      ) : null}
+
       {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Top Bar */}
-        <div className="bg-background border-b px-6 py-3 flex items-center justify-between flex-shrink-0">
-          <div>
-            <h1 className="text-2xl font-bold text-foreground">{t('admin', 'dashboardTitle')}</h1>
-            <p className="text-sm text-muted-foreground">{t('admin', 'dashboardSubtitle')}</p>
+        <div className="bg-background border-b px-4 sm:px-6 py-3 flex items-center justify-between flex-shrink-0">
+          <div className="flex items-center gap-3">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setIsMobileNavOpen(true)}
+              aria-label="Open menu"
+              title="Menu"
+            >
+              <Menu className="w-5 h-5" />
+            </Button>
+            <div>
+              <h1 className="text-2xl font-bold text-foreground">{t('admin', 'dashboardTitle')}</h1>
+              <p className="text-sm text-muted-foreground">{t('admin', 'dashboardSubtitle')}</p>
+            </div>
           </div>
           <div className="flex items-center gap-4">
             <AdminLanguageSwitcher />
